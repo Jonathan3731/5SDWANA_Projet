@@ -1,0 +1,90 @@
+NAMESPACE                    NAME                                           READY   STATUS    RESTARTS   AGE     LABELS
+mlops-jtsr-04-11-2026        pod/api-jtsr-04-11-2026-7c64d48d5f-88b89       1/1     Running   0          27m     app=api-jtsr-04-11-2026,nom=jonathan,pod-template-hash=7c64d48d5f,projet=e5
+mlops-jtsr-04-11-2026        pod/api-jtsr-04-11-2026-7c64d48d5f-pld7r       1/1     Running   0          27m     app=api-jtsr-04-11-2026,nom=jonathan,pod-template-hash=7c64d48d5f,projet=e5
+mlops-jtsr-04-11-2026        pod/api-jtsr-04-11-2026-7c64d48d5f-x6xdx       1/1     Running   0          27m     app=api-jtsr-04-11-2026,nom=jonathan,pod-template-hash=7c64d48d5f,projet=e5
+mlops-jtsr-04-11-2026        pod/shop-jtsr-04-11-2026-6d5c44566c-gfr8z      1/1     Running   0          18m     app=shop-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6d5c44566c,projet=e5
+mlops-jtsr-04-11-2026        pod/shop-jtsr-04-11-2026-6d5c44566c-qc4qj      1/1     Running   0          18m     app=shop-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6d5c44566c,projet=e5
+mlops-jtsr-04-11-2026        pod/shop-jtsr-04-11-2026-6d5c44566c-tplcd      1/1     Running   0          18m     app=shop-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6d5c44566c,projet=e5
+mlops-jtsr-04-11-2026        pod/todo-jtsr-04-11-2026-6c4b96fd95-4b5qz      1/1     Running   0          79s     app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+mlops-jtsr-04-11-2026        pod/todo-jtsr-04-11-2026-6c4b96fd95-4pfc6      1/1     Running   0          19s     app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+mlops-jtsr-04-11-2026        pod/todo-jtsr-04-11-2026-6c4b96fd95-4ttd6      1/1     Running   0          27m     app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+mlops-jtsr-04-11-2026        pod/todo-jtsr-04-11-2026-6c4b96fd95-6j6h2      1/1     Running   0          2m19s   app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+mlops-jtsr-04-11-2026        pod/todo-jtsr-04-11-2026-6c4b96fd95-6nv2h      1/1     Running   0          2m19s   app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+mlops-jtsr-04-11-2026        pod/todo-jtsr-04-11-2026-6c4b96fd95-9fh8g      1/1     Running   0          19s     app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+mlops-jtsr-04-11-2026        pod/todo-jtsr-04-11-2026-6c4b96fd95-bs6pp      1/1     Running   0          79s     app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+mlops-jtsr-04-11-2026        pod/todo-jtsr-04-11-2026-6c4b96fd95-dgrcc      1/1     Running   0          19s     app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+mlops-jtsr-04-11-2026        pod/todo-jtsr-04-11-2026-6c4b96fd95-dkqtg      1/1     Running   0          79s     app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+mlops-jtsr-04-11-2026        pod/todo-jtsr-04-11-2026-6c4b96fd95-fl9jw      1/1     Running   0          19s     app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+mlops-jtsr-04-11-2026        pod/todo-jtsr-04-11-2026-6c4b96fd95-g85qt      1/1     Running   0          79s     app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+mlops-jtsr-04-11-2026        pod/todo-jtsr-04-11-2026-6c4b96fd95-j9m7v      1/1     Running   0          19s     app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+mlops-jtsr-04-11-2026        pod/todo-jtsr-04-11-2026-6c4b96fd95-kp42c      1/1     Running   0          2m19s   app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+mlops-jtsr-04-11-2026        pod/todo-jtsr-04-11-2026-6c4b96fd95-n6spd      1/1     Running   0          19s     app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+mlops-jtsr-04-11-2026        pod/todo-jtsr-04-11-2026-6c4b96fd95-qcgbk      1/1     Running   0          27m     app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+mlops-jtsr-04-11-2026        pod/todo-jtsr-04-11-2026-6c4b96fd95-zrkgd      1/1     Running   0          27m     app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+monitoring-jtsr-04-11-2026   pod/netdata-jtsr-04-11-2026-644cf559fd-f7bsv   1/1     Running   0          9m12s   app=netdata-jtsr-04-11-2026,nom=jonathan,pod-template-hash=644cf559fd,projet=e5
+preprod-jtsr-04-11-2026      pod/api-jtsr-04-11-2026-7c64d48d5f-82gp9       1/1     Running   0          26m     app=api-jtsr-04-11-2026,nom=jonathan,pod-template-hash=7c64d48d5f,projet=e5
+preprod-jtsr-04-11-2026      pod/api-jtsr-04-11-2026-7c64d48d5f-mzslz       1/1     Running   0          26m     app=api-jtsr-04-11-2026,nom=jonathan,pod-template-hash=7c64d48d5f,projet=e5
+preprod-jtsr-04-11-2026      pod/api-jtsr-04-11-2026-7c64d48d5f-xth2z       1/1     Running   0          26m     app=api-jtsr-04-11-2026,nom=jonathan,pod-template-hash=7c64d48d5f,projet=e5
+preprod-jtsr-04-11-2026      pod/shop-jtsr-04-11-2026-5f6bdfb4db-25b9k      1/1     Running   0          26m     app=shop-jtsr-04-11-2026,nom=jonathan,pod-template-hash=5f6bdfb4db,projet=e5
+preprod-jtsr-04-11-2026      pod/shop-jtsr-04-11-2026-5f6bdfb4db-5sbkj      1/1     Running   0          26m     app=shop-jtsr-04-11-2026,nom=jonathan,pod-template-hash=5f6bdfb4db,projet=e5
+preprod-jtsr-04-11-2026      pod/shop-jtsr-04-11-2026-5f6bdfb4db-c7d2f      1/1     Running   0          26m     app=shop-jtsr-04-11-2026,nom=jonathan,pod-template-hash=5f6bdfb4db,projet=e5
+preprod-jtsr-04-11-2026      pod/todo-jtsr-04-11-2026-6c4b96fd95-5r7sm      1/1     Running   0          26m     app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+preprod-jtsr-04-11-2026      pod/todo-jtsr-04-11-2026-6c4b96fd95-jch2b      1/1     Running   0          26m     app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+preprod-jtsr-04-11-2026      pod/todo-jtsr-04-11-2026-6c4b96fd95-kc2cm      1/1     Running   0          26m     app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+prod-jtsr-04-11-2026         pod/api-jtsr-04-11-2026-7c64d48d5f-672zq       1/1     Running   0          26m     app=api-jtsr-04-11-2026,nom=jonathan,pod-template-hash=7c64d48d5f,projet=e5
+prod-jtsr-04-11-2026         pod/api-jtsr-04-11-2026-7c64d48d5f-gvcpf       1/1     Running   0          26m     app=api-jtsr-04-11-2026,nom=jonathan,pod-template-hash=7c64d48d5f,projet=e5
+prod-jtsr-04-11-2026         pod/api-jtsr-04-11-2026-7c64d48d5f-t2qpm       1/1     Running   0          26m     app=api-jtsr-04-11-2026,nom=jonathan,pod-template-hash=7c64d48d5f,projet=e5
+prod-jtsr-04-11-2026         pod/shop-jtsr-04-11-2026-5f6bdfb4db-859jb      1/1     Running   0          26m     app=shop-jtsr-04-11-2026,nom=jonathan,pod-template-hash=5f6bdfb4db,projet=e5
+prod-jtsr-04-11-2026         pod/shop-jtsr-04-11-2026-5f6bdfb4db-b8vfm      1/1     Running   0          26m     app=shop-jtsr-04-11-2026,nom=jonathan,pod-template-hash=5f6bdfb4db,projet=e5
+prod-jtsr-04-11-2026         pod/shop-jtsr-04-11-2026-5f6bdfb4db-tnhf6      1/1     Running   0          26m     app=shop-jtsr-04-11-2026,nom=jonathan,pod-template-hash=5f6bdfb4db,projet=e5
+prod-jtsr-04-11-2026         pod/todo-jtsr-04-11-2026-6c4b96fd95-p6x6s      1/1     Running   0          25m     app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+prod-jtsr-04-11-2026         pod/todo-jtsr-04-11-2026-6c4b96fd95-stlsg      1/1     Running   0          25m     app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+prod-jtsr-04-11-2026         pod/todo-jtsr-04-11-2026-6c4b96fd95-wnmsq      1/1     Running   0          25m     app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+
+NAMESPACE                    NAME                              TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)           AGE     LABELS
+mlops-jtsr-04-11-2026        service/api-jtsr-04-11-2026       ClusterIP   10.103.108.220   <none>        80/TCP            27m     nom=jonathan,projet=e5
+mlops-jtsr-04-11-2026        service/shop-jtsr-04-11-2026      NodePort    10.104.99.105    <none>        80:32410/TCP      27m     nom=jonathan,projet=e5
+mlops-jtsr-04-11-2026        service/todo-jtsr-04-11-2026      NodePort    10.108.157.171   <none>        80:31291/TCP      27m     nom=jonathan,projet=e5
+monitoring-jtsr-04-11-2026   service/netdata-jtsr-04-11-2026   NodePort    10.111.103.176   <none>        19999:32418/TCP   9m12s   nom=jonathan,projet=e5
+preprod-jtsr-04-11-2026      service/api-jtsr-04-11-2026       ClusterIP   10.108.123.73    <none>        80/TCP            26m     nom=jonathan,projet=e5
+preprod-jtsr-04-11-2026      service/shop-jtsr-04-11-2026      NodePort    10.100.180.165   <none>        80:30094/TCP      26m     nom=jonathan,projet=e5
+preprod-jtsr-04-11-2026      service/todo-jtsr-04-11-2026      NodePort    10.100.193.188   <none>        80:31468/TCP      26m     nom=jonathan,projet=e5
+prod-jtsr-04-11-2026         service/api-jtsr-04-11-2026       ClusterIP   10.108.141.33    <none>        80/TCP            26m     nom=jonathan,projet=e5
+prod-jtsr-04-11-2026         service/shop-jtsr-04-11-2026      NodePort    10.108.39.6      <none>        80:32301/TCP      26m     nom=jonathan,projet=e5
+prod-jtsr-04-11-2026         service/todo-jtsr-04-11-2026      NodePort    10.104.214.87    <none>        80:31391/TCP      25m     nom=jonathan,projet=e5
+
+NAMESPACE                    NAME                                      READY   UP-TO-DATE   AVAILABLE   AGE     LABELS
+mlops-jtsr-04-11-2026        deployment.apps/api-jtsr-04-11-2026       3/3     3            3           27m     app=api-jtsr-04-11-2026,nom=jonathan,projet=e5
+mlops-jtsr-04-11-2026        deployment.apps/shop-jtsr-04-11-2026      3/3     3            3           27m     app=shop-jtsr-04-11-2026,nom=jonathan,projet=e5
+mlops-jtsr-04-11-2026        deployment.apps/todo-jtsr-04-11-2026      16/16   16           16          27m     app=todo-jtsr-04-11-2026,nom=jonathan,projet=e5
+monitoring-jtsr-04-11-2026   deployment.apps/netdata-jtsr-04-11-2026   1/1     1            1           9m12s   app=netdata-jtsr-04-11-2026,nom=jonathan,projet=e5
+preprod-jtsr-04-11-2026      deployment.apps/api-jtsr-04-11-2026       3/3     3            3           26m     app=api-jtsr-04-11-2026,nom=jonathan,projet=e5
+preprod-jtsr-04-11-2026      deployment.apps/shop-jtsr-04-11-2026      3/3     3            3           26m     app=shop-jtsr-04-11-2026,nom=jonathan,projet=e5
+preprod-jtsr-04-11-2026      deployment.apps/todo-jtsr-04-11-2026      3/3     3            3           26m     app=todo-jtsr-04-11-2026,nom=jonathan,projet=e5
+prod-jtsr-04-11-2026         deployment.apps/api-jtsr-04-11-2026       3/3     3            3           26m     app=api-jtsr-04-11-2026,nom=jonathan,projet=e5
+prod-jtsr-04-11-2026         deployment.apps/shop-jtsr-04-11-2026      3/3     3            3           26m     app=shop-jtsr-04-11-2026,nom=jonathan,projet=e5
+prod-jtsr-04-11-2026         deployment.apps/todo-jtsr-04-11-2026      3/3     3            3           25m     app=todo-jtsr-04-11-2026,nom=jonathan,projet=e5
+
+NAMESPACE                    NAME                                                 DESIRED   CURRENT   READY   AGE     LABELS
+mlops-jtsr-04-11-2026        replicaset.apps/api-jtsr-04-11-2026-7c64d48d5f       3         3         3       27m     app=api-jtsr-04-11-2026,nom=jonathan,pod-template-hash=7c64d48d5f,projet=e5
+mlops-jtsr-04-11-2026        replicaset.apps/shop-jtsr-04-11-2026-5f6bdfb4db      0         0         0       27m     app=shop-jtsr-04-11-2026,nom=jonathan,pod-template-hash=5f6bdfb4db,projet=e5
+mlops-jtsr-04-11-2026        replicaset.apps/shop-jtsr-04-11-2026-6d5c44566c      3         3         3       18m     app=shop-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6d5c44566c,projet=e5
+mlops-jtsr-04-11-2026        replicaset.apps/todo-jtsr-04-11-2026-6c4b96fd95      16        16        16      27m     app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+monitoring-jtsr-04-11-2026   replicaset.apps/netdata-jtsr-04-11-2026-644cf559fd   1         1         1       9m12s   app=netdata-jtsr-04-11-2026,nom=jonathan,pod-template-hash=644cf559fd,projet=e5
+preprod-jtsr-04-11-2026      replicaset.apps/api-jtsr-04-11-2026-7c64d48d5f       3         3         3       26m     app=api-jtsr-04-11-2026,nom=jonathan,pod-template-hash=7c64d48d5f,projet=e5
+preprod-jtsr-04-11-2026      replicaset.apps/shop-jtsr-04-11-2026-5f6bdfb4db      3         3         3       26m     app=shop-jtsr-04-11-2026,nom=jonathan,pod-template-hash=5f6bdfb4db,projet=e5
+preprod-jtsr-04-11-2026      replicaset.apps/todo-jtsr-04-11-2026-6c4b96fd95      3         3         3       26m     app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+prod-jtsr-04-11-2026         replicaset.apps/api-jtsr-04-11-2026-7c64d48d5f       3         3         3       26m     app=api-jtsr-04-11-2026,nom=jonathan,pod-template-hash=7c64d48d5f,projet=e5
+prod-jtsr-04-11-2026         replicaset.apps/shop-jtsr-04-11-2026-5f6bdfb4db      3         3         3       26m     app=shop-jtsr-04-11-2026,nom=jonathan,pod-template-hash=5f6bdfb4db,projet=e5
+prod-jtsr-04-11-2026         replicaset.apps/todo-jtsr-04-11-2026-6c4b96fd95      3         3         3       25m     app=todo-jtsr-04-11-2026,nom=jonathan,pod-template-hash=6c4b96fd95,projet=e5
+
+NAMESPACE                 NAME                                                       REFERENCE                         TARGETS         MINPODS   MAXPODS   REPLICAS   AGE   LABELS
+mlops-jtsr-04-11-2026     horizontalpodautoscaler.autoscaling/api-jtsr-04-11-2026    Deployment/api-jtsr-04-11-2026    cpu: 2%/50%     3         20        3          27m   nom=jonathan,projet=e5
+mlops-jtsr-04-11-2026     horizontalpodautoscaler.autoscaling/shop-jtsr-04-11-2026   Deployment/shop-jtsr-04-11-2026   cpu: 2%/50%     3         20        3          27m   nom=jonathan,projet=e5
+mlops-jtsr-04-11-2026     horizontalpodautoscaler.autoscaling/todo-jtsr-04-11-2026   Deployment/todo-jtsr-04-11-2026   cpu: 133%/50%   3         20        16         27m   nom=jonathan,projet=e5
+preprod-jtsr-04-11-2026   horizontalpodautoscaler.autoscaling/api-jtsr-04-11-2026    Deployment/api-jtsr-04-11-2026    cpu: 2%/50%     3         20        3          26m   nom=jonathan,projet=e5
+preprod-jtsr-04-11-2026   horizontalpodautoscaler.autoscaling/shop-jtsr-04-11-2026   Deployment/shop-jtsr-04-11-2026   cpu: 2%/50%     3         20        3          26m   nom=jonathan,projet=e5
+preprod-jtsr-04-11-2026   horizontalpodautoscaler.autoscaling/todo-jtsr-04-11-2026   Deployment/todo-jtsr-04-11-2026   cpu: 2%/50%     3         20        3          26m   nom=jonathan,projet=e5
+prod-jtsr-04-11-2026      horizontalpodautoscaler.autoscaling/api-jtsr-04-11-2026    Deployment/api-jtsr-04-11-2026    cpu: 2%/50%     3         20        3          26m   nom=jonathan,projet=e5
+prod-jtsr-04-11-2026      horizontalpodautoscaler.autoscaling/shop-jtsr-04-11-2026   Deployment/shop-jtsr-04-11-2026   cpu: 2%/50%     3         20        3          25m   nom=jonathan,projet=e5
+prod-jtsr-04-11-2026      horizontalpodautoscaler.autoscaling/todo-jtsr-04-11-2026   Deployment/todo-jtsr-04-11-2026   cpu: 2%/50%     3         20        3          25m   nom=jonathan,projet=e5

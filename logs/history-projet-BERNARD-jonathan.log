@@ -1,0 +1,574 @@
+    1  ~$
+    2  docker ps
+    3  sudo snap install kubectl --classic
+    4  minikube start --driver=docker --listen-address=0.0.0.0 --cpus=2 --memory=3072 --kubernetes-version=v1.31.0
+    5  sudo snap install kubectl --classic
+    6  minikube start --driver=docker --listen-address=0.0.0.0 --cpus=2 --memory=3072 --kubernetes-version=v1.31.0
+    7  minikube status
+    8  sudo apt install -y bash-completion
+    9  lly installed.
+   10  sudo snap install kubectl --classic
+   11  snap help refresh
+   12  minikube start --driver=docker --listen-address=0.0.0.0 --cpus=2 --memory=3072 --kubernetes-version=v1.31.0
+   13  sudo apt uppgrade
+   14  sudo apt upgrade
+   15  sudo apt update
+   16  sudo apt install -y docker.io conntrack
+   17  sudo usermod -aG docker $USER
+   18  newgrp docker
+   19  sudo apt install -y docker.io conntrack
+   20  sudo apt update
+   21  minikube start --driver=docker --listen-address=0.0.0.0 --cpus=2 --memory=3072 --kubernetes-version=v1.31.0
+   22  sudo apt update
+   23  minikube start --driver=docker --listen-address=0.0.0.0 --cpus=2 --memory=3072 --kubernetes-version=v1.31.0
+   24  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+   25  sudo install minikube-linux-amd64 /usr/local/bin/minikube
+   26  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+   27  sudo install minikube-linux-amd64 /usr/local/bin/minikube
+   28  rm minikube-linux-amd64
+   29  minikube version
+   30  sudo apt update
+   31  minikube start --driver=docker --listen-address=0.0.0.0 --cpus=2 --memory=3072 --kubernetes-version=v1.31.0
+   32  minikube config set driver docker
+   33  # Depuis la VM, exposer un service sur toutes les interfaces
+   34  kubectl port-forward --address 0.0.0.0 svc/mon-service 8080:80
+   35  # Depuis la VM, exposer un service sur toutes les interfaces
+   36  sudo apt install -y bash-completion
+   37  cat >> ~/.bashrc <<'EOF'
+   38  # Autocompletion minikube et kubectl
+   39  source /etc/bash_completion
+   40  source <(minikube completion bash)
+   41  source <(kubectl completion bash)
+   42  # Alias k pour kubectl, avec autocompletion
+   43  alias k="kubectl"
+   44  complete -o default -F __start_kubectl k
+   45  EOF
+   46  source ~/.bashrc
+   47  k get nodes
+   48  k get po<TAB>        # complète en pods
+   49  minikube sta<TAB>    # complète en start / status
+   50  k get po⇥
+   51  k get pod
+   52  k get pods
+   53  minikube delete
+   54  minikube start --driver=docker --listen-address=0.0.0.0 --cpus=2 --memory=3072 --kubernetes-version=v1.31.0
+   55  minikube start
+   56  kubectl create deployment hello-minikube --image=kicbase/echo-server:1.0
+   57  kubectl expose deployment hello-minikube --type=NodePort --port=8080
+   58  kubectl
+   59  kubectl delete
+   60  minikube stop
+   61  minikube delete --all --purge
+   62  sudo snap remove kubectl
+   63  minikube 
+   64  minikube version
+   65  sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
+   66  sudo snap install kubectl --classic
+   67  ls
+   68  nano nginxpod
+   69  kubectl create -f nginxpod 
+   70  minikube start --driver=docker --cpus=2 --memory=3072 --kubernetes-version=v1.31.0
+   71  kubectl get nodes
+   72  kubectl create -f nginxpod 
+   73  k describe pod/nginxpod
+   74  k describe pod/ngin
+   75  k describe pod/nginx
+   76  minikube ssh
+   77  mkdir -p ~/tp-pods && cd ~/tp-pods
+   78  cat > nginx-pod.yaml <<'EOF'
+   79  apiVersion: v1
+   80  kind: Pod
+   81  metadata:
+   82    name: nginx-pod
+   83    labels:
+   84      app: nginx
+   85  spec:
+   86    containers:
+   87    - name: nginx
+   88      image: nginx:latest
+   89      ports:
+   90      - containerPort: 80
+   91  EOF
+   92  nano nginx-pod.yaml 
+   93  kubectl apply -f nginx-pod.yaml
+   94  cat > httpd-pod.yaml <<'EOF'
+   95  apiVersion: v1
+   96  kind: Pod
+   97  metadata:
+   98    name: httpd-pod
+   99    labels:
+  100      app: httpd
+  101  spec:
+  102    containers:
+  103    - name: httpd
+  104      image: httpd:latest
+  105      ports:
+  106      - containerPort: 80
+  107  EOF
+  108  nano httpd-pod.yaml 
+  109  kubectl apply -f httpd-pod.yaml
+  110  kubectl get pods -o wide
+  111  kubect
+  112  kubectl
+  113  kubectl delete nginx
+  114  minikube delete nginx
+  115  kubectl get pods -o wide
+  116  kubectl delete pod nginx
+  117  kubectl get pods -o wide
+  118  minikube ssh
+  119  kubectl port-forward --address 0.0.0.0 pod/nginx-pod 8081:80
+  120  kubectl port-forward --address 0.0.0.0 pod/nginx-pod 8081:80 > /dev/null 2>&1 &
+  121  kubectl port-forward --address 0.0.0.0 pod/httpd-pod 8082:80 > /dev/null 2>&1 &
+  122  curl http://localhost:8081
+  123  ip a
+  124  pkill -f "kubectl port-forward"
+  125  kubectl delete pod nginx-pod httpd-pod
+  126  kubectl get pods
+  127  kubectl delete -f nginx-pod.yaml -f httpd-pod.yaml
+  128  kubectl get nodes
+  129  cd ..
+  130  $
+  131  mkdir -p ~/tp-deploy/app-interne ~/tp-deploy/app-web
+  132  cat > ~/tp-deploy/app-interne/app-interne.yaml <<'EOF'
+  133  apiVersion: apps/v1
+  134  kind: Deployment
+  135  metadata:
+  136    name: app-interne
+  137  spec:
+  138    replicas: 5
+  139    selector:
+  140      matchLabels:
+  141        app: app-interne
+  142    template:
+  143      metadata:
+  144        labels:
+  145          app: app-interne
+  146      spec:
+  147        containers:
+  148        - name: whoami
+  149          image: traefik/whoami:latest
+  150          ports:
+  151          - containerPort: 80
+  152  ---
+  153  apiVersion: v1
+  154  kind: Service
+  155  metadata:
+  156    name: app-interne
+  157  spec:
+  158    type: ClusterIP
+  159    selector:
+  160      app: app-interne
+  161    ports:
+  162    - port: 80
+  163      targetPort: 80
+  164  EOF
+  165  cat > ~/tp-deploy/app-web/app-web.yaml <<'EOF'
+  166  apiVersion: apps/v1
+  167  kind: Deployment
+  168  metadata:
+  169    name: app-web
+  170  spec:
+  171    replicas: 3
+  172    selector:
+  173      matchLabels:
+  174        app: app-web
+  175    template:
+  176      metadata:
+  177        labels:
+  178          app: app-web
+  179      spec:
+  180        containers:
+  181        - name: httpd
+  182          image: httpd:2.4
+  183          ports:
+  184          - containerPort: 80
+  185  ---
+  186  apiVersion: v1
+  187  kind: Service
+  188  metadata:
+  189    name: app-web
+  190  spec:
+  191    type: NodePort
+  192    selector:
+  193      app: app-web
+  194    ports:
+  195    - port: 80
+  196      targetPort: 80
+  197      nodePort: 30080
+  198  EOF
+  199  ubuntu@ma-vm:~$
+  200  cd ~/tp-deploy/app-interne && kubectl create -f ./
+  201  cd ~/tp-deploy/app-web && kubectl create -f ./
+  202  kubectl get deploy,pods,svc -o wide
+  203  minikube ssh
+  204  nohup kubectl port-forward --address 0.0.0.0 svc/app-web 8080:80 > /dev/null 2>&1 &
+  205  docker ps
+  206  minikube status
+  207  minikube start
+  208  nohup kubectl port-forward --address 0.0.0.0 svc/app-web 8080:80 > /dev/null 2>&1 &
+  209  kubectl get deploy,pods,svc -o wide
+  210  minikube ssh
+  211  nohup kubectl port-forward --address 0.0.0.0 svc/app-web 8080:80 > /dev/null 2>&1 &
+  212  pkill -f "kubectl port-forward"
+  213  kubectl delete -f ~/tp-deploy/app-interne/ -f ~/tp-deploy/app-web/
+  214  mkdir tp3
+  215  cd tp3
+  216  nano tp3.yaml
+  217  kubectl apply -f tp3.yaml 
+  218  kubectl describe deployment nginx-deployment
+  219  kubectl get pods -l app=nginx
+  220  kubectl describe pod nginx-deployment-d556bf558-
+  221  nano tp3.yaml 
+  222  kubectl apply -f tp3.yaml 
+  223  kubectl get pods -l app=nginx
+  224  nano tp3scale.ymal
+  225  rm tp3scale.ymal 
+  226  nano tp3scale.yaml
+  227  kubectl apply -f tp3scale.yaml 
+  228  kubectl get pods -l app=nginx
+  229  kubectl delete deployment nginx-deployment
+  230  rm tp3scale.yaml 
+  231  rm tp3.yaml 
+  232  kubectl apply -f https://k8s.io/examples/application/guestbook/redis-leader-deployment.yaml
+  233  kubectl get pods
+  234  kubectl logs -f deployment/redis-leader
+  235  kubectl apply -f https://k8s.io/examples/application/guestbook/redis-leader-service.yaml
+  236  kubectl get service
+  237  kubectl apply -f https://k8s.io/examples/application/guestbook/redis-follower-deployment.yaml
+  238  kubectl get pods
+  239  kubectl apply -f https://k8s.io/examples/application/guestbook/redis-follower-service.yaml
+  240  kubectl get service
+  241  kubectl apply -f https://k8s.io/examples/application/guestbook/frontend-deployment.yaml
+  242  kubectl get pods -l app=guestbook -l tier=frontend
+  243  kubectl apply -f https://k8s.io/examples/application/guestbook/frontend-service.yaml
+  244  kubectl get services
+  245  kubectl port-forward svc/frontend 8080:80
+  246  kubectl get service frontend
+  247  kubectl scale deployment frontend --replicas=5
+  248  kubectl get pods
+  249  kubectl scale deployment frontend --replicas=2
+  250  rom 127.0.0.1:8080 -> 80
+  251  kubectl get pods
+  252  kubectl delete deployment -l app=redis
+  253  kubectl delete service -l app=redis
+  254  kubectl delete deployment frontend
+  255  kubectl delete service frontend
+  256  kubectl get pods
+  257  kubectl delete deployment -l app=redis
+  258  kubectl delete service -l app=redis
+  259  kubectl delete deployment frontend
+  260  kubectl delete service frontend
+  261  kubectl get pods
+  262  ip -4 -br a
+  263  cd tp3/
+  264  cat <<EOF >./kustomization.yaml
+  265  secretGenerator:
+  266  - name: mysql-pass
+  267    literals:
+  268    - password=YOUR_PASSWORD
+  269  EOF
+  270  ls
+  271  curl -LO https://k8s.io/examples/application/wordpress/mysql-deployment.yaml
+  272  curl -LO https://k8s.io/examples/application/wordpress/wordpress-deployment.yaml
+  273  cat <<EOF >>./kustomization.yaml
+  274  resources:
+  275    - mysql-deployment.yaml
+  276    - wordpress-deployment.yaml
+  277  EOF
+  278  kubectl apply -k ./
+  279  kubectl apply -k kustomization.yaml 
+  280  kubectl apply -k ./
+  281  minikube start
+  282  kubectl apply -k ./
+  283  kubectl get secrets
+  284  kubectl get pvc
+  285  kubectl get pods
+  286  kubectl get services wordpress
+  287  minikube service wordpress --url
+  288  curl -I http://192.168.49.2:30337
+  289  kubectl delete -k ./
+  290  kubectl apply -f https://k8s.io/examples/controllers/nginx-deployment.yaml
+  291  kubectl get deployments
+  292  kubectl rollout status deployment/nginx-deployment
+  293  kubectl get deployments
+  294  kubectl get pods --show-labels
+  295  kubectl set image deployment.v1.apps/nginx-deployment nginx=nginx:1.16.1
+  296  kubectl set image deployment/nginx-deployment nginx=nginx:1.16.1
+  297  kubectl edit deployment/nginx-deployment
+  298  kubectl rollout status deployment/nginx-deployment
+  299  kubectl patch deployment/nginx-deployment -p '{"spec":{"progressDeadlineSeconds":600}}'
+  300  kubectl delete -k ./
+  301  kubectl get pods --show-labels
+  302  k delete pods
+  303  k delete pods nginx-deployment-7dbfbc79cf-
+  304  kubectl get pods 
+  305  kubectl delete pods nginx-deployment-7dbfbc79cf-
+  306  pkill -f "kubectl port-forward"
+  307  kubectl delete deployments,services,pods --all
+  308  kubectl get deploy,pods,svc
+  309  kubectl delete deployments,services,pods --all
+  310  kubectl get deploy,pods,svc
+  311  minikube start
+  312  cd ..
+  313  minikube status || minikube start --driver=docker
+  314  kubectl get nodes
+  315  export DH_USER=Jon
+  316  docker login -u $DH_USER
+  317  export DH_USER=daemon: Get "https://registry-1.docker.io/v2/": unknown: malformed HTTP Authorization header
+  318  ubuntu@ma-vm:~$
+  319  export DH_USER=jonathan57
+  320  docker login -u $DH_USER
+  321  mkdir -p ~/tp4 && cd ~/tp4
+  322  for APP in clusterip nodeport loadbalancer; do   mkdir -p app-$APP; 
+  323    cat > app-$APP/app.py <<EOF
+  324  import socket
+  325  from flask import Flask
+  326  app = Flask(__name__)
+  327  APP_NAME = "$APP"
+  328  @app.route("/")
+  329  def index():
+  330      return f"<h1>App {APP_NAME}</h1><p>Pod : <b>{socket.gethostname()}</b></p>"
+  331  app.run(host="0.0.0.0", port=5000)
+  332  EOF
+  333      echo "flask" > app-$APP/requirements.txt;   printf "__pycache__\n*.pyc\n.git\n" > app-$APP/.dockerignore; 
+  334    cat > app-$APP/Dockerfile <<'EOF'
+  335  FROM python:3.12-slim
+  336  ENV PYTHONUNBUFFERED=1
+  337  WORKDIR /app
+  338  COPY requirements.txt .
+  339  RUN pip install --no-cache-dir -r requirements.txt
+  340  COPY app.py .
+  341  RUN useradd -r appuser
+  342  USER appuser
+  343  EXPOSE 5000
+  344  CMD ["python", "app.py"]
+  345  EOF
+  346   done
+  347  ls
+  348  cd ~/tp4
+  349  for APP in clusterip nodeport loadbalancer; do   docker build ./app-$APP -t $DH_USER/tp4-$APP:v1;   docker push $DH_USER/tp4-$APP:v1; done
+  350  mkdir -p ~/tp4/manifests && cd ~/tp4
+  351  declare -A TYPE=( [clusterip]=ClusterIP [nodeport]=NodePort [loadbalancer]=LoadBalancer )
+  352  for APP in clusterip nodeport loadbalancer; do   EXTRA="";   [ "$APP" = "nodeport" ] && EXTRA="    nodePort: 30081"; 
+  353    cat > manifests/app-$APP.yaml <<EOF
+  354  apiVersion: v1
+  355  kind: Namespace
+  356  metadata:
+  357    name: ns-$APP
+  358    labels:
+  359      tp: tp4
+  360  ---
+  361  apiVersion: apps/v1
+  362  kind: Deployment
+  363  metadata:
+  364    name: app-$APP
+  365    namespace: ns-$APP
+  366    labels:
+  367      app: app-$APP
+  368      tp: tp4
+  369  spec:
+  370    replicas: 3
+  371    selector:
+  372      matchLabels:
+  373        app: app-$APP
+  374    template:
+  375      metadata:
+  376        labels:
+  377          app: app-$APP
+  378          tier: python
+  379          tp: tp4
+  380      spec:
+  381        containers:
+  382        - name: app-$APP
+  383          image: $DH_USER/tp4-$APP:v1
+  384          ports:
+  385          - containerPort: 5000
+  386  ---
+  387  apiVersion: v1
+  388  kind: Service
+  389  metadata:
+  390    name: app-$APP
+  391    namespace: ns-$APP
+  392    labels:
+  393      app: app-$APP
+  394      tp: tp4
+  395  spec:
+  396    type: ${TYPE[$APP]}
+  397    selector:
+  398      app: app-$APP
+  399    ports:
+  400    - port: 80
+  401      targetPort: 5000
+  402  $EXTRA
+  403  EOF
+  404   done
+  405  ls
+  406  cd ~/tp4/manifests && kubectl create -f ./
+  407  kubectl get deploy,pods,svc -A -l tp=tp4 --show-labels
+  408  curl http://$(minikube ip):30081
+  409  minikube ssh
+  410  kubectl port-forward --address 0.0.0.0 -n ns-clusterip svc/app-clusterip 8081:80 > /dev/null 2>&1 &
+  411  kubectl port-forward --address 0.0.0.0 -n ns-nodeport svc/app-nodeport 8082:80 > /dev/null 2>&1 &
+  412  kubectl port-forward --address 0.0.0.0 -n ns-loadbalancer svc/app-loadbalancer 8083:80 > /dev/null 2>&1 &
+  413  minikube start
+  414  kubectl port-forward --address 0.0.0.0 -n ns-clusterip svc/app-clusterip 8081:80 > /dev/null 2>&1 &
+  415  kubectl port-forward --address 0.0.0.0 -n ns-nodeport svc/app-nodeport 8082:80 > /dev/null 2>&1 &
+  416  kubectl port-forward --address 0.0.0.0 -n ns-loadbalancer svc/app-loadbalancer 8083:80 > /dev/null 2>&1 &
+  417  kubectl get deploy,pods,svc -A -l tp=tp4 --show-labels
+  418  k delete all --all
+  419  k get pods
+  420  kubectl get deploy,pods,svc -A -l tp=tp4 --show-labels
+  421  kubectl delete ns ns-clusterip ns-nodeport ns-loadbalancer
+  422  pkill -f "kubectl port-forward"
+  423  kubectl get deploy,pods,svc -A -l tp=tp4 --show-labels
+  424  kubectl get deploy,pods,svc
+  425  minikube start
+  426  kubectl get deploy,pods,svc
+  427  kubectl delete service/kubernetes 
+  428  kubectl get deploy,pods,svc
+  429  minikube status || minikube start --driver=docker
+  430  sudo apt update && sudo apt install
+  431  minikube start --driver=docker
+  432  minikube addons enable metrics-server
+  433  git config --global user.name "Jonathan BERNARD"
+  434  git config --global user.email "jonathan.bernard@estiam.com"
+  435  git clone https://github.com/Jonathan3731/5SDWANA_TP-Final.git
+  436  git clone https://github.com/Jonathan3731/5SDWANA_Projet.git
+  437  cd 5SDWANA_Projet/
+  438  mkdir -p apps k8s namespaces observability logs
+  439  nano .gitignore
+  440  git add . && git commit -m "Init: structure du dépôt et .gitignore" && git push -u origin main
+  441  git push -u origin main
+  442  git clone --depth 1 https://github.com/stripe-samples/checkout-one-time-payments ~/src-stripe
+  443  git clone --depth 1 https://github.com/docker/getting-started-app ~/src-todo
+  444  git clone --depth 1 https://github.com/docker/awesome-compose ~/src-compose
+  445  .
+  446  ubuntu@ma-vm:~/5SDWANA_Projet$
+  447  mkdir -p apps/shop/server apps/shop/client
+  448  cp -r ~/src-stripe/server/python apps/shop/server/python
+  449  cp -r ~/src-stripe/client/html apps/shop/client/html
+  450  mkdir -p apps/todo
+  451  cp -r ~/src-todo/package.json ~/src-todo/package-lock.json ~/src-todo/src apps/todo/
+  452  cp -r ~/src-compose/nginx-wsgi-flask/flask apps/api
+  453  git add . && git commit -m "Ajout des sources des 3 applications existantes (Stripe, getting-started, Flask)" && git push
+  454  git push -u origin main
+  455  git remote set-url origin git@github.com:Jonathan3731/5SDWANA_Projet.git
+  456  git push -u origin main
+  457  ssh-keygen -t ed25519 -C "jonathan"
+  458  cat ~/.ssh/id_ed25519.pub
+  459  git remote set-url origin git@github.com:Jonathan3731/5SDWANA_Projet.git
+  460  git push -u origin main
+  461  ssh -T git@github.com
+  462  ls ~/.ssh
+  463  ssh-keygen -lf ~/.ssh/id_ed25519.pub
+  464  ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -N ""
+  465  cat ~/.ssh/id_ed25519.pub
+  466  ssh -T git@github.com
+  467  git push -u origin main
+  468  git remote -v
+  469  git remote set-url origin https://github.com/Jonathan3731/5SDWANA_Projet.git
+  470  git push -u origin main
+  471  git remote -v
+  472  git add . && git commit -m "Ajout des sources des 3 applications existantes (Stripe, getting-started, Flask)" && git push
+  473  git push
+  474  nano apps/shop/Dockerfile
+  475  nano apps/shop/.dockerignore
+  476  nano apps/todo/Dockerfile
+  477  nano apps/todo/.dockerignore
+  478  nano apps/api/requirements.txt
+  479  nano apps/api/Dockerfile
+  480  nano apps/api/.dockerignore
+  481  nano apps/api/Dockerfile.naive
+  482  docker login
+  483  docker network create net-jtsr-04-11-2026
+  484  docker build -t jonathan3731/shop-jtsr-04-11-2026:v1 apps/shop
+  485  docker build -t jonathan3731/todo-jtsr-04-11-2026:v1 apps/todo
+  486  docker build -t jonathan3731/api-jtsr-04-11-2026:v1 apps/api
+  487  docker build -f apps/api/Dockerfile.naive -t api-naive-jb-04-11-2026 apps/api
+  488  docker images | grep jtsr-04-11-2026 | tee logs/taille-images-jtsr-04-11-2026.log
+  489  docker run -d --name api-jtsr-04-11-2026 --network net-jtsr-04-11-2026 -p 8000:8000 jonathan3731/api-jtsr-04-11-2026:v1
+  490  curl http://localhost:8000/flask-health-check
+  491  docker logs api-jb-04-11-2026 > logs/docker-api-jb-04-11-2026.log
+  492  docker logs api-jtsr-04-11-2026 > logs/docker-api-jtsr-04-11-2026.log
+  493  nano apps/api/Dockerfile
+  494  nano apps/shop/Dockerfile
+  495  docker rm -f api-jtsr-04-11-2026
+  496  docker build -t jonathan3731/api-jtsr-04-11-2026:v1 apps/api
+  497  docker run -d --name api-jtsr-04-11-2026 --network net-jtsr-04-11-2026 -p 8000:8000 jonathan3731/api-jtsr-04-11-2026:v1
+  498  curl http://localhost:8000/flask-health-check
+  499  docker logs api-jtsr-04-11-2026 > logs/docker-api-jtsr-04-11-2026.log
+  500  cat logs/docker-api-jtsr-04-11-2026.log
+  501  docker rm -f api-jtsr-04-11-2026
+  502  nano erreurs-projet.md
+  503  docker push jonathan3731/shop-jtsr-04-11-2026:v1
+  504  docker logout
+  505  $
+  506  docker login
+  507  docker tag jonathan3731/shop-jtsr-04-11-2026:v1 jonathan57/shop-jtsr-04-11-2026:v1
+  508  docker tag jonathan3731/todo-jtsr-04-11-2026:v1 jonathan57/todo-jtsr-04-11-2026:v1
+  509  docker tag jonathan3731/api-jtsr-04-11-2026:v1 jonathan57/api-jtsr-04-11-2026:v1
+  510  sed -i "s/jonathan3731/jonathan57/g" k8s/*.yaml
+  511  docker push jonathan57/shop-jtsr-04-11-2026:v1
+  512  docker push jonathan57/todo-jtsr-04-11-2026:v1
+  513  docker push jonathan57/api-jtsr-04-11-2026:v1
+  514  git add . && git commit -m "Images poussees sur Docker Hub" && git push
+  515  git push
+  516  git push -u origin main
+  517  nano k8s/00-configmap.yaml
+  518  nano k8s/shop.yaml
+  519  nano k8s/00-configmap.yaml
+  520  nano k8s/shop.yaml
+  521  nano k8s/todo.yaml
+  522  nano k8s/api.yaml
+  523  nano namespaces/namespaces.yaml
+  524  nano observability/netdata.yaml
+  525  git add . && git commit -m "Manifests: ConfigMap, Deployments x3 replicas, Services, HPA 3-20, namespaces, Netdata"
+  526  git push -u origin main
+  527  nano secret.env
+  528  kubectl apply -f namespaces/
+  529  kubectl apply -f secret.env -n mlops-jtsr-04-11-2026
+  530  kubectl apply -f k8s/ -n mlops-jtsr-04-11-2026
+  531  kubectl get deploy,pods,svc,hpa -n mlops-jtsr-04-11-2026
+  532  kubectl top pods -n mlops-jtsr-04-11-2026
+  533  kubectl apply -f secret.env -n preprod-jtsr-04-11-2026
+  534  kubectl apply -f k8s/ -n preprod-jtsr-04-11-2026
+  535  kubectl apply -f secret.env -n prod-jtsr-04-11-2026
+  536  kubectl apply -f k8s/ -n prod-jtsr-04-11-2026
+  537  kubectl get deploy,pods,svc,hpa -A -l projet=e5
+  538  rm secret.env
+  539  git add . && git commit -m "Deploiement mlops, preprod, prod valide + limites ajustees"
+  540  git push -main
+  541  git push -u origin main
+  542  kubectl port-forward --address 0.0.0.0 -n mlops-jtsr-04-11-2026 svc/shop-jtsr-04-11-2026 8081:80 > /dev/null 2>&1 &
+  543  kubectl port-forward --address 0.0.0.0 -n mlops-jtsr-04-11-2026 svc/todo-jtsr-04-11-2026 8082:80 > /dev/null 2>&1 &
+  544  nano secret.env
+  545  kubectl apply -f secret.env -n mlops-jtsr-04-11-2026
+  546  kubectl rollout restart deployment shop-jtsr-04-11-2026 -n mlops-jtsr-04-11-2026
+  547  kubectl get pods -n mlops-jtsr-04-11-2026
+  548  pkill -f "port-forward"
+  549  kubectl port-forward --address 0.0.0.0 -n mlops-jtsr-04-11-2026 svc/shop-jtsr-04-11-2026 8081:80 > /dev/null 2>&1 &
+  550  kubectl apply -f secret.env -n preprod-jtsr-04-11-2026
+  551  kubectl apply -f secret.env -n prod-jtsr-04-11-2026
+  552  rm secret.env
+  553  kubectl port-forward --address 0.0.0.0 -n mlops-jtsr-04-11-2026 svc/shop-jtsr-04-11-2026 8081:80 > /dev/null 2>&1 &
+  554  kubectl port-forward --address 0.0.0.0 -n mlops-jtsr-04-11-2026 svc/todo-jtsr-04-11-2026 8082:80 > /dev/null 2>&1 &
+  555  kubectl get svc -n mlops-jtsr-04-11-2026
+  556  kubectl run curl-jtsr-04-11-2026 --rm -it --restart=Never --image=curlimages/curl -n mlops-jtsr-04-11-2026 -- curl -s http://api-jtsr-04-11-2026/flask-health-check
+  557  minikube ip
+  558  kubectl get svc todo-jtsr-04-11-2026 -n mlops-jtsr-04-11-2026
+  559  ab -n 50000 -c 100 http://192.168.49.2:32410/
+  560  sudo apt install apache2-utils
+  561  ab -n 50000 -c 100 http://192.168.49.2:32410/
+  562  kubectl top pods -n mlops-jtsr-04-11-2026
+  563  kubectl get pods -n mlops-jtsr-04-11-2026
+  564  kubectl apply -f observability/netdata.yaml
+  565  kubectl port-forward --address 0.0.0.0 -n monitoring-jtsr-04-11-2026 svc/netdata-jtsr-04-11-2026 19999:19999 > /dev/null 2>&1 &
+  566  kubectl get pods,svc -n monitoring-jtsr-04-11-2026
+  567  pkill -f "19999"
+  568  kubectl port-forward --address 0.0.0.0 -n monitoring-jtsr-04-11-2026 svc/netdata-jtsr-04-11-2026 19999:19999 > /dev/null 2>&1 &
+  569  curl -I http://localhost:19999
+  570  ab -n 50000 -c 100 http://192.168.49.2:32418/
+  571  minikube ip
+  572  kubectl get svc todo-jtsr-04-11-2026 -n mlops-jtsr-04-11-2026
+  573  ab -n 50000 -c 100 http://192.168.49.2:31291/
+  574  history > logs/history-projet-BERNARD-jonathan.log
