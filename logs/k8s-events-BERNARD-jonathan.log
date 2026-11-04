@@ -1,336 +1,227 @@
-NAMESPACE                    LAST SEEN           TYPE      REASON                         OBJECT                                          MESSAGE
-mlops-jtsr-04-11-2026        27m                 Normal    SuccessfulCreate               ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95      Created pod: todo-jtsr-04-11-2026-6c4b96fd95-qcgbk
-mlops-jtsr-04-11-2026        27m                 Normal    Pulling                        Pod/api-jtsr-04-11-2026-7c64d48d5f-x6xdx        Pulling image "jonathan57/api-jtsr-04-11-2026:v1"
-mlops-jtsr-04-11-2026        27m                 Normal    SuccessfulCreate               ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95      Created pod: todo-jtsr-04-11-2026-6c4b96fd95-4ttd6
-mlops-jtsr-04-11-2026        27m                 Normal    ScalingReplicaSet              Deployment/shop-jtsr-04-11-2026                 Scaled up replica set shop-jtsr-04-11-2026-5f6bdfb4db to 3
-mlops-jtsr-04-11-2026        27m                 Normal    SuccessfulCreate               ReplicaSet/shop-jtsr-04-11-2026-5f6bdfb4db      Created pod: shop-jtsr-04-11-2026-5f6bdfb4db-bskjx
-mlops-jtsr-04-11-2026        27m                 Normal    ScalingReplicaSet              Deployment/api-jtsr-04-11-2026                  Scaled up replica set api-jtsr-04-11-2026-7c64d48d5f to 3
-mlops-jtsr-04-11-2026        27m                 Normal    Pulling                        Pod/api-jtsr-04-11-2026-7c64d48d5f-pld7r        Pulling image "jonathan57/api-jtsr-04-11-2026:v1"
-mlops-jtsr-04-11-2026        27m                 Normal    Pulling                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-bskjx       Pulling image "jonathan57/shop-jtsr-04-11-2026:v1"
-mlops-jtsr-04-11-2026        27m                 Normal    ScalingReplicaSet              Deployment/todo-jtsr-04-11-2026                 Scaled up replica set todo-jtsr-04-11-2026-6c4b96fd95 to 3
-mlops-jtsr-04-11-2026        27m                 Normal    SuccessfulCreate               ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95      Created pod: todo-jtsr-04-11-2026-6c4b96fd95-zrkgd
-mlops-jtsr-04-11-2026        27m                 Normal    SuccessfulCreate               ReplicaSet/api-jtsr-04-11-2026-7c64d48d5f       Created pod: api-jtsr-04-11-2026-7c64d48d5f-pld7r
-mlops-jtsr-04-11-2026        27m                 Normal    SuccessfulCreate               ReplicaSet/shop-jtsr-04-11-2026-5f6bdfb4db      Created pod: shop-jtsr-04-11-2026-5f6bdfb4db-fm8n7
-mlops-jtsr-04-11-2026        27m                 Normal    Pulling                        Pod/api-jtsr-04-11-2026-7c64d48d5f-88b89        Pulling image "jonathan57/api-jtsr-04-11-2026:v1"
-mlops-jtsr-04-11-2026        27m                 Normal    SuccessfulCreate               ReplicaSet/shop-jtsr-04-11-2026-5f6bdfb4db      Created pod: shop-jtsr-04-11-2026-5f6bdfb4db-clll9
-mlops-jtsr-04-11-2026        27m                 Normal    SuccessfulCreate               ReplicaSet/api-jtsr-04-11-2026-7c64d48d5f       Created pod: api-jtsr-04-11-2026-7c64d48d5f-88b89
-mlops-jtsr-04-11-2026        27m                 Normal    SuccessfulCreate               ReplicaSet/api-jtsr-04-11-2026-7c64d48d5f       Created pod: api-jtsr-04-11-2026-7c64d48d5f-x6xdx
-mlops-jtsr-04-11-2026        27m                 Normal    Scheduled                      Pod/api-jtsr-04-11-2026-7c64d48d5f-x6xdx        Successfully assigned mlops-jtsr-04-11-2026/api-jtsr-04-11-2026-7c64d48d5f-x6xdx to minikube
-mlops-jtsr-04-11-2026        27m                 Normal    Scheduled                      Pod/api-jtsr-04-11-2026-7c64d48d5f-88b89        Successfully assigned mlops-jtsr-04-11-2026/api-jtsr-04-11-2026-7c64d48d5f-88b89 to minikube
-mlops-jtsr-04-11-2026        27m                 Normal    Scheduled                      Pod/api-jtsr-04-11-2026-7c64d48d5f-pld7r        Successfully assigned mlops-jtsr-04-11-2026/api-jtsr-04-11-2026-7c64d48d5f-pld7r to minikube
-mlops-jtsr-04-11-2026        27m                 Normal    Scheduled                      Pod/shop-jtsr-04-11-2026-5f6bdfb4db-bskjx       Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-5f6bdfb4db-bskjx to minikube
-mlops-jtsr-04-11-2026        27m                 Normal    Scheduled                      Pod/shop-jtsr-04-11-2026-5f6bdfb4db-clll9       Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-5f6bdfb4db-clll9 to minikube
-mlops-jtsr-04-11-2026        27m                 Normal    Scheduled                      Pod/shop-jtsr-04-11-2026-5f6bdfb4db-fm8n7       Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-5f6bdfb4db-fm8n7 to minikube
-mlops-jtsr-04-11-2026        27m                 Normal    Scheduled                      Pod/todo-jtsr-04-11-2026-6c4b96fd95-4ttd6       Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-4ttd6 to minikube
-mlops-jtsr-04-11-2026        27m                 Normal    Scheduled                      Pod/todo-jtsr-04-11-2026-6c4b96fd95-qcgbk       Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-qcgbk to minikube
-mlops-jtsr-04-11-2026        27m                 Normal    Scheduled                      Pod/todo-jtsr-04-11-2026-6c4b96fd95-zrkgd       Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-zrkgd to minikube
-mlops-jtsr-04-11-2026        27m                 Normal    Pulling                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-4ttd6       Pulling image "jonathan57/todo-jtsr-04-11-2026:v1"
-mlops-jtsr-04-11-2026        27m                 Normal    Pulling                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-zrkgd       Pulling image "jonathan57/todo-jtsr-04-11-2026:v1"
-mlops-jtsr-04-11-2026        27m                 Normal    Pulling                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-fm8n7       Pulling image "jonathan57/shop-jtsr-04-11-2026:v1"
-mlops-jtsr-04-11-2026        27m                 Normal    Pulling                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-qcgbk       Pulling image "jonathan57/todo-jtsr-04-11-2026:v1"
-mlops-jtsr-04-11-2026        27m                 Normal    Pulling                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-clll9       Pulling image "jonathan57/shop-jtsr-04-11-2026:v1"
-mlops-jtsr-04-11-2026        27m                 Normal    Pulled                         Pod/api-jtsr-04-11-2026-7c64d48d5f-x6xdx        Successfully pulled image "jonathan57/api-jtsr-04-11-2026:v1" in 5.61s (5.61s including waiting). Image size: 23654671 bytes.
-mlops-jtsr-04-11-2026        27m                 Normal    Started                        Pod/api-jtsr-04-11-2026-7c64d48d5f-x6xdx        Started container api-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        27m                 Normal    Created                        Pod/api-jtsr-04-11-2026-7c64d48d5f-x6xdx        Created container api-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        27m                 Normal    Pulled                         Pod/api-jtsr-04-11-2026-7c64d48d5f-88b89        Successfully pulled image "jonathan57/api-jtsr-04-11-2026:v1" in 882ms (6.462s including waiting). Image size: 23654671 bytes.
-mlops-jtsr-04-11-2026        27m                 Normal    Started                        Pod/api-jtsr-04-11-2026-7c64d48d5f-88b89        Started container api-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        27m                 Normal    Created                        Pod/api-jtsr-04-11-2026-7c64d48d5f-88b89        Created container api-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        27m                 Normal    Created                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-bskjx       Created container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        27m                 Normal    Started                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-bskjx       Started container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        27m                 Normal    Pulled                         Pod/shop-jtsr-04-11-2026-5f6bdfb4db-bskjx       Successfully pulled image "jonathan57/shop-jtsr-04-11-2026:v1" in 5.482s (11.936s including waiting). Image size: 27851368 bytes.
-mlops-jtsr-04-11-2026        27m                 Normal    Pulled                         Pod/api-jtsr-04-11-2026-7c64d48d5f-pld7r        Successfully pulled image "jonathan57/api-jtsr-04-11-2026:v1" in 774ms (12.685s including waiting). Image size: 23654671 bytes.
-mlops-jtsr-04-11-2026        27m                 Normal    Created                        Pod/api-jtsr-04-11-2026-7c64d48d5f-pld7r        Created container api-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        27m                 Normal    Started                        Pod/api-jtsr-04-11-2026-7c64d48d5f-pld7r        Started container api-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        27m                 Normal    Created                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-clll9       Created container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        27m                 Normal    Started                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-clll9       Started container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        27m                 Normal    Pulled                         Pod/shop-jtsr-04-11-2026-5f6bdfb4db-clll9       Successfully pulled image "jonathan57/shop-jtsr-04-11-2026:v1" in 912ms (13.552s including waiting). Image size: 27851368 bytes.
-mlops-jtsr-04-11-2026        27m                 Normal    Pulled                         Pod/shop-jtsr-04-11-2026-5f6bdfb4db-fm8n7       Successfully pulled image "jonathan57/shop-jtsr-04-11-2026:v1" in 905ms (14.425s including waiting). Image size: 27851368 bytes.
-mlops-jtsr-04-11-2026        27m                 Warning   FailedComputeMetricsReplicas   HorizontalPodAutoscaler/api-jtsr-04-11-2026     invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-mlops-jtsr-04-11-2026        27m                 Normal    Created                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-fm8n7       Created container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        27m                 Normal    Started                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-fm8n7       Started container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        27m                 Warning   FailedGetResourceMetric        HorizontalPodAutoscaler/api-jtsr-04-11-2026     failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-mlops-jtsr-04-11-2026        26m                 Normal    Created                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-qcgbk       Created container todo-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        26m                 Normal    Started                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-qcgbk       Started container todo-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        26m                 Normal    Pulled                         Pod/todo-jtsr-04-11-2026-6c4b96fd95-qcgbk       Successfully pulled image "jonathan57/todo-jtsr-04-11-2026:v1" in 7.287s (21.626s including waiting). Image size: 72766093 bytes.
-mlops-jtsr-04-11-2026        26m                 Normal    Started                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-4ttd6       Started container todo-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        26m                 Normal    Pulled                         Pod/todo-jtsr-04-11-2026-6c4b96fd95-4ttd6       Successfully pulled image "jonathan57/todo-jtsr-04-11-2026:v1" in 1.11s (22.735s including waiting). Image size: 72766093 bytes.
-mlops-jtsr-04-11-2026        26m                 Normal    Created                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-4ttd6       Created container todo-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        26m                 Normal    Pulled                         Pod/todo-jtsr-04-11-2026-6c4b96fd95-zrkgd       Successfully pulled image "jonathan57/todo-jtsr-04-11-2026:v1" in 1.056s (23.776s including waiting). Image size: 72766093 bytes.
-mlops-jtsr-04-11-2026        26m                 Normal    Created                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-zrkgd       Created container todo-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        26m                 Normal    Started                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-zrkgd       Started container todo-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        26m (x5 over 27m)   Warning   FailedComputeMetricsReplicas   HorizontalPodAutoscaler/todo-jtsr-04-11-2026    invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-mlops-jtsr-04-11-2026        26m (x5 over 27m)   Warning   FailedGetResourceMetric        HorizontalPodAutoscaler/todo-jtsr-04-11-2026    failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-preprod-jtsr-04-11-2026      25m                 Normal    SuccessfulCreate               ReplicaSet/shop-jtsr-04-11-2026-5f6bdfb4db      Created pod: shop-jtsr-04-11-2026-5f6bdfb4db-c7d2f
-preprod-jtsr-04-11-2026      25m                 Normal    SuccessfulCreate               ReplicaSet/api-jtsr-04-11-2026-7c64d48d5f       Created pod: api-jtsr-04-11-2026-7c64d48d5f-82gp9
-preprod-jtsr-04-11-2026      25m                 Normal    SuccessfulCreate               ReplicaSet/api-jtsr-04-11-2026-7c64d48d5f       Created pod: api-jtsr-04-11-2026-7c64d48d5f-mzslz
-preprod-jtsr-04-11-2026      25m                 Normal    SuccessfulCreate               ReplicaSet/api-jtsr-04-11-2026-7c64d48d5f       Created pod: api-jtsr-04-11-2026-7c64d48d5f-xth2z
-preprod-jtsr-04-11-2026      25m                 Normal    ScalingReplicaSet              Deployment/api-jtsr-04-11-2026                  Scaled up replica set api-jtsr-04-11-2026-7c64d48d5f to 3
-preprod-jtsr-04-11-2026      25m                 Normal    SuccessfulCreate               ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95      Created pod: todo-jtsr-04-11-2026-6c4b96fd95-kc2cm
-preprod-jtsr-04-11-2026      25m                 Normal    SuccessfulCreate               ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95      Created pod: todo-jtsr-04-11-2026-6c4b96fd95-jch2b
-preprod-jtsr-04-11-2026      25m                 Normal    ScalingReplicaSet              Deployment/todo-jtsr-04-11-2026                 Scaled up replica set todo-jtsr-04-11-2026-6c4b96fd95 to 3
-preprod-jtsr-04-11-2026      25m                 Normal    ScalingReplicaSet              Deployment/shop-jtsr-04-11-2026                 Scaled up replica set shop-jtsr-04-11-2026-5f6bdfb4db to 3
-preprod-jtsr-04-11-2026      25m                 Normal    SuccessfulCreate               ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95      Created pod: todo-jtsr-04-11-2026-6c4b96fd95-5r7sm
-preprod-jtsr-04-11-2026      25m                 Normal    SuccessfulCreate               ReplicaSet/shop-jtsr-04-11-2026-5f6bdfb4db      Created pod: shop-jtsr-04-11-2026-5f6bdfb4db-25b9k
-preprod-jtsr-04-11-2026      25m                 Normal    SuccessfulCreate               ReplicaSet/shop-jtsr-04-11-2026-5f6bdfb4db      Created pod: shop-jtsr-04-11-2026-5f6bdfb4db-5sbkj
-preprod-jtsr-04-11-2026      25m                 Normal    Scheduled                      Pod/api-jtsr-04-11-2026-7c64d48d5f-82gp9        Successfully assigned preprod-jtsr-04-11-2026/api-jtsr-04-11-2026-7c64d48d5f-82gp9 to minikube
-preprod-jtsr-04-11-2026      25m                 Normal    Scheduled                      Pod/api-jtsr-04-11-2026-7c64d48d5f-mzslz        Successfully assigned preprod-jtsr-04-11-2026/api-jtsr-04-11-2026-7c64d48d5f-mzslz to minikube
-preprod-jtsr-04-11-2026      25m                 Normal    Scheduled                      Pod/api-jtsr-04-11-2026-7c64d48d5f-xth2z        Successfully assigned preprod-jtsr-04-11-2026/api-jtsr-04-11-2026-7c64d48d5f-xth2z to minikube
-preprod-jtsr-04-11-2026      25m                 Normal    Scheduled                      Pod/shop-jtsr-04-11-2026-5f6bdfb4db-25b9k       Successfully assigned preprod-jtsr-04-11-2026/shop-jtsr-04-11-2026-5f6bdfb4db-25b9k to minikube
-preprod-jtsr-04-11-2026      25m                 Normal    Scheduled                      Pod/shop-jtsr-04-11-2026-5f6bdfb4db-5sbkj       Successfully assigned preprod-jtsr-04-11-2026/shop-jtsr-04-11-2026-5f6bdfb4db-5sbkj to minikube
-preprod-jtsr-04-11-2026      25m                 Normal    Scheduled                      Pod/shop-jtsr-04-11-2026-5f6bdfb4db-c7d2f       Successfully assigned preprod-jtsr-04-11-2026/shop-jtsr-04-11-2026-5f6bdfb4db-c7d2f to minikube
-preprod-jtsr-04-11-2026      25m                 Normal    Scheduled                      Pod/todo-jtsr-04-11-2026-6c4b96fd95-kc2cm       Successfully assigned preprod-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-kc2cm to minikube
-preprod-jtsr-04-11-2026      25m                 Normal    Scheduled                      Pod/todo-jtsr-04-11-2026-6c4b96fd95-jch2b       Successfully assigned preprod-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-jch2b to minikube
-preprod-jtsr-04-11-2026      25m                 Normal    Scheduled                      Pod/todo-jtsr-04-11-2026-6c4b96fd95-5r7sm       Successfully assigned preprod-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-5r7sm to minikube
-preprod-jtsr-04-11-2026      25m                 Normal    Created                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-5sbkj       Created container shop-jtsr-04-11-2026
-preprod-jtsr-04-11-2026      25m                 Normal    Created                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-25b9k       Created container shop-jtsr-04-11-2026
-preprod-jtsr-04-11-2026      25m                 Normal    Pulled                         Pod/api-jtsr-04-11-2026-7c64d48d5f-82gp9        Container image "jonathan57/api-jtsr-04-11-2026:v1" already present on machine
-preprod-jtsr-04-11-2026      25m                 Normal    Created                        Pod/api-jtsr-04-11-2026-7c64d48d5f-82gp9        Created container api-jtsr-04-11-2026
-preprod-jtsr-04-11-2026      25m                 Normal    Started                        Pod/api-jtsr-04-11-2026-7c64d48d5f-82gp9        Started container api-jtsr-04-11-2026
-preprod-jtsr-04-11-2026      25m                 Normal    Pulled                         Pod/api-jtsr-04-11-2026-7c64d48d5f-mzslz        Container image "jonathan57/api-jtsr-04-11-2026:v1" already present on machine
-preprod-jtsr-04-11-2026      25m                 Normal    Created                        Pod/api-jtsr-04-11-2026-7c64d48d5f-mzslz        Created container api-jtsr-04-11-2026
-preprod-jtsr-04-11-2026      25m                 Normal    Started                        Pod/api-jtsr-04-11-2026-7c64d48d5f-mzslz        Started container api-jtsr-04-11-2026
-preprod-jtsr-04-11-2026      25m                 Normal    Pulled                         Pod/api-jtsr-04-11-2026-7c64d48d5f-xth2z        Container image "jonathan57/api-jtsr-04-11-2026:v1" already present on machine
-preprod-jtsr-04-11-2026      25m                 Normal    Created                        Pod/api-jtsr-04-11-2026-7c64d48d5f-xth2z        Created container api-jtsr-04-11-2026
-preprod-jtsr-04-11-2026      25m                 Normal    Started                        Pod/api-jtsr-04-11-2026-7c64d48d5f-xth2z        Started container api-jtsr-04-11-2026
-preprod-jtsr-04-11-2026      25m                 Normal    Pulled                         Pod/shop-jtsr-04-11-2026-5f6bdfb4db-25b9k       Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-preprod-jtsr-04-11-2026      25m                 Normal    Started                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-25b9k       Started container shop-jtsr-04-11-2026
-preprod-jtsr-04-11-2026      25m                 Normal    Pulled                         Pod/shop-jtsr-04-11-2026-5f6bdfb4db-5sbkj       Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-preprod-jtsr-04-11-2026      25m                 Normal    Started                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-5sbkj       Started container shop-jtsr-04-11-2026
-preprod-jtsr-04-11-2026      25m                 Normal    Started                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-kc2cm       Started container todo-jtsr-04-11-2026
-preprod-jtsr-04-11-2026      25m                 Normal    Created                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-kc2cm       Created container todo-jtsr-04-11-2026
-preprod-jtsr-04-11-2026      25m                 Normal    Pulled                         Pod/todo-jtsr-04-11-2026-6c4b96fd95-kc2cm       Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-preprod-jtsr-04-11-2026      25m                 Normal    Pulled                         Pod/shop-jtsr-04-11-2026-5f6bdfb4db-c7d2f       Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-preprod-jtsr-04-11-2026      25m                 Normal    Started                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-jch2b       Started container todo-jtsr-04-11-2026
-preprod-jtsr-04-11-2026      25m                 Normal    Created                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-jch2b       Created container todo-jtsr-04-11-2026
-preprod-jtsr-04-11-2026      25m                 Normal    Pulled                         Pod/todo-jtsr-04-11-2026-6c4b96fd95-jch2b       Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-preprod-jtsr-04-11-2026      25m                 Normal    Created                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-c7d2f       Created container shop-jtsr-04-11-2026
-preprod-jtsr-04-11-2026      25m                 Normal    Started                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-5r7sm       Started container todo-jtsr-04-11-2026
-preprod-jtsr-04-11-2026      25m                 Normal    Created                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-5r7sm       Created container todo-jtsr-04-11-2026
-preprod-jtsr-04-11-2026      25m                 Normal    Pulled                         Pod/todo-jtsr-04-11-2026-6c4b96fd95-5r7sm       Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-preprod-jtsr-04-11-2026      25m                 Normal    Started                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-c7d2f       Started container shop-jtsr-04-11-2026
-prod-jtsr-04-11-2026         25m                 Normal    SuccessfulCreate               ReplicaSet/api-jtsr-04-11-2026-7c64d48d5f       Created pod: api-jtsr-04-11-2026-7c64d48d5f-672zq
-prod-jtsr-04-11-2026         25m                 Normal    ScalingReplicaSet              Deployment/shop-jtsr-04-11-2026                 Scaled up replica set shop-jtsr-04-11-2026-5f6bdfb4db to 3
-prod-jtsr-04-11-2026         25m                 Normal    SuccessfulCreate               ReplicaSet/shop-jtsr-04-11-2026-5f6bdfb4db      Created pod: shop-jtsr-04-11-2026-5f6bdfb4db-tnhf6
-prod-jtsr-04-11-2026         25m                 Normal    ScalingReplicaSet              Deployment/api-jtsr-04-11-2026                  Scaled up replica set api-jtsr-04-11-2026-7c64d48d5f to 3
-prod-jtsr-04-11-2026         25m                 Normal    SuccessfulCreate               ReplicaSet/shop-jtsr-04-11-2026-5f6bdfb4db      Created pod: shop-jtsr-04-11-2026-5f6bdfb4db-859jb
-prod-jtsr-04-11-2026         25m                 Normal    SuccessfulCreate               ReplicaSet/api-jtsr-04-11-2026-7c64d48d5f       Created pod: api-jtsr-04-11-2026-7c64d48d5f-gvcpf
-prod-jtsr-04-11-2026         25m                 Normal    SuccessfulCreate               ReplicaSet/api-jtsr-04-11-2026-7c64d48d5f       Created pod: api-jtsr-04-11-2026-7c64d48d5f-t2qpm
-prod-jtsr-04-11-2026         25m                 Normal    Scheduled                      Pod/api-jtsr-04-11-2026-7c64d48d5f-t2qpm        Successfully assigned prod-jtsr-04-11-2026/api-jtsr-04-11-2026-7c64d48d5f-t2qpm to minikube
-prod-jtsr-04-11-2026         25m                 Normal    Scheduled                      Pod/api-jtsr-04-11-2026-7c64d48d5f-672zq        Successfully assigned prod-jtsr-04-11-2026/api-jtsr-04-11-2026-7c64d48d5f-672zq to minikube
-prod-jtsr-04-11-2026         25m                 Normal    Scheduled                      Pod/api-jtsr-04-11-2026-7c64d48d5f-gvcpf        Successfully assigned prod-jtsr-04-11-2026/api-jtsr-04-11-2026-7c64d48d5f-gvcpf to minikube
-prod-jtsr-04-11-2026         25m                 Normal    Started                        Pod/api-jtsr-04-11-2026-7c64d48d5f-672zq        Started container api-jtsr-04-11-2026
-prod-jtsr-04-11-2026         25m                 Normal    Created                        Pod/api-jtsr-04-11-2026-7c64d48d5f-gvcpf        Created container api-jtsr-04-11-2026
-prod-jtsr-04-11-2026         25m                 Normal    Pulled                         Pod/shop-jtsr-04-11-2026-5f6bdfb4db-b8vfm       Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-prod-jtsr-04-11-2026         25m                 Normal    ScalingReplicaSet              Deployment/todo-jtsr-04-11-2026                 Scaled up replica set todo-jtsr-04-11-2026-6c4b96fd95 to 3
-prod-jtsr-04-11-2026         25m                 Normal    Started                        Pod/api-jtsr-04-11-2026-7c64d48d5f-t2qpm        Started container api-jtsr-04-11-2026
-prod-jtsr-04-11-2026         25m                 Normal    Pulled                         Pod/api-jtsr-04-11-2026-7c64d48d5f-t2qpm        Container image "jonathan57/api-jtsr-04-11-2026:v1" already present on machine
-prod-jtsr-04-11-2026         25m                 Normal    Created                        Pod/api-jtsr-04-11-2026-7c64d48d5f-t2qpm        Created container api-jtsr-04-11-2026
-prod-jtsr-04-11-2026         25m                 Normal    Started                        Pod/api-jtsr-04-11-2026-7c64d48d5f-gvcpf        Started container api-jtsr-04-11-2026
-prod-jtsr-04-11-2026         25m                 Normal    Pulled                         Pod/shop-jtsr-04-11-2026-5f6bdfb4db-tnhf6       Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-prod-jtsr-04-11-2026         25m                 Normal    SuccessfulCreate               ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95      Created pod: todo-jtsr-04-11-2026-6c4b96fd95-stlsg
-prod-jtsr-04-11-2026         25m                 Normal    SuccessfulCreate               ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95      Created pod: todo-jtsr-04-11-2026-6c4b96fd95-p6x6s
-prod-jtsr-04-11-2026         25m                 Normal    Pulled                         Pod/shop-jtsr-04-11-2026-5f6bdfb4db-859jb       Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-prod-jtsr-04-11-2026         25m                 Normal    SuccessfulCreate               ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95      Created pod: todo-jtsr-04-11-2026-6c4b96fd95-wnmsq
-prod-jtsr-04-11-2026         25m                 Normal    Pulled                         Pod/api-jtsr-04-11-2026-7c64d48d5f-672zq        Container image "jonathan57/api-jtsr-04-11-2026:v1" already present on machine
-prod-jtsr-04-11-2026         25m                 Normal    Created                        Pod/api-jtsr-04-11-2026-7c64d48d5f-672zq        Created container api-jtsr-04-11-2026
-prod-jtsr-04-11-2026         25m                 Normal    Started                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-859jb       Started container shop-jtsr-04-11-2026
-prod-jtsr-04-11-2026         25m                 Normal    Pulled                         Pod/todo-jtsr-04-11-2026-6c4b96fd95-wnmsq       Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-prod-jtsr-04-11-2026         25m                 Normal    SuccessfulCreate               ReplicaSet/shop-jtsr-04-11-2026-5f6bdfb4db      Created pod: shop-jtsr-04-11-2026-5f6bdfb4db-b8vfm
-prod-jtsr-04-11-2026         25m                 Normal    Created                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-859jb       Created container shop-jtsr-04-11-2026
-prod-jtsr-04-11-2026         25m                 Normal    Created                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-b8vfm       Created container shop-jtsr-04-11-2026
-prod-jtsr-04-11-2026         25m                 Normal    Pulled                         Pod/api-jtsr-04-11-2026-7c64d48d5f-gvcpf        Container image "jonathan57/api-jtsr-04-11-2026:v1" already present on machine
-prod-jtsr-04-11-2026         25m                 Normal    Scheduled                      Pod/shop-jtsr-04-11-2026-5f6bdfb4db-859jb       Successfully assigned prod-jtsr-04-11-2026/shop-jtsr-04-11-2026-5f6bdfb4db-859jb to minikube
-prod-jtsr-04-11-2026         25m                 Normal    Scheduled                      Pod/shop-jtsr-04-11-2026-5f6bdfb4db-tnhf6       Successfully assigned prod-jtsr-04-11-2026/shop-jtsr-04-11-2026-5f6bdfb4db-tnhf6 to minikube
-prod-jtsr-04-11-2026         25m                 Normal    Scheduled                      Pod/shop-jtsr-04-11-2026-5f6bdfb4db-b8vfm       Successfully assigned prod-jtsr-04-11-2026/shop-jtsr-04-11-2026-5f6bdfb4db-b8vfm to minikube
-prod-jtsr-04-11-2026         25m                 Normal    Scheduled                      Pod/todo-jtsr-04-11-2026-6c4b96fd95-wnmsq       Successfully assigned prod-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-wnmsq to minikube
-prod-jtsr-04-11-2026         25m                 Normal    Scheduled                      Pod/todo-jtsr-04-11-2026-6c4b96fd95-stlsg       Successfully assigned prod-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-stlsg to minikube
-prod-jtsr-04-11-2026         25m                 Normal    Scheduled                      Pod/todo-jtsr-04-11-2026-6c4b96fd95-p6x6s       Successfully assigned prod-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-p6x6s to minikube
-prod-jtsr-04-11-2026         25m                 Normal    Started                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-tnhf6       Started container shop-jtsr-04-11-2026
-prod-jtsr-04-11-2026         25m                 Normal    Created                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-wnmsq       Created container todo-jtsr-04-11-2026
-prod-jtsr-04-11-2026         25m                 Normal    Started                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-p6x6s       Started container todo-jtsr-04-11-2026
-prod-jtsr-04-11-2026         25m                 Normal    Started                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-b8vfm       Started container shop-jtsr-04-11-2026
-prod-jtsr-04-11-2026         25m                 Normal    Pulled                         Pod/todo-jtsr-04-11-2026-6c4b96fd95-stlsg       Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-prod-jtsr-04-11-2026         25m                 Normal    Created                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-stlsg       Created container todo-jtsr-04-11-2026
-prod-jtsr-04-11-2026         25m                 Normal    Started                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-stlsg       Started container todo-jtsr-04-11-2026
-prod-jtsr-04-11-2026         25m                 Normal    Created                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-tnhf6       Created container shop-jtsr-04-11-2026
-prod-jtsr-04-11-2026         25m                 Normal    Created                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-p6x6s       Created container todo-jtsr-04-11-2026
-prod-jtsr-04-11-2026         25m                 Normal    Started                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-wnmsq       Started container todo-jtsr-04-11-2026
-prod-jtsr-04-11-2026         25m                 Normal    Pulled                         Pod/todo-jtsr-04-11-2026-6c4b96fd95-p6x6s       Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-prod-jtsr-04-11-2026         25m                 Warning   FailedGetResourceMetric        HorizontalPodAutoscaler/api-jtsr-04-11-2026     failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-prod-jtsr-04-11-2026         25m                 Warning   FailedComputeMetricsReplicas   HorizontalPodAutoscaler/api-jtsr-04-11-2026     invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-prod-jtsr-04-11-2026         25m                 Warning   FailedGetResourceMetric        HorizontalPodAutoscaler/shop-jtsr-04-11-2026    failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-prod-jtsr-04-11-2026         25m                 Warning   FailedComputeMetricsReplicas   HorizontalPodAutoscaler/shop-jtsr-04-11-2026    invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-prod-jtsr-04-11-2026         25m                 Warning   FailedGetResourceMetric        HorizontalPodAutoscaler/todo-jtsr-04-11-2026    failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-prod-jtsr-04-11-2026         25m                 Warning   FailedComputeMetricsReplicas   HorizontalPodAutoscaler/todo-jtsr-04-11-2026    invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-preprod-jtsr-04-11-2026      25m (x2 over 25m)   Warning   FailedGetResourceMetric        HorizontalPodAutoscaler/shop-jtsr-04-11-2026    failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-preprod-jtsr-04-11-2026      25m (x2 over 25m)   Warning   FailedComputeMetricsReplicas   HorizontalPodAutoscaler/todo-jtsr-04-11-2026    invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-preprod-jtsr-04-11-2026      25m (x2 over 25m)   Warning   FailedComputeMetricsReplicas   HorizontalPodAutoscaler/api-jtsr-04-11-2026     invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-preprod-jtsr-04-11-2026      25m (x2 over 25m)   Warning   FailedComputeMetricsReplicas   HorizontalPodAutoscaler/shop-jtsr-04-11-2026    invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-preprod-jtsr-04-11-2026      25m (x2 over 25m)   Warning   FailedGetResourceMetric        HorizontalPodAutoscaler/todo-jtsr-04-11-2026    failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-preprod-jtsr-04-11-2026      25m (x2 over 25m)   Warning   FailedGetResourceMetric        HorizontalPodAutoscaler/api-jtsr-04-11-2026     failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-mlops-jtsr-04-11-2026        25m (x8 over 26m)   Warning   FailedComputeMetricsReplicas   HorizontalPodAutoscaler/api-jtsr-04-11-2026     invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-mlops-jtsr-04-11-2026        25m (x8 over 26m)   Warning   FailedGetResourceMetric        HorizontalPodAutoscaler/api-jtsr-04-11-2026     failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-mlops-jtsr-04-11-2026        25m (x4 over 25m)   Warning   FailedComputeMetricsReplicas   HorizontalPodAutoscaler/todo-jtsr-04-11-2026    invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-mlops-jtsr-04-11-2026        25m (x4 over 25m)   Warning   FailedGetResourceMetric        HorizontalPodAutoscaler/todo-jtsr-04-11-2026    failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-preprod-jtsr-04-11-2026      24m                 Normal    SuccessfulCreate               ReplicaSet/shop-jtsr-04-11-2026-5f6bdfb4db      Created pod: shop-jtsr-04-11-2026-5f6bdfb4db-6fd8m
-preprod-jtsr-04-11-2026      24m                 Normal    SuccessfulCreate               ReplicaSet/shop-jtsr-04-11-2026-5f6bdfb4db      Created pod: shop-jtsr-04-11-2026-5f6bdfb4db-m69zw
-preprod-jtsr-04-11-2026      24m                 Normal    ScalingReplicaSet              Deployment/shop-jtsr-04-11-2026                 Scaled up replica set shop-jtsr-04-11-2026-5f6bdfb4db to 5 from 3
-preprod-jtsr-04-11-2026      24m                 Normal    SuccessfulRescale              HorizontalPodAutoscaler/shop-jtsr-04-11-2026    New size: 5; reason: cpu resource utilization (percentage of request) above target
-preprod-jtsr-04-11-2026      24m                 Normal    Scheduled                      Pod/shop-jtsr-04-11-2026-5f6bdfb4db-6fd8m       Successfully assigned preprod-jtsr-04-11-2026/shop-jtsr-04-11-2026-5f6bdfb4db-6fd8m to minikube
-preprod-jtsr-04-11-2026      24m                 Normal    Scheduled                      Pod/shop-jtsr-04-11-2026-5f6bdfb4db-m69zw       Successfully assigned preprod-jtsr-04-11-2026/shop-jtsr-04-11-2026-5f6bdfb4db-m69zw to minikube
-preprod-jtsr-04-11-2026      24m                 Normal    Created                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-m69zw       Created container shop-jtsr-04-11-2026
-preprod-jtsr-04-11-2026      24m                 Normal    Pulled                         Pod/shop-jtsr-04-11-2026-5f6bdfb4db-6fd8m       Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-preprod-jtsr-04-11-2026      24m                 Normal    Created                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-6fd8m       Created container shop-jtsr-04-11-2026
-preprod-jtsr-04-11-2026      24m                 Normal    Started                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-6fd8m       Started container shop-jtsr-04-11-2026
-preprod-jtsr-04-11-2026      24m                 Normal    Pulled                         Pod/shop-jtsr-04-11-2026-5f6bdfb4db-m69zw       Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-preprod-jtsr-04-11-2026      24m                 Normal    Started                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-m69zw       Started container shop-jtsr-04-11-2026
-prod-jtsr-04-11-2026         24m (x4 over 24m)   Warning   FailedComputeMetricsReplicas   HorizontalPodAutoscaler/todo-jtsr-04-11-2026    invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-prod-jtsr-04-11-2026         24m (x4 over 24m)   Warning   FailedGetResourceMetric        HorizontalPodAutoscaler/shop-jtsr-04-11-2026    failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-prod-jtsr-04-11-2026         24m (x4 over 24m)   Warning   FailedGetResourceMetric        HorizontalPodAutoscaler/api-jtsr-04-11-2026     failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-prod-jtsr-04-11-2026         24m (x4 over 24m)   Warning   FailedComputeMetricsReplicas   HorizontalPodAutoscaler/api-jtsr-04-11-2026     invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-prod-jtsr-04-11-2026         24m (x4 over 24m)   Warning   FailedComputeMetricsReplicas   HorizontalPodAutoscaler/shop-jtsr-04-11-2026    invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-prod-jtsr-04-11-2026         24m (x4 over 24m)   Warning   FailedGetResourceMetric        HorizontalPodAutoscaler/todo-jtsr-04-11-2026    failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-preprod-jtsr-04-11-2026      24m (x4 over 24m)   Warning   FailedGetResourceMetric        HorizontalPodAutoscaler/todo-jtsr-04-11-2026    failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-preprod-jtsr-04-11-2026      24m (x4 over 24m)   Warning   FailedComputeMetricsReplicas   HorizontalPodAutoscaler/todo-jtsr-04-11-2026    invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-preprod-jtsr-04-11-2026      23m                 Normal    Killing                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-6fd8m       Stopping container shop-jtsr-04-11-2026
-preprod-jtsr-04-11-2026      23m                 Normal    SuccessfulDelete               ReplicaSet/shop-jtsr-04-11-2026-5f6bdfb4db      Deleted pod: shop-jtsr-04-11-2026-5f6bdfb4db-m69zw
-preprod-jtsr-04-11-2026      23m                 Normal    ScalingReplicaSet              Deployment/shop-jtsr-04-11-2026                 Scaled down replica set shop-jtsr-04-11-2026-5f6bdfb4db to 3 from 5
-preprod-jtsr-04-11-2026      23m                 Normal    Killing                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-m69zw       Stopping container shop-jtsr-04-11-2026
-preprod-jtsr-04-11-2026      23m                 Normal    SuccessfulDelete               ReplicaSet/shop-jtsr-04-11-2026-5f6bdfb4db      Deleted pod: shop-jtsr-04-11-2026-5f6bdfb4db-6fd8m
-preprod-jtsr-04-11-2026      23m                 Normal    SuccessfulRescale              HorizontalPodAutoscaler/shop-jtsr-04-11-2026    New size: 3; reason: All metrics below target
-mlops-jtsr-04-11-2026        17m                 Normal    ScalingReplicaSet              Deployment/shop-jtsr-04-11-2026                 Scaled up replica set shop-jtsr-04-11-2026-6d5c44566c to 1
-mlops-jtsr-04-11-2026        17m                 Normal    SuccessfulCreate               ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c      Created pod: shop-jtsr-04-11-2026-6d5c44566c-tplcd
-mlops-jtsr-04-11-2026        17m                 Normal    Scheduled                      Pod/shop-jtsr-04-11-2026-6d5c44566c-tplcd       Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-tplcd to minikube
-mlops-jtsr-04-11-2026        17m                 Normal    Created                        Pod/shop-jtsr-04-11-2026-6d5c44566c-tplcd       Created container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        17m                 Normal    Started                        Pod/shop-jtsr-04-11-2026-6d5c44566c-tplcd       Started container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        17m                 Normal    Pulled                         Pod/shop-jtsr-04-11-2026-6d5c44566c-tplcd       Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-mlops-jtsr-04-11-2026        17m                 Normal    Killing                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-fm8n7       Stopping container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        17m                 Normal    Pulled                         Pod/shop-jtsr-04-11-2026-6d5c44566c-qc4qj       Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-mlops-jtsr-04-11-2026        17m                 Normal    ScalingReplicaSet              Deployment/shop-jtsr-04-11-2026                 Scaled down replica set shop-jtsr-04-11-2026-5f6bdfb4db to 2 from 3
-mlops-jtsr-04-11-2026        17m                 Normal    ScalingReplicaSet              Deployment/shop-jtsr-04-11-2026                 Scaled up replica set shop-jtsr-04-11-2026-6d5c44566c to 2 from 1
-mlops-jtsr-04-11-2026        17m                 Normal    Created                        Pod/shop-jtsr-04-11-2026-6d5c44566c-qc4qj       Created container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        17m                 Normal    SuccessfulCreate               ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c      Created pod: shop-jtsr-04-11-2026-6d5c44566c-qc4qj
-mlops-jtsr-04-11-2026        17m                 Normal    SuccessfulDelete               ReplicaSet/shop-jtsr-04-11-2026-5f6bdfb4db      Deleted pod: shop-jtsr-04-11-2026-5f6bdfb4db-fm8n7
-mlops-jtsr-04-11-2026        17m                 Normal    Started                        Pod/shop-jtsr-04-11-2026-6d5c44566c-qc4qj       Started container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        17m                 Normal    Scheduled                      Pod/shop-jtsr-04-11-2026-6d5c44566c-qc4qj       Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-qc4qj to minikube
-mlops-jtsr-04-11-2026        17m                 Normal    ScalingReplicaSet              Deployment/shop-jtsr-04-11-2026                 Scaled down replica set shop-jtsr-04-11-2026-5f6bdfb4db to 1 from 2
-mlops-jtsr-04-11-2026        17m                 Normal    ScalingReplicaSet              Deployment/shop-jtsr-04-11-2026                 Scaled up replica set shop-jtsr-04-11-2026-6d5c44566c to 3 from 2
-mlops-jtsr-04-11-2026        17m                 Normal    Killing                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-clll9       Stopping container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        17m                 Normal    SuccessfulDelete               ReplicaSet/shop-jtsr-04-11-2026-5f6bdfb4db      Deleted pod: shop-jtsr-04-11-2026-5f6bdfb4db-clll9
-mlops-jtsr-04-11-2026        17m                 Normal    SuccessfulCreate               ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c      Created pod: shop-jtsr-04-11-2026-6d5c44566c-gfr8z
-mlops-jtsr-04-11-2026        17m                 Normal    Pulled                         Pod/shop-jtsr-04-11-2026-6d5c44566c-gfr8z       Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-mlops-jtsr-04-11-2026        17m                 Normal    Created                        Pod/shop-jtsr-04-11-2026-6d5c44566c-gfr8z       Created container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        17m                 Normal    Scheduled                      Pod/shop-jtsr-04-11-2026-6d5c44566c-gfr8z       Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-gfr8z to minikube
-mlops-jtsr-04-11-2026        17m                 Normal    SuccessfulDelete               ReplicaSet/shop-jtsr-04-11-2026-5f6bdfb4db      Deleted pod: shop-jtsr-04-11-2026-5f6bdfb4db-bskjx
-mlops-jtsr-04-11-2026        17m                 Normal    Started                        Pod/shop-jtsr-04-11-2026-6d5c44566c-gfr8z       Started container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        17m                 Normal    Killing                        Pod/shop-jtsr-04-11-2026-5f6bdfb4db-bskjx       Stopping container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        17m                 Normal    ScalingReplicaSet              Deployment/shop-jtsr-04-11-2026                 Scaled down replica set shop-jtsr-04-11-2026-5f6bdfb4db to 0 from 1
-mlops-jtsr-04-11-2026        17m (x9 over 27m)   Warning   FailedGetResourceMetric        HorizontalPodAutoscaler/shop-jtsr-04-11-2026    failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-mlops-jtsr-04-11-2026        17m (x9 over 27m)   Warning   FailedComputeMetricsReplicas   HorizontalPodAutoscaler/shop-jtsr-04-11-2026    invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-mlops-jtsr-04-11-2026        16m (x4 over 16m)   Warning   FailedComputeMetricsReplicas   HorizontalPodAutoscaler/shop-jtsr-04-11-2026    invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-mlops-jtsr-04-11-2026        16m (x4 over 16m)   Warning   FailedGetResourceMetric        HorizontalPodAutoscaler/shop-jtsr-04-11-2026    failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-mlops-jtsr-04-11-2026        14m                 Normal    Pulling                        Pod/curl-jtsr-04-11-2026                        Pulling image "curlimages/curl"
-mlops-jtsr-04-11-2026        14m                 Normal    Scheduled                      Pod/curl-jtsr-04-11-2026                        Successfully assigned mlops-jtsr-04-11-2026/curl-jtsr-04-11-2026 to minikube
-mlops-jtsr-04-11-2026        14m                 Normal    Started                        Pod/curl-jtsr-04-11-2026                        Started container curl-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        14m                 Normal    Created                        Pod/curl-jtsr-04-11-2026                        Created container curl-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        14m                 Normal    Pulled                         Pod/curl-jtsr-04-11-2026                        Successfully pulled image "curlimages/curl" in 3.849s (3.849s including waiting). Image size: 10853220 bytes.
-mlops-jtsr-04-11-2026        10m                 Normal    SuccessfulRescale              HorizontalPodAutoscaler/shop-jtsr-04-11-2026    New size: 7; reason: cpu resource utilization (percentage of request) above target
-mlops-jtsr-04-11-2026        10m                 Normal    Pulled                         Pod/shop-jtsr-04-11-2026-6d5c44566c-l9jnv       Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-mlops-jtsr-04-11-2026        10m                 Normal    SuccessfulCreate               ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c      Created pod: shop-jtsr-04-11-2026-6d5c44566c-48lfz
-mlops-jtsr-04-11-2026        10m                 Normal    SuccessfulCreate               ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c      Created pod: shop-jtsr-04-11-2026-6d5c44566c-wqvgd
-mlops-jtsr-04-11-2026        10m                 Normal    SuccessfulCreate               ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c      Created pod: shop-jtsr-04-11-2026-6d5c44566c-l9jnv
-mlops-jtsr-04-11-2026        10m                 Normal    ScalingReplicaSet              Deployment/shop-jtsr-04-11-2026                 Scaled up replica set shop-jtsr-04-11-2026-6d5c44566c to 7 from 3
-mlops-jtsr-04-11-2026        10m                 Normal    SuccessfulCreate               ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c      Created pod: shop-jtsr-04-11-2026-6d5c44566c-l5j2f
-mlops-jtsr-04-11-2026        10m                 Normal    Scheduled                      Pod/shop-jtsr-04-11-2026-6d5c44566c-l9jnv       Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-l9jnv to minikube
-mlops-jtsr-04-11-2026        10m                 Normal    Scheduled                      Pod/shop-jtsr-04-11-2026-6d5c44566c-48lfz       Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-48lfz to minikube
-mlops-jtsr-04-11-2026        10m                 Normal    Scheduled                      Pod/shop-jtsr-04-11-2026-6d5c44566c-wqvgd       Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-wqvgd to minikube
-mlops-jtsr-04-11-2026        10m                 Normal    Scheduled                      Pod/shop-jtsr-04-11-2026-6d5c44566c-l5j2f       Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-l5j2f to minikube
-mlops-jtsr-04-11-2026        10m                 Normal    Pulled                         Pod/shop-jtsr-04-11-2026-6d5c44566c-wqvgd       Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-mlops-jtsr-04-11-2026        10m                 Normal    Started                        Pod/shop-jtsr-04-11-2026-6d5c44566c-wqvgd       Started container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        10m                 Normal    Started                        Pod/shop-jtsr-04-11-2026-6d5c44566c-48lfz       Started container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        10m                 Normal    Created                        Pod/shop-jtsr-04-11-2026-6d5c44566c-wqvgd       Created container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        10m                 Normal    Started                        Pod/shop-jtsr-04-11-2026-6d5c44566c-l9jnv       Started container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        10m                 Normal    Pulled                         Pod/shop-jtsr-04-11-2026-6d5c44566c-l5j2f       Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-mlops-jtsr-04-11-2026        10m                 Normal    Created                        Pod/shop-jtsr-04-11-2026-6d5c44566c-l9jnv       Created container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        10m                 Normal    Created                        Pod/shop-jtsr-04-11-2026-6d5c44566c-48lfz       Created container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        10m                 Normal    Pulled                         Pod/shop-jtsr-04-11-2026-6d5c44566c-48lfz       Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-mlops-jtsr-04-11-2026        10m                 Normal    Started                        Pod/shop-jtsr-04-11-2026-6d5c44566c-l5j2f       Started container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        10m                 Normal    Created                        Pod/shop-jtsr-04-11-2026-6d5c44566c-l5j2f       Created container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        10m                 Normal    ScalingReplicaSet              Deployment/shop-jtsr-04-11-2026                 Scaled up replica set shop-jtsr-04-11-2026-6d5c44566c to 10 from 7
-mlops-jtsr-04-11-2026        10m                 Normal    SuccessfulCreate               ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c      Created pod: shop-jtsr-04-11-2026-6d5c44566c-wpf86
-mlops-jtsr-04-11-2026        10m                 Normal    SuccessfulCreate               ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c      (combined from similar events): Created pod: shop-jtsr-04-11-2026-6d5c44566c-lgjkr
-mlops-jtsr-04-11-2026        10m                 Normal    SuccessfulRescale              HorizontalPodAutoscaler/shop-jtsr-04-11-2026    New size: 10; reason: cpu resource utilization (percentage of request) above target
-mlops-jtsr-04-11-2026        10m                 Normal    Pulled                         Pod/shop-jtsr-04-11-2026-6d5c44566c-6kctd       Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-mlops-jtsr-04-11-2026        10m                 Normal    SuccessfulCreate               ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c      Created pod: shop-jtsr-04-11-2026-6d5c44566c-6kctd
-mlops-jtsr-04-11-2026        10m                 Normal    Created                        Pod/shop-jtsr-04-11-2026-6d5c44566c-wpf86       Created container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        10m                 Normal    Pulled                         Pod/shop-jtsr-04-11-2026-6d5c44566c-wpf86       Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-mlops-jtsr-04-11-2026        10m                 Normal    Scheduled                      Pod/shop-jtsr-04-11-2026-6d5c44566c-6kctd       Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-6kctd to minikube
-mlops-jtsr-04-11-2026        10m                 Normal    Scheduled                      Pod/shop-jtsr-04-11-2026-6d5c44566c-wpf86       Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-wpf86 to minikube
-mlops-jtsr-04-11-2026        10m                 Normal    Scheduled                      Pod/shop-jtsr-04-11-2026-6d5c44566c-lgjkr       Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-lgjkr to minikube
-mlops-jtsr-04-11-2026        10m                 Normal    Pulled                         Pod/shop-jtsr-04-11-2026-6d5c44566c-lgjkr       Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-mlops-jtsr-04-11-2026        10m                 Normal    Started                        Pod/shop-jtsr-04-11-2026-6d5c44566c-lgjkr       Started container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        10m                 Normal    Created                        Pod/shop-jtsr-04-11-2026-6d5c44566c-lgjkr       Created container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        10m                 Normal    Started                        Pod/shop-jtsr-04-11-2026-6d5c44566c-wpf86       Started container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        10m                 Normal    Started                        Pod/shop-jtsr-04-11-2026-6d5c44566c-6kctd       Started container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        10m                 Normal    Created                        Pod/shop-jtsr-04-11-2026-6d5c44566c-6kctd       Created container shop-jtsr-04-11-2026
-monitoring-jtsr-04-11-2026   8m40s               Normal    SuccessfulCreate               ReplicaSet/netdata-jtsr-04-11-2026-644cf559fd   Created pod: netdata-jtsr-04-11-2026-644cf559fd-f7bsv
-monitoring-jtsr-04-11-2026   8m40s               Normal    ScalingReplicaSet              Deployment/netdata-jtsr-04-11-2026              Scaled up replica set netdata-jtsr-04-11-2026-644cf559fd to 1
-monitoring-jtsr-04-11-2026   8m39s               Normal    Scheduled                      Pod/netdata-jtsr-04-11-2026-644cf559fd-f7bsv    Successfully assigned monitoring-jtsr-04-11-2026/netdata-jtsr-04-11-2026-644cf559fd-f7bsv to minikube
-monitoring-jtsr-04-11-2026   8m39s               Normal    Pulling                        Pod/netdata-jtsr-04-11-2026-644cf559fd-f7bsv    Pulling image "netdata/netdata:stable"
-monitoring-jtsr-04-11-2026   8m18s               Normal    Started                        Pod/netdata-jtsr-04-11-2026-644cf559fd-f7bsv    Started container netdata-jtsr-04-11-2026
-monitoring-jtsr-04-11-2026   8m18s               Normal    Created                        Pod/netdata-jtsr-04-11-2026-644cf559fd-f7bsv    Created container netdata-jtsr-04-11-2026
-monitoring-jtsr-04-11-2026   8m18s               Normal    Pulled                         Pod/netdata-jtsr-04-11-2026-644cf559fd-f7bsv    Successfully pulled image "netdata/netdata:stable" in 21.368s (21.368s including waiting). Image size: 325562540 bytes.
-mlops-jtsr-04-11-2026        8m2s                Normal    SuccessfulDelete               ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c      Deleted pod: shop-jtsr-04-11-2026-6d5c44566c-l9jnv
-mlops-jtsr-04-11-2026        8m2s                Normal    Killing                        Pod/shop-jtsr-04-11-2026-6d5c44566c-l5j2f       Stopping container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        8m2s                Normal    Killing                        Pod/shop-jtsr-04-11-2026-6d5c44566c-wqvgd       Stopping container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        8m2s                Normal    SuccessfulDelete               ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c      Deleted pod: shop-jtsr-04-11-2026-6d5c44566c-wpf86
-mlops-jtsr-04-11-2026        8m2s                Normal    Killing                        Pod/shop-jtsr-04-11-2026-6d5c44566c-wpf86       Stopping container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        8m2s                Normal    SuccessfulDelete               ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c      Deleted pod: shop-jtsr-04-11-2026-6d5c44566c-wqvgd
-mlops-jtsr-04-11-2026        8m2s                Normal    Killing                        Pod/shop-jtsr-04-11-2026-6d5c44566c-lgjkr       Stopping container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        8m2s                Normal    SuccessfulDelete               ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c      Deleted pod: shop-jtsr-04-11-2026-6d5c44566c-l5j2f
-mlops-jtsr-04-11-2026        8m2s                Normal    SuccessfulDelete               ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c      Deleted pod: shop-jtsr-04-11-2026-6d5c44566c-48lfz
-mlops-jtsr-04-11-2026        8m2s                Normal    SuccessfulDelete               ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c      Deleted pod: shop-jtsr-04-11-2026-6d5c44566c-lgjkr
-mlops-jtsr-04-11-2026        8m2s                Normal    SuccessfulDelete               ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c      Deleted pod: shop-jtsr-04-11-2026-6d5c44566c-6kctd
-mlops-jtsr-04-11-2026        8m2s                Normal    Killing                        Pod/shop-jtsr-04-11-2026-6d5c44566c-l9jnv       Stopping container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        8m2s                Normal    ScalingReplicaSet              Deployment/shop-jtsr-04-11-2026                 (combined from similar events): Scaled down replica set shop-jtsr-04-11-2026-6d5c44566c to 3 from 10
-mlops-jtsr-04-11-2026        8m2s                Normal    Killing                        Pod/shop-jtsr-04-11-2026-6d5c44566c-48lfz       Stopping container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        8m2s                Normal    Killing                        Pod/shop-jtsr-04-11-2026-6d5c44566c-6kctd       Stopping container shop-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        107s                Normal    SuccessfulCreate               ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95      Created pod: todo-jtsr-04-11-2026-6c4b96fd95-6j6h2
-mlops-jtsr-04-11-2026        107s                Normal    ScalingReplicaSet              Deployment/todo-jtsr-04-11-2026                 Scaled up replica set todo-jtsr-04-11-2026-6c4b96fd95 to 6 from 3
-mlops-jtsr-04-11-2026        107s                Normal    SuccessfulCreate               ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95      Created pod: todo-jtsr-04-11-2026-6c4b96fd95-6nv2h
-mlops-jtsr-04-11-2026        107s                Normal    SuccessfulRescale              HorizontalPodAutoscaler/todo-jtsr-04-11-2026    New size: 6; reason: cpu resource utilization (percentage of request) above target
-mlops-jtsr-04-11-2026        107s                Normal    SuccessfulCreate               ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95      Created pod: todo-jtsr-04-11-2026-6c4b96fd95-kp42c
-mlops-jtsr-04-11-2026        106s                Normal    Scheduled                      Pod/todo-jtsr-04-11-2026-6c4b96fd95-6j6h2       Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-6j6h2 to minikube
-mlops-jtsr-04-11-2026        106s                Normal    Scheduled                      Pod/todo-jtsr-04-11-2026-6c4b96fd95-kp42c       Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-kp42c to minikube
-mlops-jtsr-04-11-2026        106s                Normal    Scheduled                      Pod/todo-jtsr-04-11-2026-6c4b96fd95-6nv2h       Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-6nv2h to minikube
-mlops-jtsr-04-11-2026        106s                Normal    Started                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-6j6h2       Started container todo-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        106s                Normal    Started                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-6nv2h       Started container todo-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        106s                Normal    Created                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-kp42c       Created container todo-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        106s                Normal    Started                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-kp42c       Started container todo-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        106s                Normal    Pulled                         Pod/todo-jtsr-04-11-2026-6c4b96fd95-kp42c       Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-mlops-jtsr-04-11-2026        106s                Normal    Pulled                         Pod/todo-jtsr-04-11-2026-6c4b96fd95-6nv2h       Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-mlops-jtsr-04-11-2026        106s                Normal    Created                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-6j6h2       Created container todo-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        106s                Normal    Created                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-6nv2h       Created container todo-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        106s                Normal    Pulled                         Pod/todo-jtsr-04-11-2026-6c4b96fd95-6j6h2       Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-mlops-jtsr-04-11-2026        47s                 Normal    SuccessfulRescale              HorizontalPodAutoscaler/todo-jtsr-04-11-2026    New size: 10; reason: cpu resource utilization (percentage of request) above target
-mlops-jtsr-04-11-2026        47s                 Normal    SuccessfulCreate               ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95      Created pod: todo-jtsr-04-11-2026-6c4b96fd95-4b5qz
-mlops-jtsr-04-11-2026        47s                 Normal    ScalingReplicaSet              Deployment/todo-jtsr-04-11-2026                 Scaled up replica set todo-jtsr-04-11-2026-6c4b96fd95 to 10 from 6
-mlops-jtsr-04-11-2026        47s                 Normal    SuccessfulCreate               ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95      Created pod: todo-jtsr-04-11-2026-6c4b96fd95-bs6pp
-mlops-jtsr-04-11-2026        47s                 Normal    SuccessfulCreate               ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95      Created pod: todo-jtsr-04-11-2026-6c4b96fd95-g85qt
-mlops-jtsr-04-11-2026        47s                 Normal    SuccessfulCreate               ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95      Created pod: todo-jtsr-04-11-2026-6c4b96fd95-dkqtg
-mlops-jtsr-04-11-2026        46s                 Normal    Scheduled                      Pod/todo-jtsr-04-11-2026-6c4b96fd95-dkqtg       Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-dkqtg to minikube
-mlops-jtsr-04-11-2026        46s                 Normal    Scheduled                      Pod/todo-jtsr-04-11-2026-6c4b96fd95-g85qt       Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-g85qt to minikube
-mlops-jtsr-04-11-2026        46s                 Normal    Scheduled                      Pod/todo-jtsr-04-11-2026-6c4b96fd95-bs6pp       Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-bs6pp to minikube
-mlops-jtsr-04-11-2026        46s                 Normal    Scheduled                      Pod/todo-jtsr-04-11-2026-6c4b96fd95-4b5qz       Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-4b5qz to minikube
-mlops-jtsr-04-11-2026        46s                 Normal    Pulled                         Pod/todo-jtsr-04-11-2026-6c4b96fd95-g85qt       Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-mlops-jtsr-04-11-2026        46s                 Normal    Started                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-4b5qz       Started container todo-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        46s                 Normal    Pulled                         Pod/todo-jtsr-04-11-2026-6c4b96fd95-dkqtg       Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-mlops-jtsr-04-11-2026        46s                 Normal    Created                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-dkqtg       Created container todo-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        46s                 Normal    Started                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-dkqtg       Started container todo-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        46s                 Normal    Created                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-bs6pp       Created container todo-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        46s                 Normal    Created                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-g85qt       Created container todo-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        46s                 Normal    Started                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-g85qt       Started container todo-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        46s                 Normal    Pulled                         Pod/todo-jtsr-04-11-2026-6c4b96fd95-bs6pp       Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-mlops-jtsr-04-11-2026        46s                 Normal    Pulled                         Pod/todo-jtsr-04-11-2026-6c4b96fd95-4b5qz       Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-mlops-jtsr-04-11-2026        46s                 Normal    Created                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-4b5qz       Created container todo-jtsr-04-11-2026
-mlops-jtsr-04-11-2026        45s                 Normal    Started                        Pod/todo-jtsr-04-11-2026-6c4b96fd95-bs6pp       Started container todo-jtsr-04-11-2026
+NAMESPACE               LAST SEEN             TYPE      REASON              OBJECT                                         MESSAGE
+mlops-jtsr-04-11-2026   28m (x2 over 90m)     Normal    ScalingReplicaSet   Deployment/shop-jtsr-04-11-2026                Scaled up replica set shop-jtsr-04-11-2026-6d5c44566c to 7 from 3
+mlops-jtsr-04-11-2026   28m (x2 over 90m)     Normal    SuccessfulRescale   HorizontalPodAutoscaler/shop-jtsr-04-11-2026   New size: 7; reason: cpu resource utilization (percentage of request) above target
+mlops-jtsr-04-11-2026   28m                   Normal    SuccessfulCreate    ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c     Created pod: shop-jtsr-04-11-2026-6d5c44566c-6hsvx
+mlops-jtsr-04-11-2026   28m                   Normal    SuccessfulCreate    ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c     Created pod: shop-jtsr-04-11-2026-6d5c44566c-glldc
+mlops-jtsr-04-11-2026   28m                   Normal    SuccessfulCreate    ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c     Created pod: shop-jtsr-04-11-2026-6d5c44566c-2br57
+mlops-jtsr-04-11-2026   28m                   Normal    SuccessfulCreate    ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c     Created pod: shop-jtsr-04-11-2026-6d5c44566c-khxxb
+mlops-jtsr-04-11-2026   28m                   Normal    Scheduled           Pod/shop-jtsr-04-11-2026-6d5c44566c-6hsvx      Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-6hsvx to minikube
+mlops-jtsr-04-11-2026   28m                   Normal    Scheduled           Pod/shop-jtsr-04-11-2026-6d5c44566c-2br57      Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-2br57 to minikube
+mlops-jtsr-04-11-2026   28m                   Normal    Scheduled           Pod/shop-jtsr-04-11-2026-6d5c44566c-glldc      Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-glldc to minikube
+mlops-jtsr-04-11-2026   28m                   Normal    Scheduled           Pod/shop-jtsr-04-11-2026-6d5c44566c-khxxb      Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-khxxb to minikube
+mlops-jtsr-04-11-2026   28m                   Normal    Created             Pod/shop-jtsr-04-11-2026-6d5c44566c-6hsvx      Created container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   28m                   Normal    Pulled              Pod/shop-jtsr-04-11-2026-6d5c44566c-2br57      Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   28m                   Normal    Pulled              Pod/shop-jtsr-04-11-2026-6d5c44566c-khxxb      Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   28m                   Normal    Pulled              Pod/shop-jtsr-04-11-2026-6d5c44566c-6hsvx      Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   28m                   Normal    Pulled              Pod/shop-jtsr-04-11-2026-6d5c44566c-glldc      Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   28m                   Normal    Created             Pod/shop-jtsr-04-11-2026-6d5c44566c-glldc      Created container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   28m                   Normal    Started             Pod/shop-jtsr-04-11-2026-6d5c44566c-glldc      Started container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   28m                   Normal    Started             Pod/shop-jtsr-04-11-2026-6d5c44566c-2br57      Started container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   28m                   Normal    Created             Pod/shop-jtsr-04-11-2026-6d5c44566c-khxxb      Created container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   28m                   Normal    Started             Pod/shop-jtsr-04-11-2026-6d5c44566c-khxxb      Started container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   28m                   Normal    Started             Pod/shop-jtsr-04-11-2026-6d5c44566c-6hsvx      Started container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   28m                   Normal    Created             Pod/shop-jtsr-04-11-2026-6d5c44566c-2br57      Created container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    SuccessfulCreate    ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c     Created pod: shop-jtsr-04-11-2026-6d5c44566c-g9htv
+mlops-jtsr-04-11-2026   27m (x2 over 89m)     Normal    SuccessfulRescale   HorizontalPodAutoscaler/shop-jtsr-04-11-2026   New size: 10; reason: cpu resource utilization (percentage of request) above target
+mlops-jtsr-04-11-2026   27m (x2 over 89m)     Normal    ScalingReplicaSet   Deployment/shop-jtsr-04-11-2026                Scaled up replica set shop-jtsr-04-11-2026-6d5c44566c to 10 from 7
+mlops-jtsr-04-11-2026   27m                   Normal    SuccessfulCreate    ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c     Created pod: shop-jtsr-04-11-2026-6d5c44566c-zcgms
+mlops-jtsr-04-11-2026   27m                   Normal    SuccessfulCreate    ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c     Created pod: shop-jtsr-04-11-2026-6d5c44566c-mdcpf
+mlops-jtsr-04-11-2026   27m                   Normal    Scheduled           Pod/shop-jtsr-04-11-2026-6d5c44566c-g9htv      Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-g9htv to minikube
+mlops-jtsr-04-11-2026   27m                   Normal    Scheduled           Pod/shop-jtsr-04-11-2026-6d5c44566c-mdcpf      Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-mdcpf to minikube
+mlops-jtsr-04-11-2026   27m                   Normal    Scheduled           Pod/shop-jtsr-04-11-2026-6d5c44566c-zcgms      Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-zcgms to minikube
+mlops-jtsr-04-11-2026   27m                   Normal    Pulled              Pod/shop-jtsr-04-11-2026-6d5c44566c-zcgms      Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   27m                   Normal    Created             Pod/shop-jtsr-04-11-2026-6d5c44566c-zcgms      Created container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Started             Pod/shop-jtsr-04-11-2026-6d5c44566c-mdcpf      Started container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Started             Pod/shop-jtsr-04-11-2026-6d5c44566c-g9htv      Started container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Created             Pod/shop-jtsr-04-11-2026-6d5c44566c-g9htv      Created container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Pulled              Pod/shop-jtsr-04-11-2026-6d5c44566c-g9htv      Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   27m                   Normal    Started             Pod/shop-jtsr-04-11-2026-6d5c44566c-zcgms      Started container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Created             Pod/shop-jtsr-04-11-2026-6d5c44566c-mdcpf      Created container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Pulled              Pod/shop-jtsr-04-11-2026-6d5c44566c-mdcpf      Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   27m                   Normal    SuccessfulRescale   HorizontalPodAutoscaler/shop-jtsr-04-11-2026   New size: 20; reason: cpu resource utilization (percentage of request) above target
+mlops-jtsr-04-11-2026   27m                   Normal    SuccessfulCreate    ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c     Created pod: shop-jtsr-04-11-2026-6d5c44566c-sks65
+mlops-jtsr-04-11-2026   27m (x9 over 89m)     Normal    SuccessfulCreate    ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c     (combined from similar events): Created pod: shop-jtsr-04-11-2026-6d5c44566c-455kq
+mlops-jtsr-04-11-2026   27m                   Normal    SuccessfulCreate    ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c     Created pod: shop-jtsr-04-11-2026-6d5c44566c-tm49p
+mlops-jtsr-04-11-2026   27m                   Normal    ScalingReplicaSet   Deployment/shop-jtsr-04-11-2026                Scaled up replica set shop-jtsr-04-11-2026-6d5c44566c to 20 from 10
+mlops-jtsr-04-11-2026   27m                   Normal    Scheduled           Pod/shop-jtsr-04-11-2026-6d5c44566c-tm49p      Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-tm49p to minikube
+mlops-jtsr-04-11-2026   27m                   Normal    Scheduled           Pod/shop-jtsr-04-11-2026-6d5c44566c-sks65      Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-sks65 to minikube
+mlops-jtsr-04-11-2026   27m                   Normal    Scheduled           Pod/shop-jtsr-04-11-2026-6d5c44566c-tghwt      Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-tghwt to minikube
+mlops-jtsr-04-11-2026   27m                   Normal    Scheduled           Pod/shop-jtsr-04-11-2026-6d5c44566c-c5xcl      Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-c5xcl to minikube
+mlops-jtsr-04-11-2026   27m                   Normal    Scheduled           Pod/shop-jtsr-04-11-2026-6d5c44566c-rnb86      Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-rnb86 to minikube
+mlops-jtsr-04-11-2026   27m                   Normal    Scheduled           Pod/shop-jtsr-04-11-2026-6d5c44566c-pvtql      Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-pvtql to minikube
+mlops-jtsr-04-11-2026   27m                   Normal    Scheduled           Pod/shop-jtsr-04-11-2026-6d5c44566c-8fzwv      Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-8fzwv to minikube
+mlops-jtsr-04-11-2026   27m                   Normal    Scheduled           Pod/shop-jtsr-04-11-2026-6d5c44566c-5kn5v      Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-5kn5v to minikube
+mlops-jtsr-04-11-2026   27m                   Normal    Scheduled           Pod/shop-jtsr-04-11-2026-6d5c44566c-455kq      Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-455kq to minikube
+mlops-jtsr-04-11-2026   27m                   Normal    Scheduled           Pod/shop-jtsr-04-11-2026-6d5c44566c-tdwb7      Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-tdwb7 to minikube
+mlops-jtsr-04-11-2026   27m                   Normal    Pulled              Pod/shop-jtsr-04-11-2026-6d5c44566c-rnb86      Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   27m                   Normal    Created             Pod/shop-jtsr-04-11-2026-6d5c44566c-c5xcl      Created container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Created             Pod/shop-jtsr-04-11-2026-6d5c44566c-rnb86      Created container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Started             Pod/shop-jtsr-04-11-2026-6d5c44566c-pvtql      Started container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Created             Pod/shop-jtsr-04-11-2026-6d5c44566c-pvtql      Created container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Started             Pod/shop-jtsr-04-11-2026-6d5c44566c-rnb86      Started container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Pulled              Pod/shop-jtsr-04-11-2026-6d5c44566c-pvtql      Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   27m                   Normal    Started             Pod/shop-jtsr-04-11-2026-6d5c44566c-tm49p      Started container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Pulled              Pod/shop-jtsr-04-11-2026-6d5c44566c-sks65      Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   27m                   Normal    Pulled              Pod/shop-jtsr-04-11-2026-6d5c44566c-455kq      Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   27m                   Normal    Created             Pod/shop-jtsr-04-11-2026-6d5c44566c-455kq      Created container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Started             Pod/shop-jtsr-04-11-2026-6d5c44566c-455kq      Started container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Created             Pod/shop-jtsr-04-11-2026-6d5c44566c-tm49p      Created container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Created             Pod/shop-jtsr-04-11-2026-6d5c44566c-sks65      Created container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Pulled              Pod/shop-jtsr-04-11-2026-6d5c44566c-5kn5v      Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   27m                   Normal    Created             Pod/shop-jtsr-04-11-2026-6d5c44566c-5kn5v      Created container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Started             Pod/shop-jtsr-04-11-2026-6d5c44566c-5kn5v      Started container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Pulled              Pod/shop-jtsr-04-11-2026-6d5c44566c-tm49p      Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   27m                   Normal    Started             Pod/shop-jtsr-04-11-2026-6d5c44566c-sks65      Started container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Started             Pod/shop-jtsr-04-11-2026-6d5c44566c-tghwt      Started container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Pulled              Pod/shop-jtsr-04-11-2026-6d5c44566c-tdwb7      Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   27m                   Normal    Created             Pod/shop-jtsr-04-11-2026-6d5c44566c-tdwb7      Created container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Created             Pod/shop-jtsr-04-11-2026-6d5c44566c-tghwt      Created container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Started             Pod/shop-jtsr-04-11-2026-6d5c44566c-tdwb7      Started container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Pulled              Pod/shop-jtsr-04-11-2026-6d5c44566c-8fzwv      Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   27m                   Normal    Created             Pod/shop-jtsr-04-11-2026-6d5c44566c-8fzwv      Created container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Started             Pod/shop-jtsr-04-11-2026-6d5c44566c-8fzwv      Started container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Pulled              Pod/shop-jtsr-04-11-2026-6d5c44566c-tghwt      Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   27m                   Normal    Started             Pod/shop-jtsr-04-11-2026-6d5c44566c-c5xcl      Started container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   27m                   Normal    Pulled              Pod/shop-jtsr-04-11-2026-6d5c44566c-c5xcl      Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   25m (x2 over 87m)     Normal    SuccessfulRescale   HorizontalPodAutoscaler/shop-jtsr-04-11-2026   New size: 3; reason: All metrics below target
+mlops-jtsr-04-11-2026   25m                   Normal    ScalingReplicaSet   Deployment/shop-jtsr-04-11-2026                Scaled down replica set shop-jtsr-04-11-2026-6d5c44566c to 3 from 20
+mlops-jtsr-04-11-2026   25m                   Normal    SuccessfulDelete    ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c     Deleted pod: shop-jtsr-04-11-2026-6d5c44566c-khxxb
+mlops-jtsr-04-11-2026   25m                   Normal    SuccessfulDelete    ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c     Deleted pod: shop-jtsr-04-11-2026-6d5c44566c-zcgms
+mlops-jtsr-04-11-2026   25m                   Normal    SuccessfulDelete    ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c     Deleted pod: shop-jtsr-04-11-2026-6d5c44566c-8fzwv
+mlops-jtsr-04-11-2026   25m                   Normal    SuccessfulDelete    ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c     Deleted pod: shop-jtsr-04-11-2026-6d5c44566c-tm49p
+mlops-jtsr-04-11-2026   25m                   Normal    SuccessfulDelete    ReplicaSet/shop-jtsr-04-11-2026-6d5c44566c     Deleted pod: shop-jtsr-04-11-2026-6d5c44566c-pvtql
+kube-system             25m                   Warning   Unhealthy           Pod/metrics-server-c87d8ff5d-f6q6n             Liveness probe failed: Get "https://10.244.0.3:4443/livez": net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+kube-system             25m                   Warning   Unhealthy           Pod/metrics-server-c87d8ff5d-f6q6n             Readiness probe failed: Get "https://10.244.0.3:4443/readyz": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+mlops-jtsr-04-11-2026   25m                   Normal    Killing             Pod/shop-jtsr-04-11-2026-6d5c44566c-zcgms      Stopping container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   25m                   Normal    Killing             Pod/shop-jtsr-04-11-2026-6d5c44566c-5kn5v      Stopping container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   25m                   Normal    Killing             Pod/shop-jtsr-04-11-2026-6d5c44566c-2br57      Stopping container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   25m                   Normal    Killing             Pod/shop-jtsr-04-11-2026-6d5c44566c-glldc      Stopping container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   25m                   Normal    Killing             Pod/shop-jtsr-04-11-2026-6d5c44566c-rnb86      Stopping container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   25m                   Normal    Killing             Pod/shop-jtsr-04-11-2026-6d5c44566c-tghwt      Stopping container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   25m                   Normal    Killing             Pod/shop-jtsr-04-11-2026-6d5c44566c-tm49p      Stopping container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   25m                   Normal    Killing             Pod/shop-jtsr-04-11-2026-6d5c44566c-c5xcl      Stopping container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   25m                   Normal    Killing             Pod/shop-jtsr-04-11-2026-6d5c44566c-khxxb      Stopping container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   25m                   Normal    Killing             Pod/shop-jtsr-04-11-2026-6d5c44566c-455kq      Stopping container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   25m                   Normal    Killing             Pod/shop-jtsr-04-11-2026-6d5c44566c-g9htv      Stopping container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   25m                   Normal    Killing             Pod/shop-jtsr-04-11-2026-6d5c44566c-8fzwv      Stopping container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   25m                   Normal    Killing             Pod/shop-jtsr-04-11-2026-6d5c44566c-tdwb7      Stopping container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   25m                   Normal    Killing             Pod/shop-jtsr-04-11-2026-6d5c44566c-mdcpf      Stopping container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   25m                   Normal    Killing             Pod/shop-jtsr-04-11-2026-6d5c44566c-sks65      Stopping container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   25m                   Normal    Killing             Pod/shop-jtsr-04-11-2026-6d5c44566c-6hsvx      Stopping container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   25m                   Normal    Killing             Pod/shop-jtsr-04-11-2026-6d5c44566c-pvtql      Stopping container shop-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   9m17s                 Normal    Pulling             Pod/curl-jtsr-04-11-2026                       Pulling image "curlimages/curl"
+mlops-jtsr-04-11-2026   9m17s                 Normal    Scheduled           Pod/curl-jtsr-04-11-2026                       Successfully assigned mlops-jtsr-04-11-2026/curl-jtsr-04-11-2026 to minikube
+mlops-jtsr-04-11-2026   9m16s                 Normal    Created             Pod/curl-jtsr-04-11-2026                       Created container curl-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   9m16s                 Normal    Started             Pod/curl-jtsr-04-11-2026                       Started container curl-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   9m16s                 Normal    Pulled              Pod/curl-jtsr-04-11-2026                       Successfully pulled image "curlimages/curl" in 692ms (692ms including waiting). Image size: 10853220 bytes.
+mlops-jtsr-04-11-2026   7m17s                 Normal    Created             Pod/todo-jtsr-04-11-2026-6c4b96fd95-dxl62      Created container todo-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   7m17s                 Normal    Pulled              Pod/todo-jtsr-04-11-2026-6c4b96fd95-9mbdt      Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   7m17s                 Normal    SuccessfulCreate    ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95     Created pod: todo-jtsr-04-11-2026-6c4b96fd95-ttjr6
+mlops-jtsr-04-11-2026   7m17s                 Normal    SuccessfulCreate    ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95     Created pod: todo-jtsr-04-11-2026-6c4b96fd95-dxl62
+mlops-jtsr-04-11-2026   7m17s                 Normal    SuccessfulCreate    ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95     Created pod: todo-jtsr-04-11-2026-6c4b96fd95-kjjz4
+mlops-jtsr-04-11-2026   7m17s                 Normal    SuccessfulCreate    ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95     Created pod: todo-jtsr-04-11-2026-6c4b96fd95-9mbdt
+mlops-jtsr-04-11-2026   7m17s                 Normal    ScalingReplicaSet   Deployment/todo-jtsr-04-11-2026                Scaled up replica set todo-jtsr-04-11-2026-6c4b96fd95 to 7 from 3
+mlops-jtsr-04-11-2026   7m17s                 Normal    Pulled              Pod/todo-jtsr-04-11-2026-6c4b96fd95-dxl62      Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   7m17s                 Normal    Created             Pod/todo-jtsr-04-11-2026-6c4b96fd95-ttjr6      Created container todo-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   7m17s                 Normal    Created             Pod/todo-jtsr-04-11-2026-6c4b96fd95-kjjz4      Created container todo-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   7m17s                 Normal    SuccessfulRescale   HorizontalPodAutoscaler/todo-jtsr-04-11-2026   New size: 7; reason: cpu resource utilization (percentage of request) above target
+mlops-jtsr-04-11-2026   7m17s                 Normal    Created             Pod/todo-jtsr-04-11-2026-6c4b96fd95-9mbdt      Created container todo-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   7m17s                 Normal    Pulled              Pod/todo-jtsr-04-11-2026-6c4b96fd95-ttjr6      Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   7m17s                 Normal    Pulled              Pod/todo-jtsr-04-11-2026-6c4b96fd95-kjjz4      Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   7m17s                 Normal    Started             Pod/todo-jtsr-04-11-2026-6c4b96fd95-9mbdt      Started container todo-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   7m17s                 Normal    Started             Pod/todo-jtsr-04-11-2026-6c4b96fd95-dxl62      Started container todo-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   7m17s                 Normal    Scheduled           Pod/todo-jtsr-04-11-2026-6c4b96fd95-9mbdt      Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-9mbdt to minikube
+mlops-jtsr-04-11-2026   7m17s                 Normal    Scheduled           Pod/todo-jtsr-04-11-2026-6c4b96fd95-dxl62      Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-dxl62 to minikube
+mlops-jtsr-04-11-2026   7m17s                 Normal    Scheduled           Pod/todo-jtsr-04-11-2026-6c4b96fd95-kjjz4      Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-kjjz4 to minikube
+mlops-jtsr-04-11-2026   7m17s                 Normal    Scheduled           Pod/todo-jtsr-04-11-2026-6c4b96fd95-ttjr6      Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-ttjr6 to minikube
+mlops-jtsr-04-11-2026   7m16s                 Normal    Started             Pod/todo-jtsr-04-11-2026-6c4b96fd95-kjjz4      Started container todo-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   7m16s                 Normal    Started             Pod/todo-jtsr-04-11-2026-6c4b96fd95-ttjr6      Started container todo-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   7m2s                  Normal    Created             Pod/todo-jtsr-04-11-2026-6c4b96fd95-vml82      Created container todo-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   7m2s                  Normal    SuccessfulCreate    ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95     Created pod: todo-jtsr-04-11-2026-6c4b96fd95-rvnwz
+mlops-jtsr-04-11-2026   7m2s                  Normal    Pulled              Pod/todo-jtsr-04-11-2026-6c4b96fd95-xj9dw      Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   7m2s                  Normal    ScalingReplicaSet   Deployment/todo-jtsr-04-11-2026                Scaled up replica set todo-jtsr-04-11-2026-6c4b96fd95 to 11 from 7
+mlops-jtsr-04-11-2026   7m2s                  Normal    SuccessfulRescale   HorizontalPodAutoscaler/todo-jtsr-04-11-2026   New size: 11; reason: cpu resource utilization (percentage of request) above target
+mlops-jtsr-04-11-2026   7m2s                  Normal    Pulled              Pod/todo-jtsr-04-11-2026-6c4b96fd95-rvnwz      Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   7m2s                  Normal    Created             Pod/todo-jtsr-04-11-2026-6c4b96fd95-rvnwz      Created container todo-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   7m2s                  Normal    Started             Pod/todo-jtsr-04-11-2026-6c4b96fd95-rvnwz      Started container todo-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   7m2s                  Normal    Started             Pod/todo-jtsr-04-11-2026-6c4b96fd95-7nzbf      Started container todo-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   7m2s                  Normal    Created             Pod/todo-jtsr-04-11-2026-6c4b96fd95-7nzbf      Created container todo-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   7m2s                  Normal    Pulled              Pod/todo-jtsr-04-11-2026-6c4b96fd95-7nzbf      Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   7m2s                  Normal    Created             Pod/todo-jtsr-04-11-2026-6c4b96fd95-xj9dw      Created container todo-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   7m2s                  Normal    Started             Pod/todo-jtsr-04-11-2026-6c4b96fd95-xj9dw      Started container todo-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   7m2s                  Normal    SuccessfulCreate    ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95     Created pod: todo-jtsr-04-11-2026-6c4b96fd95-xj9dw
+mlops-jtsr-04-11-2026   7m2s                  Normal    SuccessfulCreate    ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95     Created pod: todo-jtsr-04-11-2026-6c4b96fd95-vml82
+mlops-jtsr-04-11-2026   7m2s                  Normal    SuccessfulCreate    ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95     Created pod: todo-jtsr-04-11-2026-6c4b96fd95-7nzbf
+mlops-jtsr-04-11-2026   7m2s                  Normal    Started             Pod/todo-jtsr-04-11-2026-6c4b96fd95-vml82      Started container todo-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   7m2s                  Normal    Pulled              Pod/todo-jtsr-04-11-2026-6c4b96fd95-vml82      Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   7m2s                  Normal    Scheduled           Pod/todo-jtsr-04-11-2026-6c4b96fd95-rvnwz      Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-rvnwz to minikube
+mlops-jtsr-04-11-2026   7m2s                  Normal    Scheduled           Pod/todo-jtsr-04-11-2026-6c4b96fd95-vml82      Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-vml82 to minikube
+mlops-jtsr-04-11-2026   7m2s                  Normal    Scheduled           Pod/todo-jtsr-04-11-2026-6c4b96fd95-7nzbf      Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-7nzbf to minikube
+mlops-jtsr-04-11-2026   7m2s                  Normal    Scheduled           Pod/todo-jtsr-04-11-2026-6c4b96fd95-xj9dw      Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-xj9dw to minikube
+mlops-jtsr-04-11-2026   4m33s                 Normal    Pulling             Pod/ab-jtsr-04-11-2026                         Pulling image "httpd:alpine"
+mlops-jtsr-04-11-2026   4m33s                 Normal    Scheduled           Pod/ab-jtsr-04-11-2026                         Successfully assigned mlops-jtsr-04-11-2026/ab-jtsr-04-11-2026 to minikube
+mlops-jtsr-04-11-2026   4m32s                 Normal    SuccessfulDelete    ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95     Deleted pod: todo-jtsr-04-11-2026-6c4b96fd95-xj9dw
+mlops-jtsr-04-11-2026   4m32s                 Normal    Killing             Pod/todo-jtsr-04-11-2026-6c4b96fd95-ttjr6      Stopping container todo-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   4m32s                 Normal    Killing             Pod/todo-jtsr-04-11-2026-6c4b96fd95-xj9dw      Stopping container todo-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   4m32s                 Normal    Killing             Pod/todo-jtsr-04-11-2026-6c4b96fd95-dxl62      Stopping container todo-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   4m32s                 Normal    SuccessfulDelete    ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95     Deleted pod: todo-jtsr-04-11-2026-6c4b96fd95-vml82
+mlops-jtsr-04-11-2026   4m32s                 Normal    SuccessfulDelete    ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95     Deleted pod: todo-jtsr-04-11-2026-6c4b96fd95-kjjz4
+mlops-jtsr-04-11-2026   4m32s                 Normal    Killing             Pod/todo-jtsr-04-11-2026-6c4b96fd95-vml82      Stopping container todo-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   4m32s                 Normal    SuccessfulDelete    ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95     Deleted pod: todo-jtsr-04-11-2026-6c4b96fd95-rvnwz
+mlops-jtsr-04-11-2026   4m32s                 Normal    Killing             Pod/todo-jtsr-04-11-2026-6c4b96fd95-7nzbf      Stopping container todo-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   4m32s                 Normal    SuccessfulDelete    ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95     Deleted pod: todo-jtsr-04-11-2026-6c4b96fd95-dxl62
+mlops-jtsr-04-11-2026   4m32s                 Normal    Killing             Pod/todo-jtsr-04-11-2026-6c4b96fd95-rvnwz      Stopping container todo-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   4m32s                 Normal    SuccessfulDelete    ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95     Deleted pod: todo-jtsr-04-11-2026-6c4b96fd95-7nzbf
+mlops-jtsr-04-11-2026   4m32s                 Normal    SuccessfulDelete    ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95     Deleted pod: todo-jtsr-04-11-2026-6c4b96fd95-9mbdt
+mlops-jtsr-04-11-2026   4m32s                 Normal    Killing             Pod/todo-jtsr-04-11-2026-6c4b96fd95-9mbdt      Stopping container todo-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   4m32s (x2 over 77m)   Normal    SuccessfulRescale   HorizontalPodAutoscaler/todo-jtsr-04-11-2026   New size: 3; reason: All metrics below target
+mlops-jtsr-04-11-2026   4m32s                 Normal    ScalingReplicaSet   Deployment/todo-jtsr-04-11-2026                Scaled down replica set todo-jtsr-04-11-2026-6c4b96fd95 to 3 from 11
+mlops-jtsr-04-11-2026   4m32s                 Normal    Killing             Pod/todo-jtsr-04-11-2026-6c4b96fd95-kjjz4      Stopping container todo-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   4m29s                 Normal    Created             Pod/ab-jtsr-04-11-2026                         Created container ab-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   4m29s                 Normal    Started             Pod/ab-jtsr-04-11-2026                         Started container ab-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   4m29s                 Normal    Pulled              Pod/ab-jtsr-04-11-2026                         Successfully pulled image "httpd:alpine" in 3.245s (3.245s including waiting). Image size: 20734785 bytes.
+mlops-jtsr-04-11-2026   3m37s                 Normal    Started             Pod/ab-jtsr-04-11-2026                         Started container ab-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   3m37s                 Normal    Created             Pod/ab-jtsr-04-11-2026                         Created container ab-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   3m37s                 Normal    Pulled              Pod/ab-jtsr-04-11-2026                         Container image "httpd:alpine" already present on machine
+mlops-jtsr-04-11-2026   3m37s                 Normal    Scheduled           Pod/ab-jtsr-04-11-2026                         Successfully assigned mlops-jtsr-04-11-2026/ab-jtsr-04-11-2026 to minikube
+mlops-jtsr-04-11-2026   3m18s                 Normal    Pulled              Pod/api-jtsr-04-11-2026-7c64d48d5f-kq9jw       Container image "jonathan57/api-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   3m18s                 Normal    ScalingReplicaSet   Deployment/api-jtsr-04-11-2026                 Scaled up replica set api-jtsr-04-11-2026-7c64d48d5f to 7 from 3
+mlops-jtsr-04-11-2026   3m18s                 Normal    Pulled              Pod/api-jtsr-04-11-2026-7c64d48d5f-mb65v       Container image "jonathan57/api-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   3m18s                 Normal    Created             Pod/api-jtsr-04-11-2026-7c64d48d5f-kq9jw       Created container api-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   3m18s                 Normal    Started             Pod/api-jtsr-04-11-2026-7c64d48d5f-mb65v       Started container api-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   3m18s                 Normal    Started             Pod/api-jtsr-04-11-2026-7c64d48d5f-dnbh9       Started container api-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   3m18s                 Normal    Created             Pod/api-jtsr-04-11-2026-7c64d48d5f-dnbh9       Created container api-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   3m18s                 Normal    Pulled              Pod/api-jtsr-04-11-2026-7c64d48d5f-dnbh9       Container image "jonathan57/api-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   3m18s                 Normal    SuccessfulCreate    ReplicaSet/api-jtsr-04-11-2026-7c64d48d5f      Created pod: api-jtsr-04-11-2026-7c64d48d5f-dnbh9
+mlops-jtsr-04-11-2026   3m18s                 Normal    Created             Pod/api-jtsr-04-11-2026-7c64d48d5f-mb65v       Created container api-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   3m18s                 Normal    Started             Pod/api-jtsr-04-11-2026-7c64d48d5f-kq9jw       Started container api-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   3m18s                 Normal    Created             Pod/api-jtsr-04-11-2026-7c64d48d5f-m2kq7       Created container api-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   3m18s                 Normal    SuccessfulRescale   HorizontalPodAutoscaler/api-jtsr-04-11-2026    New size: 7; reason: cpu resource utilization (percentage of request) above target
+mlops-jtsr-04-11-2026   3m18s                 Normal    Pulled              Pod/api-jtsr-04-11-2026-7c64d48d5f-m2kq7       Container image "jonathan57/api-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   3m18s                 Normal    SuccessfulCreate    ReplicaSet/api-jtsr-04-11-2026-7c64d48d5f      Created pod: api-jtsr-04-11-2026-7c64d48d5f-m2kq7
+mlops-jtsr-04-11-2026   3m18s                 Normal    SuccessfulCreate    ReplicaSet/api-jtsr-04-11-2026-7c64d48d5f      Created pod: api-jtsr-04-11-2026-7c64d48d5f-kq9jw
+mlops-jtsr-04-11-2026   3m18s                 Normal    SuccessfulCreate    ReplicaSet/api-jtsr-04-11-2026-7c64d48d5f      Created pod: api-jtsr-04-11-2026-7c64d48d5f-mb65v
+mlops-jtsr-04-11-2026   3m18s                 Normal    Scheduled           Pod/api-jtsr-04-11-2026-7c64d48d5f-dnbh9       Successfully assigned mlops-jtsr-04-11-2026/api-jtsr-04-11-2026-7c64d48d5f-dnbh9 to minikube
+mlops-jtsr-04-11-2026   3m18s                 Normal    Scheduled           Pod/api-jtsr-04-11-2026-7c64d48d5f-kq9jw       Successfully assigned mlops-jtsr-04-11-2026/api-jtsr-04-11-2026-7c64d48d5f-kq9jw to minikube
+mlops-jtsr-04-11-2026   3m18s                 Normal    Scheduled           Pod/api-jtsr-04-11-2026-7c64d48d5f-mb65v       Successfully assigned mlops-jtsr-04-11-2026/api-jtsr-04-11-2026-7c64d48d5f-mb65v to minikube
+mlops-jtsr-04-11-2026   3m18s                 Normal    Scheduled           Pod/api-jtsr-04-11-2026-7c64d48d5f-m2kq7       Successfully assigned mlops-jtsr-04-11-2026/api-jtsr-04-11-2026-7c64d48d5f-m2kq7 to minikube
+mlops-jtsr-04-11-2026   3m17s                 Normal    Started             Pod/api-jtsr-04-11-2026-7c64d48d5f-m2kq7       Started container api-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   3m3s                  Normal    Pulled              Pod/api-jtsr-04-11-2026-7c64d48d5f-7cxk9       Container image "jonathan57/api-jtsr-04-11-2026:v1" already present on machine
+mlops-jtsr-04-11-2026   3m3s                  Normal    SuccessfulCreate    ReplicaSet/api-jtsr-04-11-2026-7c64d48d5f      Created pod: api-jtsr-04-11-2026-7c64d48d5f-7cxk9
+mlops-jtsr-04-11-2026   3m3s                  Normal    SuccessfulRescale   HorizontalPodAutoscaler/api-jtsr-04-11-2026    New size: 8; reason: cpu resource utilization (percentage of request) above target
+mlops-jtsr-04-11-2026   3m3s                  Normal    ScalingReplicaSet   Deployment/api-jtsr-04-11-2026                 Scaled up replica set api-jtsr-04-11-2026-7c64d48d5f to 8 from 7
+mlops-jtsr-04-11-2026   3m3s                  Normal    Created             Pod/api-jtsr-04-11-2026-7c64d48d5f-7cxk9       Created container api-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   3m3s                  Normal    Started             Pod/api-jtsr-04-11-2026-7c64d48d5f-7cxk9       Started container api-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   3m3s                  Normal    Scheduled           Pod/api-jtsr-04-11-2026-7c64d48d5f-7cxk9       Successfully assigned mlops-jtsr-04-11-2026/api-jtsr-04-11-2026-7c64d48d5f-7cxk9 to minikube
+mlops-jtsr-04-11-2026   33s                   Normal    SuccessfulDelete    ReplicaSet/api-jtsr-04-11-2026-7c64d48d5f      Deleted pod: api-jtsr-04-11-2026-7c64d48d5f-7cxk9
+mlops-jtsr-04-11-2026   33s                   Normal    SuccessfulDelete    ReplicaSet/api-jtsr-04-11-2026-7c64d48d5f      Deleted pod: api-jtsr-04-11-2026-7c64d48d5f-dnbh9
+mlops-jtsr-04-11-2026   33s                   Normal    Killing             Pod/api-jtsr-04-11-2026-7c64d48d5f-dnbh9       Stopping container api-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   33s                   Normal    SuccessfulDelete    ReplicaSet/api-jtsr-04-11-2026-7c64d48d5f      Deleted pod: api-jtsr-04-11-2026-7c64d48d5f-kq9jw
+mlops-jtsr-04-11-2026   33s                   Normal    Killing             Pod/api-jtsr-04-11-2026-7c64d48d5f-m2kq7       Stopping container api-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   33s                   Normal    SuccessfulDelete    ReplicaSet/api-jtsr-04-11-2026-7c64d48d5f      Deleted pod: api-jtsr-04-11-2026-7c64d48d5f-mb65v
+mlops-jtsr-04-11-2026   33s                   Normal    Killing             Pod/api-jtsr-04-11-2026-7c64d48d5f-mb65v       Stopping container api-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   33s                   Normal    SuccessfulRescale   HorizontalPodAutoscaler/api-jtsr-04-11-2026    New size: 3; reason: All metrics below target
+mlops-jtsr-04-11-2026   33s                   Normal    ScalingReplicaSet   Deployment/api-jtsr-04-11-2026                 Scaled down replica set api-jtsr-04-11-2026-7c64d48d5f to 3 from 8
+mlops-jtsr-04-11-2026   33s                   Normal    Killing             Pod/api-jtsr-04-11-2026-7c64d48d5f-kq9jw       Stopping container api-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   33s                   Normal    Killing             Pod/api-jtsr-04-11-2026-7c64d48d5f-7cxk9       Stopping container api-jtsr-04-11-2026
+mlops-jtsr-04-11-2026   33s                   Normal    SuccessfulDelete    ReplicaSet/api-jtsr-04-11-2026-7c64d48d5f      Deleted pod: api-jtsr-04-11-2026-7c64d48d5f-m2kq7

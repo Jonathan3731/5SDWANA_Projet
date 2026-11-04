@@ -33,14 +33,16 @@ Pod Template:
 Conditions:
   Type           Status  Reason
   ----           ------  ------
-  Available      True    MinimumReplicasAvailable
   Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
 OldReplicaSets:  <none>
 NewReplicaSet:   api-jtsr-04-11-2026-7c64d48d5f (3/3 replicas created)
 Events:
-  Type    Reason             Age   From                   Message
-  ----    ------             ----  ----                   -------
-  Normal  ScalingReplicaSet  27m   deployment-controller  Scaled up replica set api-jtsr-04-11-2026-7c64d48d5f to 3
+  Type    Reason             Age    From                   Message
+  ----    ------             ----   ----                   -------
+  Normal  ScalingReplicaSet  3m19s  deployment-controller  Scaled up replica set api-jtsr-04-11-2026-7c64d48d5f to 7 from 3
+  Normal  ScalingReplicaSet  3m4s   deployment-controller  Scaled up replica set api-jtsr-04-11-2026-7c64d48d5f to 8 from 7
+  Normal  ScalingReplicaSet  34s    deployment-controller  Scaled down replica set api-jtsr-04-11-2026-7c64d48d5f to 3 from 8
 
 
 Name:                   shop-jtsr-04-11-2026
@@ -87,18 +89,12 @@ Conditions:
 OldReplicaSets:  shop-jtsr-04-11-2026-5f6bdfb4db (0/0 replicas created)
 NewReplicaSet:   shop-jtsr-04-11-2026-6d5c44566c (3/3 replicas created)
 Events:
-  Type    Reason             Age   From                   Message
-  ----    ------             ----  ----                   -------
-  Normal  ScalingReplicaSet  27m   deployment-controller  Scaled up replica set shop-jtsr-04-11-2026-5f6bdfb4db to 3
-  Normal  ScalingReplicaSet  18m   deployment-controller  Scaled up replica set shop-jtsr-04-11-2026-6d5c44566c to 1
-  Normal  ScalingReplicaSet  18m   deployment-controller  Scaled down replica set shop-jtsr-04-11-2026-5f6bdfb4db to 2 from 3
-  Normal  ScalingReplicaSet  18m   deployment-controller  Scaled up replica set shop-jtsr-04-11-2026-6d5c44566c to 2 from 1
-  Normal  ScalingReplicaSet  18m   deployment-controller  Scaled down replica set shop-jtsr-04-11-2026-5f6bdfb4db to 1 from 2
-  Normal  ScalingReplicaSet  18m   deployment-controller  Scaled up replica set shop-jtsr-04-11-2026-6d5c44566c to 3 from 2
-  Normal  ScalingReplicaSet  17m   deployment-controller  Scaled down replica set shop-jtsr-04-11-2026-5f6bdfb4db to 0 from 1
-  Normal  ScalingReplicaSet  10m   deployment-controller  Scaled up replica set shop-jtsr-04-11-2026-6d5c44566c to 7 from 3
-  Normal  ScalingReplicaSet  10m   deployment-controller  Scaled up replica set shop-jtsr-04-11-2026-6d5c44566c to 10 from 7
-  Normal  ScalingReplicaSet  8m8s  deployment-controller  (combined from similar events): Scaled down replica set shop-jtsr-04-11-2026-6d5c44566c to 3 from 10
+  Type    Reason             Age                From                   Message
+  ----    ------             ----               ----                   -------
+  Normal  ScalingReplicaSet  28m (x2 over 90m)  deployment-controller  Scaled up replica set shop-jtsr-04-11-2026-6d5c44566c to 7 from 3
+  Normal  ScalingReplicaSet  27m (x2 over 89m)  deployment-controller  Scaled up replica set shop-jtsr-04-11-2026-6d5c44566c to 10 from 7
+  Normal  ScalingReplicaSet  27m                deployment-controller  Scaled up replica set shop-jtsr-04-11-2026-6d5c44566c to 20 from 10
+  Normal  ScalingReplicaSet  25m                deployment-controller  Scaled down replica set shop-jtsr-04-11-2026-6d5c44566c to 3 from 20
 
 
 Name:                   todo-jtsr-04-11-2026
@@ -109,7 +105,7 @@ Labels:                 app=todo-jtsr-04-11-2026
                         projet=e5
 Annotations:            deployment.kubernetes.io/revision: 1
 Selector:               app=todo-jtsr-04-11-2026
-Replicas:               10 desired | 10 updated | 10 total | 10 available | 0 unavailable
+Replicas:               3 desired | 3 updated | 3 total | 3 available | 0 unavailable
 StrategyType:           RollingUpdate
 MinReadySeconds:        0
 RollingUpdateStrategy:  25% max unavailable, 25% max surge
@@ -139,13 +135,13 @@ Conditions:
   Progressing    True    NewReplicaSetAvailable
   Available      True    MinimumReplicasAvailable
 OldReplicaSets:  <none>
-NewReplicaSet:   todo-jtsr-04-11-2026-6c4b96fd95 (10/10 replicas created)
+NewReplicaSet:   todo-jtsr-04-11-2026-6c4b96fd95 (3/3 replicas created)
 Events:
-  Type    Reason             Age   From                   Message
-  ----    ------             ----  ----                   -------
-  Normal  ScalingReplicaSet  27m   deployment-controller  Scaled up replica set todo-jtsr-04-11-2026-6c4b96fd95 to 3
-  Normal  ScalingReplicaSet  113s  deployment-controller  Scaled up replica set todo-jtsr-04-11-2026-6c4b96fd95 to 6 from 3
-  Normal  ScalingReplicaSet  53s   deployment-controller  Scaled up replica set todo-jtsr-04-11-2026-6c4b96fd95 to 10 from 6
+  Type    Reason             Age    From                   Message
+  ----    ------             ----   ----                   -------
+  Normal  ScalingReplicaSet  7m18s  deployment-controller  Scaled up replica set todo-jtsr-04-11-2026-6c4b96fd95 to 7 from 3
+  Normal  ScalingReplicaSet  7m3s   deployment-controller  Scaled up replica set todo-jtsr-04-11-2026-6c4b96fd95 to 11 from 7
+  Normal  ScalingReplicaSet  4m33s  deployment-controller  Scaled down replica set todo-jtsr-04-11-2026-6c4b96fd95 to 3 from 11
 
 
 Name:                   netdata-jtsr-04-11-2026
@@ -187,10 +183,7 @@ Conditions:
   Progressing    True    NewReplicaSetAvailable
 OldReplicaSets:  <none>
 NewReplicaSet:   netdata-jtsr-04-11-2026-644cf559fd (1/1 replicas created)
-Events:
-  Type    Reason             Age    From                   Message
-  ----    ------             ----   ----                   -------
-  Normal  ScalingReplicaSet  8m46s  deployment-controller  Scaled up replica set netdata-jtsr-04-11-2026-644cf559fd to 1
+Events:          <none>
 
 
 Name:                   api-jtsr-04-11-2026
@@ -232,10 +225,7 @@ Conditions:
   Progressing    True    NewReplicaSetAvailable
 OldReplicaSets:  <none>
 NewReplicaSet:   api-jtsr-04-11-2026-7c64d48d5f (3/3 replicas created)
-Events:
-  Type    Reason             Age   From                   Message
-  ----    ------             ----  ----                   -------
-  Normal  ScalingReplicaSet  25m   deployment-controller  Scaled up replica set api-jtsr-04-11-2026-7c64d48d5f to 3
+Events:          <none>
 
 
 Name:                   shop-jtsr-04-11-2026
@@ -280,12 +270,7 @@ Conditions:
   Available      True    MinimumReplicasAvailable
 OldReplicaSets:  <none>
 NewReplicaSet:   shop-jtsr-04-11-2026-5f6bdfb4db (3/3 replicas created)
-Events:
-  Type    Reason             Age   From                   Message
-  ----    ------             ----  ----                   -------
-  Normal  ScalingReplicaSet  25m   deployment-controller  Scaled up replica set shop-jtsr-04-11-2026-5f6bdfb4db to 3
-  Normal  ScalingReplicaSet  25m   deployment-controller  Scaled up replica set shop-jtsr-04-11-2026-5f6bdfb4db to 5 from 3
-  Normal  ScalingReplicaSet  23m   deployment-controller  Scaled down replica set shop-jtsr-04-11-2026-5f6bdfb4db to 3 from 5
+Events:          <none>
 
 
 Name:                   todo-jtsr-04-11-2026
@@ -327,10 +312,7 @@ Conditions:
   Progressing    True    NewReplicaSetAvailable
 OldReplicaSets:  <none>
 NewReplicaSet:   todo-jtsr-04-11-2026-6c4b96fd95 (3/3 replicas created)
-Events:
-  Type    Reason             Age   From                   Message
-  ----    ------             ----  ----                   -------
-  Normal  ScalingReplicaSet  25m   deployment-controller  Scaled up replica set todo-jtsr-04-11-2026-6c4b96fd95 to 3
+Events:          <none>
 
 
 Name:                   api-jtsr-04-11-2026
@@ -372,10 +354,7 @@ Conditions:
   Progressing    True    NewReplicaSetAvailable
 OldReplicaSets:  <none>
 NewReplicaSet:   api-jtsr-04-11-2026-7c64d48d5f (3/3 replicas created)
-Events:
-  Type    Reason             Age   From                   Message
-  ----    ------             ----  ----                   -------
-  Normal  ScalingReplicaSet  25m   deployment-controller  Scaled up replica set api-jtsr-04-11-2026-7c64d48d5f to 3
+Events:          <none>
 
 
 Name:                   shop-jtsr-04-11-2026
@@ -420,10 +399,7 @@ Conditions:
   Progressing    True    NewReplicaSetAvailable
 OldReplicaSets:  <none>
 NewReplicaSet:   shop-jtsr-04-11-2026-5f6bdfb4db (3/3 replicas created)
-Events:
-  Type    Reason             Age   From                   Message
-  ----    ------             ----  ----                   -------
-  Normal  ScalingReplicaSet  25m   deployment-controller  Scaled up replica set shop-jtsr-04-11-2026-5f6bdfb4db to 3
+Events:          <none>
 
 
 Name:                   todo-jtsr-04-11-2026
@@ -465,10 +441,7 @@ Conditions:
   Progressing    True    NewReplicaSetAvailable
 OldReplicaSets:  <none>
 NewReplicaSet:   todo-jtsr-04-11-2026-6c4b96fd95 (3/3 replicas created)
-Events:
-  Type    Reason             Age   From                   Message
-  ----    ------             ----  ----                   -------
-  Normal  ScalingReplicaSet  25m   deployment-controller  Scaled up replica set todo-jtsr-04-11-2026-6c4b96fd95 to 3
+Events:          <none>
 
 
 Name:                     api-jtsr-04-11-2026
@@ -525,7 +498,7 @@ IPs:                      10.108.157.171
 Port:                     <unset>  80/TCP
 TargetPort:               3000/TCP
 NodePort:                 <unset>  31291/TCP
-Endpoints:                10.244.0.11:3000,10.244.0.10:3000,10.244.0.12:3000 + 7 more...
+Endpoints:                10.244.0.11:3000,10.244.0.10:3000,10.244.0.12:3000
 Session Affinity:         None
 External Traffic Policy:  Cluster
 Internal Traffic Policy:  Cluster
@@ -706,12 +679,11 @@ Conditions:
   ScalingActive   True    ValidMetricFound  the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)
   ScalingLimited  True    TooFewReplicas    the desired replica count is less than the minimum replica count
 Events:
-  Type     Reason                        Age                From                       Message
-  ----     ------                        ----               ----                       -------
-  Warning  FailedGetResourceMetric       27m                horizontal-pod-autoscaler  failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-  Warning  FailedComputeMetricsReplicas  27m                horizontal-pod-autoscaler  invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-  Warning  FailedGetResourceMetric       25m (x8 over 26m)  horizontal-pod-autoscaler  failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-  Warning  FailedComputeMetricsReplicas  25m (x8 over 26m)  horizontal-pod-autoscaler  invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
+  Type    Reason             Age    From                       Message
+  ----    ------             ----   ----                       -------
+  Normal  SuccessfulRescale  3m19s  horizontal-pod-autoscaler  New size: 7; reason: cpu resource utilization (percentage of request) above target
+  Normal  SuccessfulRescale  3m4s   horizontal-pod-autoscaler  New size: 8; reason: cpu resource utilization (percentage of request) above target
+  Normal  SuccessfulRescale  34s    horizontal-pod-autoscaler  New size: 3; reason: All metrics below target
 
 
 Name:                                                  shop-jtsr-04-11-2026
@@ -745,14 +717,12 @@ Conditions:
   ScalingActive   True    ValidMetricFound  the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)
   ScalingLimited  True    TooFewReplicas    the desired replica count is less than the minimum replica count
 Events:
-  Type     Reason                        Age                From                       Message
-  ----     ------                        ----               ----                       -------
-  Warning  FailedGetResourceMetric       17m (x9 over 27m)  horizontal-pod-autoscaler  failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-  Warning  FailedComputeMetricsReplicas  17m (x9 over 27m)  horizontal-pod-autoscaler  invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-  Warning  FailedGetResourceMetric       16m (x4 over 16m)  horizontal-pod-autoscaler  failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-  Warning  FailedComputeMetricsReplicas  16m (x4 over 16m)  horizontal-pod-autoscaler  invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-  Normal   SuccessfulRescale             10m                horizontal-pod-autoscaler  New size: 7; reason: cpu resource utilization (percentage of request) above target
-  Normal   SuccessfulRescale             10m                horizontal-pod-autoscaler  New size: 10; reason: cpu resource utilization (percentage of request) above target
+  Type    Reason             Age                From                       Message
+  ----    ------             ----               ----                       -------
+  Normal  SuccessfulRescale  28m (x2 over 90m)  horizontal-pod-autoscaler  New size: 7; reason: cpu resource utilization (percentage of request) above target
+  Normal  SuccessfulRescale  27m (x2 over 89m)  horizontal-pod-autoscaler  New size: 10; reason: cpu resource utilization (percentage of request) above target
+  Normal  SuccessfulRescale  27m                horizontal-pod-autoscaler  New size: 20; reason: cpu resource utilization (percentage of request) above target
+  Normal  SuccessfulRescale  25m (x2 over 87m)  horizontal-pod-autoscaler  New size: 3; reason: All metrics below target
 
 
 Name:                                                  todo-jtsr-04-11-2026
@@ -763,7 +733,7 @@ Annotations:                                           <none>
 CreationTimestamp:                                     Wed, 04 Nov 2026 11:26:48 +0100
 Reference:                                             Deployment/todo-jtsr-04-11-2026
 Metrics:                                               ( current / target )
-  resource cpu on pods  (as a percentage of request):  164% (82m) / 50%
+  resource cpu on pods  (as a percentage of request):  2% (1m) / 50%
 Min replicas:                                          3
 Max replicas:                                          20
 Behavior:
@@ -778,22 +748,19 @@ Behavior:
     Select Policy: Max
     Policies:
       - Type: Percent  Value: 100  Period: 15 seconds
-Deployment pods:       10 current / 10 desired
+Deployment pods:       3 current / 3 desired
 Conditions:
-  Type            Status  Reason              Message
-  ----            ------  ------              -------
-  AbleToScale     True    ReadyForNewScale    recommended size matches current size
-  ScalingActive   True    ValidMetricFound    the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)
-  ScalingLimited  False   DesiredWithinRange  the desired count is within the acceptable range
+  Type            Status  Reason            Message
+  ----            ------  ------            -------
+  AbleToScale     True    ReadyForNewScale  recommended size matches current size
+  ScalingActive   True    ValidMetricFound  the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)
+  ScalingLimited  True    TooFewReplicas    the desired replica count is less than the minimum replica count
 Events:
-  Type     Reason                        Age                From                       Message
-  ----     ------                        ----               ----                       -------
-  Warning  FailedGetResourceMetric       26m (x5 over 27m)  horizontal-pod-autoscaler  failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-  Warning  FailedComputeMetricsReplicas  26m (x5 over 27m)  horizontal-pod-autoscaler  invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-  Warning  FailedGetResourceMetric       25m (x4 over 25m)  horizontal-pod-autoscaler  failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-  Warning  FailedComputeMetricsReplicas  25m (x4 over 25m)  horizontal-pod-autoscaler  invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-  Normal   SuccessfulRescale             114s               horizontal-pod-autoscaler  New size: 6; reason: cpu resource utilization (percentage of request) above target
-  Normal   SuccessfulRescale             54s                horizontal-pod-autoscaler  New size: 10; reason: cpu resource utilization (percentage of request) above target
+  Type    Reason             Age                  From                       Message
+  ----    ------             ----                 ----                       -------
+  Normal  SuccessfulRescale  7m18s                horizontal-pod-autoscaler  New size: 7; reason: cpu resource utilization (percentage of request) above target
+  Normal  SuccessfulRescale  7m3s                 horizontal-pod-autoscaler  New size: 11; reason: cpu resource utilization (percentage of request) above target
+  Normal  SuccessfulRescale  4m33s (x2 over 77m)  horizontal-pod-autoscaler  New size: 3; reason: All metrics below target
 
 
 Name:                                                  api-jtsr-04-11-2026
@@ -826,11 +793,7 @@ Conditions:
   AbleToScale     True    ReadyForNewScale  recommended size matches current size
   ScalingActive   True    ValidMetricFound  the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)
   ScalingLimited  True    TooFewReplicas    the desired replica count is less than the minimum replica count
-Events:
-  Type     Reason                        Age                From                       Message
-  ----     ------                        ----               ----                       -------
-  Warning  FailedGetResourceMetric       25m (x2 over 25m)  horizontal-pod-autoscaler  failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-  Warning  FailedComputeMetricsReplicas  25m (x2 over 25m)  horizontal-pod-autoscaler  invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
+Events:           <none>
 
 
 Name:                                                  shop-jtsr-04-11-2026
@@ -863,13 +826,7 @@ Conditions:
   AbleToScale     True    ReadyForNewScale  recommended size matches current size
   ScalingActive   True    ValidMetricFound  the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)
   ScalingLimited  True    TooFewReplicas    the desired replica count is less than the minimum replica count
-Events:
-  Type     Reason                        Age                From                       Message
-  ----     ------                        ----               ----                       -------
-  Warning  FailedGetResourceMetric       25m (x2 over 25m)  horizontal-pod-autoscaler  failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-  Warning  FailedComputeMetricsReplicas  25m (x2 over 25m)  horizontal-pod-autoscaler  invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-  Normal   SuccessfulRescale             25m                horizontal-pod-autoscaler  New size: 5; reason: cpu resource utilization (percentage of request) above target
-  Normal   SuccessfulRescale             23m                horizontal-pod-autoscaler  New size: 3; reason: All metrics below target
+Events:           <none>
 
 
 Name:                                                  todo-jtsr-04-11-2026
@@ -902,13 +859,7 @@ Conditions:
   AbleToScale     True    ReadyForNewScale  recommended size matches current size
   ScalingActive   True    ValidMetricFound  the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)
   ScalingLimited  True    TooFewReplicas    the desired replica count is less than the minimum replica count
-Events:
-  Type     Reason                        Age                From                       Message
-  ----     ------                        ----               ----                       -------
-  Warning  FailedGetResourceMetric       25m (x2 over 25m)  horizontal-pod-autoscaler  failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-  Warning  FailedComputeMetricsReplicas  25m (x2 over 25m)  horizontal-pod-autoscaler  invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-  Warning  FailedGetResourceMetric       24m (x4 over 25m)  horizontal-pod-autoscaler  failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-  Warning  FailedComputeMetricsReplicas  24m (x4 over 25m)  horizontal-pod-autoscaler  invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
+Events:           <none>
 
 
 Name:                                                  api-jtsr-04-11-2026
@@ -941,13 +892,7 @@ Conditions:
   AbleToScale     True    ReadyForNewScale  recommended size matches current size
   ScalingActive   True    ValidMetricFound  the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)
   ScalingLimited  True    TooFewReplicas    the desired replica count is less than the minimum replica count
-Events:
-  Type     Reason                        Age                From                       Message
-  ----     ------                        ----               ----                       -------
-  Warning  FailedGetResourceMetric       25m                horizontal-pod-autoscaler  failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-  Warning  FailedComputeMetricsReplicas  25m                horizontal-pod-autoscaler  invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-  Warning  FailedGetResourceMetric       24m (x4 over 25m)  horizontal-pod-autoscaler  failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-  Warning  FailedComputeMetricsReplicas  24m (x4 over 25m)  horizontal-pod-autoscaler  invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
+Events:           <none>
 
 
 Name:                                                  shop-jtsr-04-11-2026
@@ -980,13 +925,7 @@ Conditions:
   AbleToScale     True    ReadyForNewScale  recommended size matches current size
   ScalingActive   True    ValidMetricFound  the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)
   ScalingLimited  True    TooFewReplicas    the desired replica count is less than the minimum replica count
-Events:
-  Type     Reason                        Age                From                       Message
-  ----     ------                        ----               ----                       -------
-  Warning  FailedGetResourceMetric       25m                horizontal-pod-autoscaler  failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-  Warning  FailedComputeMetricsReplicas  25m                horizontal-pod-autoscaler  invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-  Warning  FailedGetResourceMetric       24m (x4 over 25m)  horizontal-pod-autoscaler  failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-  Warning  FailedComputeMetricsReplicas  24m (x4 over 25m)  horizontal-pod-autoscaler  invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
+Events:           <none>
 
 
 Name:                                                  todo-jtsr-04-11-2026
@@ -1019,13 +958,7 @@ Conditions:
   AbleToScale     True    ReadyForNewScale  recommended size matches current size
   ScalingActive   True    ValidMetricFound  the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)
   ScalingLimited  True    TooFewReplicas    the desired replica count is less than the minimum replica count
-Events:
-  Type     Reason                        Age                From                       Message
-  ----     ------                        ----               ----                       -------
-  Warning  FailedGetResourceMetric       25m                horizontal-pod-autoscaler  failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-  Warning  FailedComputeMetricsReplicas  25m                horizontal-pod-autoscaler  invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API
-  Warning  FailedGetResourceMetric       24m (x4 over 25m)  horizontal-pod-autoscaler  failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
-  Warning  FailedComputeMetricsReplicas  24m (x4 over 25m)  horizontal-pod-autoscaler  invalid metrics (1 invalid out of 1), first error is: failed to get cpu resource metric value: failed to get cpu utilization: did not receive metrics for targeted pods (pods might be unready)
+Events:           <none>
 
 
 Name:             api-jtsr-04-11-2026-7c64d48d5f-88b89
@@ -1082,14 +1015,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  27m   default-scheduler  Successfully assigned mlops-jtsr-04-11-2026/api-jtsr-04-11-2026-7c64d48d5f-88b89 to minikube
-  Normal  Pulling    27m   kubelet            spec.containers{api-jtsr-04-11-2026}: Pulling image "jonathan57/api-jtsr-04-11-2026:v1"
-  Normal  Pulled     27m   kubelet            spec.containers{api-jtsr-04-11-2026}: Successfully pulled image "jonathan57/api-jtsr-04-11-2026:v1" in 882ms (6.462s including waiting). Image size: 23654671 bytes.
-  Normal  Created    27m   kubelet            spec.containers{api-jtsr-04-11-2026}: Created container api-jtsr-04-11-2026
-  Normal  Started    27m   kubelet            spec.containers{api-jtsr-04-11-2026}: Started container api-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             api-jtsr-04-11-2026-7c64d48d5f-pld7r
@@ -1146,14 +1072,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  27m   default-scheduler  Successfully assigned mlops-jtsr-04-11-2026/api-jtsr-04-11-2026-7c64d48d5f-pld7r to minikube
-  Normal  Pulling    27m   kubelet            spec.containers{api-jtsr-04-11-2026}: Pulling image "jonathan57/api-jtsr-04-11-2026:v1"
-  Normal  Pulled     27m   kubelet            spec.containers{api-jtsr-04-11-2026}: Successfully pulled image "jonathan57/api-jtsr-04-11-2026:v1" in 774ms (12.685s including waiting). Image size: 23654671 bytes.
-  Normal  Created    27m   kubelet            spec.containers{api-jtsr-04-11-2026}: Created container api-jtsr-04-11-2026
-  Normal  Started    27m   kubelet            spec.containers{api-jtsr-04-11-2026}: Started container api-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             api-jtsr-04-11-2026-7c64d48d5f-x6xdx
@@ -1210,14 +1129,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  27m   default-scheduler  Successfully assigned mlops-jtsr-04-11-2026/api-jtsr-04-11-2026-7c64d48d5f-x6xdx to minikube
-  Normal  Pulling    27m   kubelet            spec.containers{api-jtsr-04-11-2026}: Pulling image "jonathan57/api-jtsr-04-11-2026:v1"
-  Normal  Pulled     27m   kubelet            spec.containers{api-jtsr-04-11-2026}: Successfully pulled image "jonathan57/api-jtsr-04-11-2026:v1" in 5.61s (5.61s including waiting). Image size: 23654671 bytes.
-  Normal  Created    27m   kubelet            spec.containers{api-jtsr-04-11-2026}: Created container api-jtsr-04-11-2026
-  Normal  Started    27m   kubelet            spec.containers{api-jtsr-04-11-2026}: Started container api-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             shop-jtsr-04-11-2026-6d5c44566c-gfr8z
@@ -1277,13 +1189,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  18m   default-scheduler  Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-gfr8z to minikube
-  Normal  Pulled     18m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    18m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Created container shop-jtsr-04-11-2026
-  Normal  Started    18m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Started container shop-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             shop-jtsr-04-11-2026-6d5c44566c-qc4qj
@@ -1343,13 +1249,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  18m   default-scheduler  Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-qc4qj to minikube
-  Normal  Pulled     18m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    18m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Created container shop-jtsr-04-11-2026
-  Normal  Started    18m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Started container shop-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             shop-jtsr-04-11-2026-6d5c44566c-tplcd
@@ -1409,76 +1309,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  18m   default-scheduler  Successfully assigned mlops-jtsr-04-11-2026/shop-jtsr-04-11-2026-6d5c44566c-tplcd to minikube
-  Normal  Pulled     18m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    18m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Created container shop-jtsr-04-11-2026
-  Normal  Started    18m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Started container shop-jtsr-04-11-2026
-
-
-Name:             todo-jtsr-04-11-2026-6c4b96fd95-4b5qz
-Namespace:        mlops-jtsr-04-11-2026
-Priority:         0
-Service Account:  default
-Node:             minikube/192.168.49.2
-Start Time:       Wed, 04 Nov 2026 11:53:19 +0100
-Labels:           app=todo-jtsr-04-11-2026
-                  nom=jonathan
-                  pod-template-hash=6c4b96fd95
-                  projet=e5
-Annotations:      <none>
-Status:           Running
-IP:               10.244.0.51
-IPs:
-  IP:           10.244.0.51
-Controlled By:  ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95
-Containers:
-  todo-jtsr-04-11-2026:
-    Container ID:   containerd://35c9146577bbee2b321ab6a7067047b9d0a8c65cc9eb2d982c0fa11ebb856fdc
-    Image:          jonathan57/todo-jtsr-04-11-2026:v1
-    Image ID:       docker.io/jonathan57/todo-jtsr-04-11-2026@sha256:0a7257da1de756a3f2a9fef5c2c65481f6d5694c29b06f4f1a0f4927a5a134a2
-    Port:           3000/TCP
-    Host Port:      0/TCP
-    State:          Running
-      Started:      Wed, 04 Nov 2026 11:53:20 +0100
-    Ready:          True
-    Restart Count:  0
-    Limits:
-      cpu:     200m
-      memory:  256Mi
-    Requests:
-      cpu:        50m
-      memory:     64Mi
-    Environment:  <none>
-    Mounts:
-      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-8444f (ro)
-Conditions:
-  Type                        Status
-  PodReadyToStartContainers   True 
-  Initialized                 True 
-  Ready                       True 
-  ContainersReady             True 
-  PodScheduled                True 
-Volumes:
-  kube-api-access-8444f:
-    Type:                    Projected (a volume that contains injected data from multiple sources)
-    TokenExpirationSeconds:  3607
-    ConfigMapName:           kube-root-ca.crt
-    Optional:                false
-    DownwardAPI:             true
-QoS Class:                   Burstable
-Node-Selectors:              <none>
-Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
-                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  53s   default-scheduler  Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-4b5qz to minikube
-  Normal  Pulled     53s   kubelet            spec.containers{todo-jtsr-04-11-2026}: Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    53s   kubelet            spec.containers{todo-jtsr-04-11-2026}: Created container todo-jtsr-04-11-2026
-  Normal  Started    53s   kubelet            spec.containers{todo-jtsr-04-11-2026}: Started container todo-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             todo-jtsr-04-11-2026-6c4b96fd95-4ttd6
@@ -1535,392 +1366,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  27m   default-scheduler  Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-4ttd6 to minikube
-  Normal  Pulling    27m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Pulling image "jonathan57/todo-jtsr-04-11-2026:v1"
-  Normal  Pulled     27m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Successfully pulled image "jonathan57/todo-jtsr-04-11-2026:v1" in 1.11s (22.735s including waiting). Image size: 72766093 bytes.
-  Normal  Created    27m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Created container todo-jtsr-04-11-2026
-  Normal  Started    27m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Started container todo-jtsr-04-11-2026
-
-
-Name:             todo-jtsr-04-11-2026-6c4b96fd95-6j6h2
-Namespace:        mlops-jtsr-04-11-2026
-Priority:         0
-Service Account:  default
-Node:             minikube/192.168.49.2
-Start Time:       Wed, 04 Nov 2026 11:52:19 +0100
-Labels:           app=todo-jtsr-04-11-2026
-                  nom=jonathan
-                  pod-template-hash=6c4b96fd95
-                  projet=e5
-Annotations:      <none>
-Status:           Running
-IP:               10.244.0.45
-IPs:
-  IP:           10.244.0.45
-Controlled By:  ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95
-Containers:
-  todo-jtsr-04-11-2026:
-    Container ID:   containerd://1a91f86f48a9d7855f43b19adc82c254391bd5379e231767fd8a7aa61971db0e
-    Image:          jonathan57/todo-jtsr-04-11-2026:v1
-    Image ID:       docker.io/jonathan57/todo-jtsr-04-11-2026@sha256:0a7257da1de756a3f2a9fef5c2c65481f6d5694c29b06f4f1a0f4927a5a134a2
-    Port:           3000/TCP
-    Host Port:      0/TCP
-    State:          Running
-      Started:      Wed, 04 Nov 2026 11:52:20 +0100
-    Ready:          True
-    Restart Count:  0
-    Limits:
-      cpu:     200m
-      memory:  256Mi
-    Requests:
-      cpu:        50m
-      memory:     64Mi
-    Environment:  <none>
-    Mounts:
-      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-98tzm (ro)
-Conditions:
-  Type                        Status
-  PodReadyToStartContainers   True 
-  Initialized                 True 
-  Ready                       True 
-  ContainersReady             True 
-  PodScheduled                True 
-Volumes:
-  kube-api-access-98tzm:
-    Type:                    Projected (a volume that contains injected data from multiple sources)
-    TokenExpirationSeconds:  3607
-    ConfigMapName:           kube-root-ca.crt
-    Optional:                false
-    DownwardAPI:             true
-QoS Class:                   Burstable
-Node-Selectors:              <none>
-Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
-                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  113s  default-scheduler  Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-6j6h2 to minikube
-  Normal  Pulled     113s  kubelet            spec.containers{todo-jtsr-04-11-2026}: Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    113s  kubelet            spec.containers{todo-jtsr-04-11-2026}: Created container todo-jtsr-04-11-2026
-  Normal  Started    113s  kubelet            spec.containers{todo-jtsr-04-11-2026}: Started container todo-jtsr-04-11-2026
-
-
-Name:             todo-jtsr-04-11-2026-6c4b96fd95-6nv2h
-Namespace:        mlops-jtsr-04-11-2026
-Priority:         0
-Service Account:  default
-Node:             minikube/192.168.49.2
-Start Time:       Wed, 04 Nov 2026 11:52:19 +0100
-Labels:           app=todo-jtsr-04-11-2026
-                  nom=jonathan
-                  pod-template-hash=6c4b96fd95
-                  projet=e5
-Annotations:      <none>
-Status:           Running
-IP:               10.244.0.47
-IPs:
-  IP:           10.244.0.47
-Controlled By:  ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95
-Containers:
-  todo-jtsr-04-11-2026:
-    Container ID:   containerd://79f9a7259a4344c5cdf008f3d66edc8390bb85f0ed6a3407d7a3f81d914cfce2
-    Image:          jonathan57/todo-jtsr-04-11-2026:v1
-    Image ID:       docker.io/jonathan57/todo-jtsr-04-11-2026@sha256:0a7257da1de756a3f2a9fef5c2c65481f6d5694c29b06f4f1a0f4927a5a134a2
-    Port:           3000/TCP
-    Host Port:      0/TCP
-    State:          Running
-      Started:      Wed, 04 Nov 2026 11:52:20 +0100
-    Ready:          True
-    Restart Count:  0
-    Limits:
-      cpu:     200m
-      memory:  256Mi
-    Requests:
-      cpu:        50m
-      memory:     64Mi
-    Environment:  <none>
-    Mounts:
-      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-s49gq (ro)
-Conditions:
-  Type                        Status
-  PodReadyToStartContainers   True 
-  Initialized                 True 
-  Ready                       True 
-  ContainersReady             True 
-  PodScheduled                True 
-Volumes:
-  kube-api-access-s49gq:
-    Type:                    Projected (a volume that contains injected data from multiple sources)
-    TokenExpirationSeconds:  3607
-    ConfigMapName:           kube-root-ca.crt
-    Optional:                false
-    DownwardAPI:             true
-QoS Class:                   Burstable
-Node-Selectors:              <none>
-Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
-                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  113s  default-scheduler  Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-6nv2h to minikube
-  Normal  Pulled     113s  kubelet            spec.containers{todo-jtsr-04-11-2026}: Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    113s  kubelet            spec.containers{todo-jtsr-04-11-2026}: Created container todo-jtsr-04-11-2026
-  Normal  Started    113s  kubelet            spec.containers{todo-jtsr-04-11-2026}: Started container todo-jtsr-04-11-2026
-
-
-Name:             todo-jtsr-04-11-2026-6c4b96fd95-bs6pp
-Namespace:        mlops-jtsr-04-11-2026
-Priority:         0
-Service Account:  default
-Node:             minikube/192.168.49.2
-Start Time:       Wed, 04 Nov 2026 11:53:19 +0100
-Labels:           app=todo-jtsr-04-11-2026
-                  nom=jonathan
-                  pod-template-hash=6c4b96fd95
-                  projet=e5
-Annotations:      <none>
-Status:           Running
-IP:               10.244.0.50
-IPs:
-  IP:           10.244.0.50
-Controlled By:  ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95
-Containers:
-  todo-jtsr-04-11-2026:
-    Container ID:   containerd://62e2a60e8f5bdd303554b65c0f173a11e17835b58206546386fa2b073a7bd540
-    Image:          jonathan57/todo-jtsr-04-11-2026:v1
-    Image ID:       docker.io/jonathan57/todo-jtsr-04-11-2026@sha256:0a7257da1de756a3f2a9fef5c2c65481f6d5694c29b06f4f1a0f4927a5a134a2
-    Port:           3000/TCP
-    Host Port:      0/TCP
-    State:          Running
-      Started:      Wed, 04 Nov 2026 11:53:20 +0100
-    Ready:          True
-    Restart Count:  0
-    Limits:
-      cpu:     200m
-      memory:  256Mi
-    Requests:
-      cpu:        50m
-      memory:     64Mi
-    Environment:  <none>
-    Mounts:
-      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-7v4sf (ro)
-Conditions:
-  Type                        Status
-  PodReadyToStartContainers   True 
-  Initialized                 True 
-  Ready                       True 
-  ContainersReady             True 
-  PodScheduled                True 
-Volumes:
-  kube-api-access-7v4sf:
-    Type:                    Projected (a volume that contains injected data from multiple sources)
-    TokenExpirationSeconds:  3607
-    ConfigMapName:           kube-root-ca.crt
-    Optional:                false
-    DownwardAPI:             true
-QoS Class:                   Burstable
-Node-Selectors:              <none>
-Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
-                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  53s   default-scheduler  Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-bs6pp to minikube
-  Normal  Pulled     53s   kubelet            spec.containers{todo-jtsr-04-11-2026}: Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    53s   kubelet            spec.containers{todo-jtsr-04-11-2026}: Created container todo-jtsr-04-11-2026
-  Normal  Started    52s   kubelet            spec.containers{todo-jtsr-04-11-2026}: Started container todo-jtsr-04-11-2026
-
-
-Name:             todo-jtsr-04-11-2026-6c4b96fd95-dkqtg
-Namespace:        mlops-jtsr-04-11-2026
-Priority:         0
-Service Account:  default
-Node:             minikube/192.168.49.2
-Start Time:       Wed, 04 Nov 2026 11:53:19 +0100
-Labels:           app=todo-jtsr-04-11-2026
-                  nom=jonathan
-                  pod-template-hash=6c4b96fd95
-                  projet=e5
-Annotations:      <none>
-Status:           Running
-IP:               10.244.0.48
-IPs:
-  IP:           10.244.0.48
-Controlled By:  ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95
-Containers:
-  todo-jtsr-04-11-2026:
-    Container ID:   containerd://abac612e7c4144412a4447fb11558e5706d2c8d9b7c1694fcdac8761174a0b0a
-    Image:          jonathan57/todo-jtsr-04-11-2026:v1
-    Image ID:       docker.io/jonathan57/todo-jtsr-04-11-2026@sha256:0a7257da1de756a3f2a9fef5c2c65481f6d5694c29b06f4f1a0f4927a5a134a2
-    Port:           3000/TCP
-    Host Port:      0/TCP
-    State:          Running
-      Started:      Wed, 04 Nov 2026 11:53:20 +0100
-    Ready:          True
-    Restart Count:  0
-    Limits:
-      cpu:     200m
-      memory:  256Mi
-    Requests:
-      cpu:        50m
-      memory:     64Mi
-    Environment:  <none>
-    Mounts:
-      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-s6n8q (ro)
-Conditions:
-  Type                        Status
-  PodReadyToStartContainers   True 
-  Initialized                 True 
-  Ready                       True 
-  ContainersReady             True 
-  PodScheduled                True 
-Volumes:
-  kube-api-access-s6n8q:
-    Type:                    Projected (a volume that contains injected data from multiple sources)
-    TokenExpirationSeconds:  3607
-    ConfigMapName:           kube-root-ca.crt
-    Optional:                false
-    DownwardAPI:             true
-QoS Class:                   Burstable
-Node-Selectors:              <none>
-Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
-                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  53s   default-scheduler  Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-dkqtg to minikube
-  Normal  Pulled     53s   kubelet            spec.containers{todo-jtsr-04-11-2026}: Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    53s   kubelet            spec.containers{todo-jtsr-04-11-2026}: Created container todo-jtsr-04-11-2026
-  Normal  Started    53s   kubelet            spec.containers{todo-jtsr-04-11-2026}: Started container todo-jtsr-04-11-2026
-
-
-Name:             todo-jtsr-04-11-2026-6c4b96fd95-g85qt
-Namespace:        mlops-jtsr-04-11-2026
-Priority:         0
-Service Account:  default
-Node:             minikube/192.168.49.2
-Start Time:       Wed, 04 Nov 2026 11:53:19 +0100
-Labels:           app=todo-jtsr-04-11-2026
-                  nom=jonathan
-                  pod-template-hash=6c4b96fd95
-                  projet=e5
-Annotations:      <none>
-Status:           Running
-IP:               10.244.0.49
-IPs:
-  IP:           10.244.0.49
-Controlled By:  ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95
-Containers:
-  todo-jtsr-04-11-2026:
-    Container ID:   containerd://a3a4dd281cb671ac6cc2d19f2fd571d4579e637f4590baabf9b9b70687fc7084
-    Image:          jonathan57/todo-jtsr-04-11-2026:v1
-    Image ID:       docker.io/jonathan57/todo-jtsr-04-11-2026@sha256:0a7257da1de756a3f2a9fef5c2c65481f6d5694c29b06f4f1a0f4927a5a134a2
-    Port:           3000/TCP
-    Host Port:      0/TCP
-    State:          Running
-      Started:      Wed, 04 Nov 2026 11:53:20 +0100
-    Ready:          True
-    Restart Count:  0
-    Limits:
-      cpu:     200m
-      memory:  256Mi
-    Requests:
-      cpu:        50m
-      memory:     64Mi
-    Environment:  <none>
-    Mounts:
-      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-tfcr8 (ro)
-Conditions:
-  Type                        Status
-  PodReadyToStartContainers   True 
-  Initialized                 True 
-  Ready                       True 
-  ContainersReady             True 
-  PodScheduled                True 
-Volumes:
-  kube-api-access-tfcr8:
-    Type:                    Projected (a volume that contains injected data from multiple sources)
-    TokenExpirationSeconds:  3607
-    ConfigMapName:           kube-root-ca.crt
-    Optional:                false
-    DownwardAPI:             true
-QoS Class:                   Burstable
-Node-Selectors:              <none>
-Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
-                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  53s   default-scheduler  Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-g85qt to minikube
-  Normal  Pulled     53s   kubelet            spec.containers{todo-jtsr-04-11-2026}: Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    53s   kubelet            spec.containers{todo-jtsr-04-11-2026}: Created container todo-jtsr-04-11-2026
-  Normal  Started    53s   kubelet            spec.containers{todo-jtsr-04-11-2026}: Started container todo-jtsr-04-11-2026
-
-
-Name:             todo-jtsr-04-11-2026-6c4b96fd95-kp42c
-Namespace:        mlops-jtsr-04-11-2026
-Priority:         0
-Service Account:  default
-Node:             minikube/192.168.49.2
-Start Time:       Wed, 04 Nov 2026 11:52:19 +0100
-Labels:           app=todo-jtsr-04-11-2026
-                  nom=jonathan
-                  pod-template-hash=6c4b96fd95
-                  projet=e5
-Annotations:      <none>
-Status:           Running
-IP:               10.244.0.46
-IPs:
-  IP:           10.244.0.46
-Controlled By:  ReplicaSet/todo-jtsr-04-11-2026-6c4b96fd95
-Containers:
-  todo-jtsr-04-11-2026:
-    Container ID:   containerd://6faa239ecf941c31e5fbcba2182517453f0252691e6e5d63211e57146e14356f
-    Image:          jonathan57/todo-jtsr-04-11-2026:v1
-    Image ID:       docker.io/jonathan57/todo-jtsr-04-11-2026@sha256:0a7257da1de756a3f2a9fef5c2c65481f6d5694c29b06f4f1a0f4927a5a134a2
-    Port:           3000/TCP
-    Host Port:      0/TCP
-    State:          Running
-      Started:      Wed, 04 Nov 2026 11:52:20 +0100
-    Ready:          True
-    Restart Count:  0
-    Limits:
-      cpu:     200m
-      memory:  256Mi
-    Requests:
-      cpu:        50m
-      memory:     64Mi
-    Environment:  <none>
-    Mounts:
-      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-vddl7 (ro)
-Conditions:
-  Type                        Status
-  PodReadyToStartContainers   True 
-  Initialized                 True 
-  Ready                       True 
-  ContainersReady             True 
-  PodScheduled                True 
-Volumes:
-  kube-api-access-vddl7:
-    Type:                    Projected (a volume that contains injected data from multiple sources)
-    TokenExpirationSeconds:  3607
-    ConfigMapName:           kube-root-ca.crt
-    Optional:                false
-    DownwardAPI:             true
-QoS Class:                   Burstable
-Node-Selectors:              <none>
-Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
-                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  113s  default-scheduler  Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-kp42c to minikube
-  Normal  Pulled     113s  kubelet            spec.containers{todo-jtsr-04-11-2026}: Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    113s  kubelet            spec.containers{todo-jtsr-04-11-2026}: Created container todo-jtsr-04-11-2026
-  Normal  Started    113s  kubelet            spec.containers{todo-jtsr-04-11-2026}: Started container todo-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             todo-jtsr-04-11-2026-6c4b96fd95-qcgbk
@@ -1977,14 +1423,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  27m   default-scheduler  Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-qcgbk to minikube
-  Normal  Pulling    27m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Pulling image "jonathan57/todo-jtsr-04-11-2026:v1"
-  Normal  Pulled     27m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Successfully pulled image "jonathan57/todo-jtsr-04-11-2026:v1" in 7.287s (21.626s including waiting). Image size: 72766093 bytes.
-  Normal  Created    27m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Created container todo-jtsr-04-11-2026
-  Normal  Started    27m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Started container todo-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             todo-jtsr-04-11-2026-6c4b96fd95-zrkgd
@@ -2041,14 +1480,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  27m   default-scheduler  Successfully assigned mlops-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-zrkgd to minikube
-  Normal  Pulling    27m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Pulling image "jonathan57/todo-jtsr-04-11-2026:v1"
-  Normal  Pulled     27m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Successfully pulled image "jonathan57/todo-jtsr-04-11-2026:v1" in 1.056s (23.776s including waiting). Image size: 72766093 bytes.
-  Normal  Created    27m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Created container todo-jtsr-04-11-2026
-  Normal  Started    27m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Started container todo-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             netdata-jtsr-04-11-2026-644cf559fd-f7bsv
@@ -2105,14 +1537,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age    From               Message
-  ----    ------     ----   ----               -------
-  Normal  Scheduled  8m46s  default-scheduler  Successfully assigned monitoring-jtsr-04-11-2026/netdata-jtsr-04-11-2026-644cf559fd-f7bsv to minikube
-  Normal  Pulling    8m46s  kubelet            spec.containers{netdata-jtsr-04-11-2026}: Pulling image "netdata/netdata:stable"
-  Normal  Pulled     8m25s  kubelet            spec.containers{netdata-jtsr-04-11-2026}: Successfully pulled image "netdata/netdata:stable" in 21.368s (21.368s including waiting). Image size: 325562540 bytes.
-  Normal  Created    8m25s  kubelet            spec.containers{netdata-jtsr-04-11-2026}: Created container netdata-jtsr-04-11-2026
-  Normal  Started    8m25s  kubelet            spec.containers{netdata-jtsr-04-11-2026}: Started container netdata-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             api-jtsr-04-11-2026-7c64d48d5f-82gp9
@@ -2169,13 +1594,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  25m   default-scheduler  Successfully assigned preprod-jtsr-04-11-2026/api-jtsr-04-11-2026-7c64d48d5f-82gp9 to minikube
-  Normal  Pulled     25m   kubelet            spec.containers{api-jtsr-04-11-2026}: Container image "jonathan57/api-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    25m   kubelet            spec.containers{api-jtsr-04-11-2026}: Created container api-jtsr-04-11-2026
-  Normal  Started    25m   kubelet            spec.containers{api-jtsr-04-11-2026}: Started container api-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             api-jtsr-04-11-2026-7c64d48d5f-mzslz
@@ -2232,13 +1651,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  25m   default-scheduler  Successfully assigned preprod-jtsr-04-11-2026/api-jtsr-04-11-2026-7c64d48d5f-mzslz to minikube
-  Normal  Pulled     25m   kubelet            spec.containers{api-jtsr-04-11-2026}: Container image "jonathan57/api-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    25m   kubelet            spec.containers{api-jtsr-04-11-2026}: Created container api-jtsr-04-11-2026
-  Normal  Started    25m   kubelet            spec.containers{api-jtsr-04-11-2026}: Started container api-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             api-jtsr-04-11-2026-7c64d48d5f-xth2z
@@ -2295,13 +1708,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  25m   default-scheduler  Successfully assigned preprod-jtsr-04-11-2026/api-jtsr-04-11-2026-7c64d48d5f-xth2z to minikube
-  Normal  Pulled     25m   kubelet            spec.containers{api-jtsr-04-11-2026}: Container image "jonathan57/api-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    25m   kubelet            spec.containers{api-jtsr-04-11-2026}: Created container api-jtsr-04-11-2026
-  Normal  Started    25m   kubelet            spec.containers{api-jtsr-04-11-2026}: Started container api-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             shop-jtsr-04-11-2026-5f6bdfb4db-25b9k
@@ -2361,13 +1768,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  25m   default-scheduler  Successfully assigned preprod-jtsr-04-11-2026/shop-jtsr-04-11-2026-5f6bdfb4db-25b9k to minikube
-  Normal  Pulled     25m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    25m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Created container shop-jtsr-04-11-2026
-  Normal  Started    25m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Started container shop-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             shop-jtsr-04-11-2026-5f6bdfb4db-5sbkj
@@ -2427,13 +1828,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  25m   default-scheduler  Successfully assigned preprod-jtsr-04-11-2026/shop-jtsr-04-11-2026-5f6bdfb4db-5sbkj to minikube
-  Normal  Pulled     25m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    25m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Created container shop-jtsr-04-11-2026
-  Normal  Started    25m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Started container shop-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             shop-jtsr-04-11-2026-5f6bdfb4db-c7d2f
@@ -2493,13 +1888,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  25m   default-scheduler  Successfully assigned preprod-jtsr-04-11-2026/shop-jtsr-04-11-2026-5f6bdfb4db-c7d2f to minikube
-  Normal  Pulled     25m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    25m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Created container shop-jtsr-04-11-2026
-  Normal  Started    25m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Started container shop-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             todo-jtsr-04-11-2026-6c4b96fd95-5r7sm
@@ -2556,13 +1945,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  25m   default-scheduler  Successfully assigned preprod-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-5r7sm to minikube
-  Normal  Pulled     25m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    25m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Created container todo-jtsr-04-11-2026
-  Normal  Started    25m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Started container todo-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             todo-jtsr-04-11-2026-6c4b96fd95-jch2b
@@ -2619,13 +2002,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  25m   default-scheduler  Successfully assigned preprod-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-jch2b to minikube
-  Normal  Pulled     25m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    25m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Created container todo-jtsr-04-11-2026
-  Normal  Started    25m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Started container todo-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             todo-jtsr-04-11-2026-6c4b96fd95-kc2cm
@@ -2682,13 +2059,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  25m   default-scheduler  Successfully assigned preprod-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-kc2cm to minikube
-  Normal  Pulled     25m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    25m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Created container todo-jtsr-04-11-2026
-  Normal  Started    25m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Started container todo-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             api-jtsr-04-11-2026-7c64d48d5f-672zq
@@ -2745,13 +2116,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  25m   default-scheduler  Successfully assigned prod-jtsr-04-11-2026/api-jtsr-04-11-2026-7c64d48d5f-672zq to minikube
-  Normal  Pulled     25m   kubelet            spec.containers{api-jtsr-04-11-2026}: Container image "jonathan57/api-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    25m   kubelet            spec.containers{api-jtsr-04-11-2026}: Created container api-jtsr-04-11-2026
-  Normal  Started    25m   kubelet            spec.containers{api-jtsr-04-11-2026}: Started container api-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             api-jtsr-04-11-2026-7c64d48d5f-gvcpf
@@ -2808,13 +2173,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  25m   default-scheduler  Successfully assigned prod-jtsr-04-11-2026/api-jtsr-04-11-2026-7c64d48d5f-gvcpf to minikube
-  Normal  Pulled     25m   kubelet            spec.containers{api-jtsr-04-11-2026}: Container image "jonathan57/api-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    25m   kubelet            spec.containers{api-jtsr-04-11-2026}: Created container api-jtsr-04-11-2026
-  Normal  Started    25m   kubelet            spec.containers{api-jtsr-04-11-2026}: Started container api-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             api-jtsr-04-11-2026-7c64d48d5f-t2qpm
@@ -2871,13 +2230,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  25m   default-scheduler  Successfully assigned prod-jtsr-04-11-2026/api-jtsr-04-11-2026-7c64d48d5f-t2qpm to minikube
-  Normal  Pulled     25m   kubelet            spec.containers{api-jtsr-04-11-2026}: Container image "jonathan57/api-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    25m   kubelet            spec.containers{api-jtsr-04-11-2026}: Created container api-jtsr-04-11-2026
-  Normal  Started    25m   kubelet            spec.containers{api-jtsr-04-11-2026}: Started container api-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             shop-jtsr-04-11-2026-5f6bdfb4db-859jb
@@ -2937,13 +2290,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  25m   default-scheduler  Successfully assigned prod-jtsr-04-11-2026/shop-jtsr-04-11-2026-5f6bdfb4db-859jb to minikube
-  Normal  Pulled     25m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    25m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Created container shop-jtsr-04-11-2026
-  Normal  Started    25m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Started container shop-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             shop-jtsr-04-11-2026-5f6bdfb4db-b8vfm
@@ -3003,13 +2350,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  25m   default-scheduler  Successfully assigned prod-jtsr-04-11-2026/shop-jtsr-04-11-2026-5f6bdfb4db-b8vfm to minikube
-  Normal  Pulled     25m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    25m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Created container shop-jtsr-04-11-2026
-  Normal  Started    25m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Started container shop-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             shop-jtsr-04-11-2026-5f6bdfb4db-tnhf6
@@ -3069,13 +2410,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  25m   default-scheduler  Successfully assigned prod-jtsr-04-11-2026/shop-jtsr-04-11-2026-5f6bdfb4db-tnhf6 to minikube
-  Normal  Pulled     25m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Container image "jonathan57/shop-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    25m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Created container shop-jtsr-04-11-2026
-  Normal  Started    25m   kubelet            spec.containers{shop-jtsr-04-11-2026}: Started container shop-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             todo-jtsr-04-11-2026-6c4b96fd95-p6x6s
@@ -3132,13 +2467,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  25m   default-scheduler  Successfully assigned prod-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-p6x6s to minikube
-  Normal  Pulled     25m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    25m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Created container todo-jtsr-04-11-2026
-  Normal  Started    25m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Started container todo-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             todo-jtsr-04-11-2026-6c4b96fd95-stlsg
@@ -3195,13 +2524,7 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  25m   default-scheduler  Successfully assigned prod-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-stlsg to minikube
-  Normal  Pulled     25m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    25m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Created container todo-jtsr-04-11-2026
-  Normal  Started    25m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Started container todo-jtsr-04-11-2026
+Events:                      <none>
 
 
 Name:             todo-jtsr-04-11-2026-6c4b96fd95-wnmsq
@@ -3258,10 +2581,4 @@ QoS Class:                   Burstable
 Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
-Events:
-  Type    Reason     Age   From               Message
-  ----    ------     ----  ----               -------
-  Normal  Scheduled  25m   default-scheduler  Successfully assigned prod-jtsr-04-11-2026/todo-jtsr-04-11-2026-6c4b96fd95-wnmsq to minikube
-  Normal  Pulled     25m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Container image "jonathan57/todo-jtsr-04-11-2026:v1" already present on machine
-  Normal  Created    25m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Created container todo-jtsr-04-11-2026
-  Normal  Started    25m   kubelet            spec.containers{todo-jtsr-04-11-2026}: Started container todo-jtsr-04-11-2026
+Events:                      <none>

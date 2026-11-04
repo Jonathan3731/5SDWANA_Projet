@@ -572,3 +572,34 @@
   572  kubectl get svc todo-jtsr-04-11-2026 -n mlops-jtsr-04-11-2026
   573  ab -n 50000 -c 100 http://192.168.49.2:31291/
   574  history > logs/history-projet-BERNARD-jonathan.log
+  575  kubectl events -A > logs/k8s-events-BERNARD-jonathan.log
+  576  kubectl describe deploy,svc,hpa,pods -A -l projet=e5 > logs/k8s-describe-BERNARD-jonathan.log
+  577  kubectl logs -n mlops-jtsr-04-11-2026 -l app=todo-jtsr-04-11-2026 --tail=100 > logs/pod-todo-jtsr-04-11-2026.log
+  578  kubectl get all -A -l projet=e5 --show-labels > logs/k8s-labels-jtsr-04-11-2026.log
+  579  grep -rl "sk_test" logs/ k8s/
+  580  git add . && git commit -m "Logs" && git pull && git push
+  581  git push -u origin main
+  582  kubectl get svc
+  583  kubectl get svc, pods
+  584  kubectl get pods
+  585  minikube ip
+  586  kubectl get svc shop-jtsr-04-11-2026 -n mlops-jtsr-04-11-2026
+  587  ab -n 50000 -c 100 http://192.168.49.2:32410/
+  588  kubectl get namespaces
+  589  docker images | grep jtsr
+  590  kubectl describe pod <pod-shop> -n mlops-jtsr-04-11-2026 | grep -A6 Limits
+  591  kubectl describe pod shop-jtsr-04-11-2026-6d5c44566c-48lfz -n mlops-jtsr-04-11-2026 | grep -A6 Limits
+  592  kubectl get svc shop-jtsr-04-11-2026 -n mlops-jtsr-04-11-2026
+  593  kubectl describe pod shop-jtsr-04-11-2026 -n mlops-jtsr-04-11-2026 | grep -A6 Limits
+  594  kubectl get secret -n mlops-jtsr-04-11-2026
+  595  kubectl exec -n mlops-jtsr-04-11-2026 deploy/shop-jtsr-04-11-2026 -- printenv | grep -E "STRIPE|PRICE|DOMAIN"
+  596  kubectl get deploy,pods,svc,hpa -A -l projet=e5
+  597  kubectl get pods -A -l projet=e5 --show-labels
+  598  kubectl get svc -A -l projet=e5
+  599  kubectl run curl-jtsr-04-11-2026 --rm -it --restart=Never --image=curlimages/curl -n mlops-jtsr-04-11-2026 -- curl -s http://api-jtsr-04-11-2026/flask-health-check
+  600  ab sur todo    ab -r -n 50000 -c 100 http://192.168.49.2:31291/
+  601  ab -r -n 50000 -c 100 http://192.168.49.2:31291/
+  602  kubectl run ab-jtsr-04-11-2026 --rm -it --restart=Never --image=httpd:alpine -n mlops-jtsr-04-11-2026 -- ab -r -n 20000 -c 50 http://api-jtsr-04-11-2026/
+  603  kubectl get events -n mlops-jtsr-04-11-2026
+  604  git add . && git commit -m "Commandes pour le rendu" && git pull && git push
+  605  history > logs/history-projet-BERNARD-jonathan.log
