@@ -421,44 +421,6 @@ Dans les trois cas, l'autoscaling se déclenche dès que le CPU dépasse 50 % de
 
 ![Commits](docs/captures/23-git-commits.png)
 
-### Récapitulatif des captures
-
-| N° | Fichier à créer dans `docs/captures/` | Ce qu'il montre |
-| --- | --- | --- |
-| 00 | `00-schema-architecture.png` | Schéma d'architecture du projet |
-| 01 | `01-dockerhub-images.png` | Les 3 images sur Docker Hub |
-| 02 | `02-docker-images-tailles.png` | `docker images` : tailles et comparaison avec `Dockerfile.naive` |
-| 03 | `03-kubectl-top-pods.png` | `kubectl top pods` : consommation CPU / RAM |
-| 04 | `04-describe-limits.png` | `kubectl describe pod` : Limits / Requests |
-| 05 | `05-secret.png` | `kubectl get secret` |
-| 06 | `06-printenv-secret.png` | `printenv` dans le pod shop (clés masquées) |
-| 07 | `07-stack-3-namespaces.png` | `kubectl get deploy,pods,svc,hpa -A -l projet=e5` |
-| 08 | `08-labels.png` | `kubectl get pods -A -l projet=e5 --show-labels` |
-| 09 | `09-services.png` | `kubectl get svc` : ClusterIP / NodePort |
-| 10 | `10-api-interne.png` | `curl` de l'API depuis un pod |
-| 11 | `11-shop-navigateur.png` | shop depuis le PC |
-| 12 | `12-todo-navigateur.png` | todo depuis le PC |
-| 13 | `13-stripe-paiement.png` | Page de paiement Stripe |
-| 14 | `14-stripe-succes.png` | Page de succès |
-| 15 | `15-stripe-dashboard.png` | Paiement dans le tableau de bord Stripe |
-| 16a | `16a-ab-shop-erreur.png` | Premier test shop interrompu (erreur documentée) |
-| 16 | `16-ab-shop.png` | Test de charge shop complet |
-| 17 | `17-ab-todo.png` | Test de charge todo |
-| 17b | `17b-hpa-todo-scale-up.png` | Autoscaling de todo (11 réplicas) |
-| 18 | `18-ab-api.png` | Test de charge api |
-| 18b | `18b-hpa-api-scale-up.png` | Autoscaling de api (7 réplicas) |
-| 19a | `19a-hpa-avant-charge.png` | HPA au repos, avant la charge |
-| 19b | `19b-hpa-debut-charge.png` | Début de la charge, avant le scaling |
-| 19c | `19c-top-pods-pendant-charge.png` | `kubectl top pods` pendant la charge |
-| 19 | `19-hpa-scale-up.png` | Autoscaling |
-| 20 | `20-hpa-scale-down.png` | Downscaling |
-| 21 | `21-netdata.png` | Interface Netdata |
-| 21b | `21b-netdata-pod.png` | Netdata, vue détaillée du pod |
-| 22 | `22-events.png` | Tableau des events |
-| 22b | `22b-events-scaling-shop.png` | Events du scaling de shop (jusqu'à 20 pods) |
-| 22c | `22c-events-scaling-todo.png` | Events du scaling de todo |
-| 23 | `23-git-commits.png` | Historique des commits |
-
 ## 10. Avantages et inconvénients des choix
 
 | Choix | Avantages | Inconvénients |
