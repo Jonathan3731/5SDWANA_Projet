@@ -5,10 +5,10 @@
 
 | Membre | Rôle dans le projet |
 | --- | --- |
-| Jonathan BERNARD | _à compléter_ |
-| _Prénom NOM_ | _à compléter_ |
-| _Prénom NOM_ | _à compléter_ |
-| _Prénom NOM_ | _à compléter_ |
+| Jonathan BERNARD | Responsable Kubernetes (déploiement) |
+| Tomy HOMBOURGER | Responsable Git et documentation |
+| Romain FIGAROLI | Responsable Docker (images) |
+| Soulaymane KADI | Responsable tests et observabilité |
 
 ---
 
