@@ -179,7 +179,7 @@ stringData:
   STRIPE_SECRET_KEY: "sk_test_..."
   STRIPE_PUBLISHABLE_KEY: "pk_test_..."
   PRICE: "price_..."
-  DOMAIN: "http://<IP-VM>:8081"
+  DOMAIN: "http://172.18.75.182:8081"
 ```
 
 ```bash
@@ -266,7 +266,7 @@ kubectl run curl-jtsr-04-11-2026 --rm -it --restart=Never --image=curlimages/cur
 
 ### 8.1 Test de paiement Stripe
 
-1. Ouvrir `http://<IP-VM>:8081` et cliquer sur **Buy**.
+1. Ouvrir `http://172.18.75.182:8081` et cliquer sur **Buy**.
 2. Payer avec la carte de test `4242 4242 4242 4242` (date future, CVC quelconque).
 3. Vérifier que le paiement apparaît dans le tableau de bord Stripe → **Paiements** (mode test).
 
