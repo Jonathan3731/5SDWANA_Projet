@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-jtsr-04-11-2026
+  labels:
+    nom: jonathan
+    projet: e5
+data:
+  PAYMENT_METHOD_TYPES: "card"

@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: mlops-jtsr-04-11-2026
+  labels:
+    nom: jonathan
+    projet: e5
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: preprod-jtsr-04-11-2026
+  labels:
+    nom: jonathan
+    projet: e5
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: prod-jtsr-04-11-2026
+  labels:
+    nom: jonathan
+    projet: e5
