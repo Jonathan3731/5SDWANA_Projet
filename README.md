@@ -234,9 +234,9 @@ kubectl port-forward --address 0.0.0.0 -n monitoring-jtsr-04-11-2026 svc/netdata
 
 | Application | URL depuis le PC |
 | --- | --- |
-| shop (Stripe) | `http://<IP-VM>:8081` |
-| todo | `http://<IP-VM>:8082` |
-| Netdata | `http://<IP-VM>:19999` |
+| shop (Stripe) | `http://172.18.75.182:8081` |
+| todo | `http://172.18.75.182:8082` |
+| Netdata | `http://172.18.75.182:19999` |
 | api | non exposée — test depuis l'intérieur du cluster ci-dessous |
 
 Test de l'API **depuis l'intérieur** du cluster (Service ClusterIP) :
