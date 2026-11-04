@@ -63,8 +63,6 @@ Le schéma détaillé :
 
 ![Schéma d'architecture](docs/captures/00-schema-architecture.png)
 
-> 📸 **Captures :** toutes les captures sont rangées dans `docs/captures/`, numérotées dans l'ordre du README. Pour en ajouter une, enregistre l'image sous le nom indiqué : elle s'affichera automatiquement à cet endroit sur GitHub.
-
 ## 4. Applications
 
 | Application | Image Docker Hub | Port conteneur | Service | Accès |
